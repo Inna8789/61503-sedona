@@ -1,15 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: sedona</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-  </head>
-  <body>
+    <head>
+    	<meta charset="utf-8">
+    	<title>HTML Academy: sedona</title>
+     	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    	<link href="css/normalize.css" type="text/css" rel="stylesheet">
+    	<link href="css/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+  		<header>
+  		 	<nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li>
+                        <a href="hotels.html">Гостиницы</a>
+                    </li>
+                    <li></li>
+                </ul>
+            </nav>
+  		</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+  		<main class="content">
 
-    <!-- <script src="js/script.js"></script> -->
+  			<header class="content-header">
+                <h1 class="content-header-title">
+                    <span class="title-welcome">Welcome to the gorgeous</span>
+                    <span class="title-sedona">Sedona</span>
+                </h1>
+                <blockquote>
+                    Because the Grand Canyon sucks
+                </blockquote>
+            </header>
+ 
+  			<div class="content-index">
+  				<div class="index-header">
+                	<h2 class="sedona-title2">Седона &mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h2>
+                	<p>Рассмотрим 5 причин, по&nbsp;которым Седона круче чем Гранд Каньон!</p>
+            	</div>
+            	<div class="reasons">
+                	<div class="reason-with-pic">
+                    	<div class="reason-item">
+                        	<h3 class="sedona-title2">Настоящий<br>городок</h3>
+                            <span class="reason-number">№1</span>
+                            <p>Седона не&nbsp;аттракцион для&nbsp;туристов, там течёт своя жизнь</p>
+                    	</div>
+                    	<div class="reason-pic">
+                        	<img src="img/bcg_2.jpg" alt=""> 
+                    	</div>
+            		</div>
 
-  </body>
+            	<div class="features">
+                	<div class="reason-item features-house">
+                    	<h4 class="sedona-title2">Жильё</h4>
+                        <p>Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
+                	</div>
+                    <div class="reason-item features-hamburger">
+                        <h4 class="sedona-title2">Еда</h4>
+                        <p>Всегда заказывай фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+                    </div>
+                    <div class="reason-item features-gift">
+                        <h4 class="sedona-title2">Сувениры</h4>
+                        <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
+                    </div>
+            	</div>
+
+            	<div class="reason-with-pic">
+                	<div class="reason-pic">
+                    	<img src="img/bcg_3.jpg" alt="">  
+                	</div>
+                	<div class="reason-item">
+                    	<h3 class="sedona-title2">Там есть<br>мост дьявола</h3>
+                    	<span class="reason-number">№2</span>
+                    	<p>Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь... </p>
+                	</div>
+            	</div>
+
+            	<div class="reasons-other">
+                	<div class="reason-item">
+                    	<h4 class="sedona-title2">Небольшая<br>площадь</h4>
+                    	<span class="reason-number">№3</span>
+                    	<p>Все достопримечательности находятся очень близко</p>
+                	</div>
+                	<div class="reason-item">
+                    	<h4 class="sedona-title2">Красивая<br>дорога</h4>
+                    	<span class="reason-number">№4</span>
+                    	<p>Ехать в&nbsp;Седону из&nbsp;<nobr>Лас-Вегаса</nobr> совсем не&nbsp;скучно!</p>
+                	</div>
+                	<div class="reason-item">
+                    	<h4 class="sedona-title2">Мало<br> туристов</h4>
+                		<span class="reason-number">№5</span>
+                		<p>Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>                               
+                	</div>
+            	</div>
+
+            	<section class="search-hotels">
+                	<h4 class="search-title">Заинтересовались?</h4>
+                	<div class="search-text">
+                    	Укажите предполагаемые даты поездки и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
+                	</div>
+                	<button type="button" class="search-button">Поиск гостиницы в Седоне</button>
+            	</section>
+
+            	<div class="dislocation-map"></div>
+        	</div>
+		</main>
+
+		<footer class="main-footer">
+			<div class="footer-contacts">
+                <a href="#">#Visitsedona</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-btn social-btn-tw"><i class="icon-twitter"></i></a>
+                <a href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i></a>
+                <a href="#" class="social-btn social-btn-youtube"><i class="icon-youtube"></i></a>
+            </div>
+            <div class="footer-copyright">
+                Разработано <a class="copyright-glukhanko" href="http://glukhanko.ru/" target="_blank"></a> for <a class="copyright-htmlacademy" href="http://htmlacademy.ru" target="_blank"></a>
+            </div>
+		</footer>
+
+
+   
+
+    <script src="js/script.js"></script>
+
+	</body>
 </html>
