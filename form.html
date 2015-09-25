@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+    	<meta charset="utf-8">
+    	<title>HTML Academy: sedona</title>
+     	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    	<link href="css/normalize.css" type="text/css" rel="stylesheet">
+    	<link href="css/style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+  		
+
+
+        <div class="page-header__wrapper">
+        <div class="page-header">
+
+            <nav class="modal-nav">
+                <ul>
+                    <li class="modal-nav__item  modal-nav__item--close">
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#">Информация</a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li class="modal-nav__item">
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <figure class="logo logo--modal-nav-open">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="">
+                    </a>
+            </figure>
+
+            <h1 class="page-header__title">
+                <span class="page-header__welcome">Welcome to the gorgeous</span>
+                <span class="page-header__sedona">Sedona</span>
+            </h1>
+            <blockquote>
+                Because the Grand Canyon sucks
+            </blockquote>
+
+        </div>
+        </div>
+
+  		
+        <div class="form-header__wrapper">
+  		<div class="form-header">
+
+            	<h2 class="form-header__title">
+                    Оставьте свой отзыв
+                </h2>
+            	<p>
+                    Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях
+                </p>
+        </div>
+        </div>
+
+
+        <div class="form__wrapper">
+        <form class="form" action="/echo" method="post">
+
+
+
+            <fieldset class="form__fieldset">
+
+            	<legend class="form__legend">
+                    Представьтесь, пожалуйста:
+                </legend>
+
+            	<label>Фамилия:<span>*</span></label>
+            	<input type="text" placeholder="Иванов" required>
+            	<label>Имя:<span>*</span></label>
+            	<input type="text" placeholder="Пётр" required>
+            	<label>Отчество:<span>*</span></label>
+            	<input type="text" placeholder="Александрович">
+
+            </fieldset>
+
+
+            <fieldset class="form__fieldset">
+            	<legend class="form__legend">
+                    Ваше общее впечатление:
+                </legend>
+
+            	<input id="radio-1" name="radio" type="radio" checked>
+            	<label for="radio-1">Скорее положительное</label>
+            	<input id="radio-2" name="radio" type="radio">
+            	<label for="radio-2">Скорее отрицательное</label>
+            </fieldset>
+
+
+            <fildset class="form__fieldset">
+
+            	<legend class="form__legend">
+                    Даты вашей поездки
+                </legend>
+
+            	<label>Дата приезда:<span>*</span></label>
+            	<input type="date" placeholder="4 июля 2015" required>
+            	<label>Длительность пребывания:<span>*</span></label>
+            	<input type="number" value="14" placeholder="дн." required>
+            	<label>Дата отъезда:<span>*</span></label>
+            	<input type="date" placeholder="28 июля 2015" required>
+            </fildset>
+
+
+            <fieldset class="form__fieldset">
+
+            	<legend class="form__legend">
+                    Кол-во путешественников
+                </legend>
+
+            	<label>Количество путешественников:<span>*</span></label>
+            	<input type="number" value="2" placeholder="чел." required>
+            	<div class="form-left">
+            		<label>№</label>
+            		<input type="number" value="1">
+            	</div>
+            	<div class="form-right">
+            		<label>Фамилия:<span>*</span></label>
+            		<input type="text" placeholder="Иванов" required>
+            		<label>Имя:<span>*</span></label>
+            		<input type="text" placeholder="Пётр" required>
+            			<label>Отчество:<span>*</span></label>
+            			<input type="text" placeholder="Александрович">
+            	</div>
+            	<div class="form-left"></div>
+            		<label>№</label>
+            		<input type="number" value="2">
+            	</div>
+            	<div class="form-right">
+            		<label>Фамилия:<span>*</span></label>
+            		<input type="text" placeholder="Иванов" required>
+            		<label>Имя:<span>*</span></label>
+            		<input type="text" placeholder="Пётр" required>
+            		<label>Отчество:<span>*</span></label>
+            		<input type="text" placeholder="Александрович">
+            	</div>
+
+            </fieldset>
+
+
+            <fieldset class="form__fieldset">
+
+                <legend class="form__legend">
+                    Посещённые достопримечательности
+                </legend>
+
+            	<input id="checkbox-1" type="checkbox" checked>
+            	<label for="checkbox-1">Мост Дьявола</label>
+            	<input id="checkbox-2" type="checkbox">
+            	<label for="checkbox-2">Слайд-парк</label>
+            	<input id="checkbox-3" type="checkbox" checked>
+            	<label for="checkbox-3">Гора-Колокол</label>
+            	<input id="checkbox-4" type="checkbox" checked>
+            	<label for="checkbox-4">Красные Скалы</label>
+            </fieldset>
+
+
+            <fieldset class="form__fieldset">
+
+            	<legend class="form__legend">
+                    Загрузите фотографии:
+                </legend>
+
+            	<input type="submit" value="Выбрать фотографии">
+            	<div class="photos">
+            		<div class="photos-item">
+            			<img src="/img/photo_1.jpg" alt="">
+            		</div>
+            		<div class="photos-item">
+            			<img src="/img/photo_2_3.jpg" alt="">
+            		</div>
+            		<div class="photos-item">
+            			<img src="/img/photo_2_3.jpg" alt="">
+            		</div>
+            		<div class="photos-item">
+            			<img src="/img/photo_4.jpg" alt="">
+            		</div>
+            		<div class="photos-item">
+            			<img src="/img/photo_5.jpg" alt="">
+            		</div>
+            		<div class="photos-item">
+            			<img src="/img/photo_6.jpg" alt="">
+            		</div>
+            		<div class="photos-item">
+            			<img src="/img/photo_7.jpg" alt="">
+            		</div>
+            	</div>
+
+            </fieldset>
+
+        </form>
+        </div>
+
+
+        <div class="main-footer__wrapper">
+        <footer class="main-footer">
+
+               
+            <div class="contacts--footer">
+                <a href="#">#Visitsedona</a>
+            </div>
+            <div class="social--footer">
+                <a href="#" class="social-btn social-btn-tw"><i class="icon-twitter"></i></a>
+                <a href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i></a>
+                <a href="#" class="social-btn social-btn-youtube"><i class="icon-youtube"></i></a>
+            </div>
+            <div class="copyright--footer">
+                Разработано 
+                <a class="cohtmlacademy" href="http://htmlacademy.ru" target="_blank"></a>
+            </div>
+                
+        </footer>
+        </div>
+
+
+
+	</body>
+
+</html>
