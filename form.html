@@ -18,7 +18,7 @@
 
             <nav class="modal-nav">
                 <ul>
-                    <li class="modal-nav__item  modal-nav__item--close">
+                    <li class="modal-nav__item">
                         <a href="#">Карта штата</a>
                     </li>
                     <li class="modal-nav__item">
@@ -33,15 +33,15 @@
                 </ul>
             </nav>
 
-            <figure class="logo logo--modal-nav-open">
+            <figure class="logo">
                     <a href="index.html">
-                        <img src="img/logo.png" alt="">
+                        <img class="logo-img" src="img/logo.png" alt="">
                     </a>
             </figure>
 
-            <h1 class="page-header__title">
-                <span class="page-header__welcome">Welcome to the gorgeous</span>
-                <span class="page-header__sedona">Sedona</span>
+            <h1 class="main-title">
+                <span class="welcome">Welcome to the gorgeous</span>
+                <span class="sedona">Sedona</span>
             </h1>
             <blockquote>
                 Because the Grand Canyon sucks
@@ -69,9 +69,9 @@
 
 
 
-            <fieldset class="form__fieldset">
+            <fieldset class="fieldset">
 
-            	<legend class="form__legend">
+            	<legend class="fieldset__legend">
                     Представьтесь, пожалуйста:
                 </legend>
 
@@ -85,8 +85,8 @@
             </fieldset>
 
 
-            <fieldset class="form__fieldset">
-            	<legend class="form__legend">
+            <fieldset class="fieldset">
+            	<legend class="fieldset__legend">
                     Ваше общее впечатление:
                 </legend>
 
@@ -97,9 +97,9 @@
             </fieldset>
 
 
-            <fildset class="form__fieldset">
+            <fildset class="fieldset">
 
-            	<legend class="form__legend">
+            	<legend class="fieldset__legend">
                     Даты вашей поездки
                 </legend>
 
@@ -112,19 +112,19 @@
             </fildset>
 
 
-            <fieldset class="form__fieldset">
+            <fieldset class="fieldset">
 
-            	<legend class="form__legend">
+            	<legend class="fieldset__legend">
                     Кол-во путешественников
                 </legend>
 
             	<label>Количество путешественников:<span>*</span></label>
             	<input type="number" value="2" placeholder="чел." required>
-            	<div class="form-left">
+            	<div class="fieldset__left">
             		<label>№</label>
             		<input type="number" value="1">
             	</div>
-            	<div class="form-right">
+            	<div class="fieldset__right">
             		<label>Фамилия:<span>*</span></label>
             		<input type="text" placeholder="Иванов" required>
             		<label>Имя:<span>*</span></label>
@@ -132,11 +132,11 @@
             			<label>Отчество:<span>*</span></label>
             			<input type="text" placeholder="Александрович">
             	</div>
-            	<div class="form-left"></div>
+            	<div class="fieldset__left"></div>
             		<label>№</label>
             		<input type="number" value="2">
             	</div>
-            	<div class="form-right">
+            	<div class="fieldset__right">
             		<label>Фамилия:<span>*</span></label>
             		<input type="text" placeholder="Иванов" required>
             		<label>Имя:<span>*</span></label>
@@ -148,9 +148,9 @@
             </fieldset>
 
 
-            <fieldset class="form__fieldset">
+            <fieldset class="fieldset">
 
-                <legend class="form__legend">
+                <legend class="fieldset__legend">
                     Посещённые достопримечательности
                 </legend>
 
@@ -162,36 +162,38 @@
             	<label for="checkbox-3">Гора-Колокол</label>
             	<input id="checkbox-4" type="checkbox" checked>
             	<label for="checkbox-4">Красные Скалы</label>
+                
             </fieldset>
 
 
-            <fieldset class="form__fieldset">
+            <fieldset class="fieldset">
 
-            	<legend class="form__legend">
+            	<legend class="fieldset__legend">
                     Загрузите фотографии:
                 </legend>
 
             	<input type="submit" value="Выбрать фотографии">
+
             	<div class="photos">
-            		<div class="photos-item">
+            		<div class="photos__item">
             			<img src="/img/photo_1.jpg" alt="">
             		</div>
-            		<div class="photos-item">
+            		<div class="photos__item">
             			<img src="/img/photo_2_3.jpg" alt="">
             		</div>
-            		<div class="photos-item">
+            		<div class="photos__item">
             			<img src="/img/photo_2_3.jpg" alt="">
             		</div>
-            		<div class="photos-item">
+            		<div class="photos__item">
             			<img src="/img/photo_4.jpg" alt="">
             		</div>
-            		<div class="photos-item">
+            		<div class="photos__item">
             			<img src="/img/photo_5.jpg" alt="">
             		</div>
-            		<div class="photos-item">
+            		<div class="photos__item">
             			<img src="/img/photo_6.jpg" alt="">
             		</div>
-            		<div class="photos-item">
+            		<div class="photos__item">
             			<img src="/img/photo_7.jpg" alt="">
             		</div>
             	</div>
@@ -206,15 +208,15 @@
         <footer class="main-footer">
 
                
-            <div class="contacts--footer">
+            <div class="contacts">
                 <a href="#">#Visitsedona</a>
             </div>
-            <div class="social--footer">
+            <div class="social">
                 <a href="#" class="social-btn social-btn-tw"><i class="icon-twitter"></i></a>
                 <a href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i></a>
                 <a href="#" class="social-btn social-btn-youtube"><i class="icon-youtube"></i></a>
             </div>
-            <div class="copyright--footer">
+            <div class="copyright">
                 Разработано 
                 <a class="cohtmlacademy" href="http://htmlacademy.ru" target="_blank"></a>
             </div>
