@@ -1,14 +1,14 @@
 
-
-// font-family: 'symbols-sedona';
-  src: url('../font/symbols-sedona.eot?60737633');
-  src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
-       url('../font/symbols-sedona.woff?60737633') format('woff'),
-       url('../font/symbols-sedona.ttf?60737633') format('truetype'),
-       url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//  font-family: 'symbols-sedona';
+//   src: url('../font/symbols-sedona.eot?60737633');
+//   src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
+//        url('../font/symbols-sedona.woff?60737633') format('woff'),
+//        url('../font/symbols-sedona.ttf?60737633') format('truetype'),
+//        url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
