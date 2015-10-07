@@ -5,7 +5,7 @@
 	padding-bottom: 30px;
 	margin: 0 auto;
 	text-align: center;
-
+}
 
 	.contacts {
 		margin-bottom: 40px;
@@ -23,7 +23,7 @@
 		font-size: 0;
 		
 		.social-btn {
-			display: inline-block;
+			@include inline-block;
 			width: 50px;
 			height: 50px;
 			margin-left: 5px;
@@ -36,23 +36,21 @@
 
 	.copyright {
 
-    	.copyright-htmlacademy {
-    		display: inline-block;
-    		vertical-align: middle;
+    	&__htmlacademy {
+    		@include inline-block(middle);
+            
     		margin-left: 10px;
     		background: url("../img/icons/sprite-footer.png") no-repeat;
     		background-position: -74px 0;
     		width: 30px;
     		height: 35px;
+            
+            &:hover {
+                background-position: -74px -46px;
+            }
 
-    	}
-
-    	.copyright-htmlacademy:hover {
-    		background-position: -74px -46px;
-    	}
-
-    	.copyright-htmlacademy:active {
-    		background-position: -74px -92px;
+            &:active {
+                background-position: -74px -92px;
+            }
     	}
 	}
-}

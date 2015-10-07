@@ -1,6 +1,12 @@
+// Сделать по БЭМ, смотри примеры в heaer-nav
+// Использовать грамотно вложенность
 
+@charset 'UTF-8';
 
 @import "variables";
+@import "mixins";
+@import "font-face";
+
 @import "components/body";
 @import "components/header-nav";
 @import "components/header-content";
@@ -11,11 +17,3 @@
 @import "components/hotel-search";
 @import "components/dislocation-map";
 @import "components/main-footer";
-
-
-
-
-
-
-
-// @import "font-face";

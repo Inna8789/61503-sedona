@@ -13,7 +13,7 @@
     <body>
         <div class="wrapper">
 
-            <div class="header-nav">
+            <header class="main_header">
 
                 <figure class="logo">
                     <a href="index.html">
@@ -21,12 +21,9 @@
                     </a>
                 </figure>
 
-
-                <a href="#"><div class="menu"></div></a>
-
-
-                <nav >
-                    <ul class="nav">
+                <nav class="nav">
+                    <button type="button" class="menu_btn menu_btn--close js-closeMenu"></button>
+                    <ul>
                         <li class="nav__item">
                             <a href="#">Карта штата</a>
                         </li>
@@ -42,45 +39,43 @@
                     </ul>
                 </nav>
 
-            </div>
+                <button type="button" class="menu_btn menu_btn--open js-openMenu"></button>
+            </header>
 
 
-            <div class="header-content">
+            <div class="header_content">
 
-                <h1 class="main-title">
-                    <span class="welcome">Welcome to the gorgeous</span>
-                    <span class="sedona">Sedona</span>
+                <h1 class="main_title">
+                    <span class="main_title__welcome">Welcome to the gorgeous</span>
+                    <span class="main_title__sedona">Sedona</span>
                 </h1>
-                <blockquote>
+                <blockquote class="main_quote">
                     Because the Grand Canyon sucks
                 </blockquote>
-
             </div>
 
        
        
 
 
-            <div class="index-header">
+            <div class="index_header">
 
-                <h2 class="index-header__title">
-                    Седона &mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!
-                </h2>
-                <p>
-                    Рассмотрим 5 причин, по&nbsp;которым Седона круче чем Гранд Каньон!
-                </p>
+                <h2 class="index_header__title">Седона &mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h2>
+                <p>Рассмотрим 5 причин, по&nbsp;которым Седона круче чем Гранд Каньон!</p>
 
             </div>
         
+            <!-- 
+                Названия по БЭМ-классам будем считать правильным, подправить ниже по аналогии
+             -->
+            <div class="reason reason--with_pic">
 
-            <div class="reason-with-pic">
-
-                <div class="reason-with-pic__item">
-                    <h3>Настоящий городок</h3>
-                    <span>№1</span>
+                <div class="reason__item">
+                    <h3 class="reason__title">Настоящий городок</h3>
+                    <span class="reason__number">№3</span>
                     <p>Седона не&nbsp;аттракцион для&nbsp;туристов,<br> там течёт своя жизнь</p>
                 </div>
-                <div class="reason-with-pic__pic">
+                <div class="reason__pic">
                     <img src="img/bcg_2.jpg" alt=""> 
                 </div>
 
@@ -90,27 +85,17 @@
             <div class="features">
     
                 <div class="features__item features__item--house">
-                    <h4>Жильё</h4>
+                    <h4 class="features__title">Жильё</h4>
                     <p>Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
                 </div>
-    
-            </div>
        
-       
-            <div class="features">
-    
                 <div class="features__item features__item--gift">
-                    <h4>Сувениры</h4>
+                    <h4 class="features__title">Сувениры</h4>
                     <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
                 </div>
-    
-            </div>
-       
-        
-            <div class="features">
         
                 <div class="features__item features__item--hamburger">
-                    <h4>Еда</h4>
+                    <h4 class="features__title">Еда</h4>
                     <p>Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                 </div>
     
@@ -130,7 +115,10 @@
     
             </div>
         
-        
+            <!-- 
+                reason должен быть общим
+                reason__title добавить нужно
+             -->
             <div class="reason">
     
                 <div class="reason__item">
@@ -164,7 +152,10 @@
     
             </div>
        
-
+            <!-- 
+                Исправить - на _
+                Так правильней по БЭМ
+             -->
         
             <div class="hotel-search">
                 
@@ -174,15 +165,15 @@
                 <div class="hotel-search__text">
                     Укажите предполагаемые даты поездки и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
                 </div>
-                <button type="submit" class="hotel-search__find-button">
+                <a href="#" class="hotel-search__find-button">
                     Найти гостиницу
-                </button>
-    
+                </a>
+
             </div>
        
 
         
-            <div class="dislocation-map">
+            <div class="map">
                 Map
             </div>
         
@@ -194,13 +185,13 @@
                     <a href="#">#Visitsedona</a>
                 </div>
                 <div class="social">
-                    <a href="#" class="social-btn social-btn-tw"><i class="icon-twitter"></i></a>
-                    <a href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i></a>
-                    <a href="#" class="social-btn social-btn-youtube"><i class="icon-youtube"></i></a>
+                    <a href="#" class="social-btn social-btn--tw"><i class="icon-twitter"></i></a>
+                    <a href="#" class="social-btn social-btn--fb"><i class="icon-facebook"></i></a>
+                    <a href="#" class="social-btn social-btn--youtube"><i class="icon-youtube"></i></a>
                 </div>
                 <div class="copyright">
                     Разработано 
-                    <a class="copyright-htmlacademy" href="http://htmlacademy.ru" target="_blank"></a>
+                    <a class="copyright__htmlacademy" href="http://htmlacademy.ru" target="_blank"></a>
                 </div>
                     
             </footer>

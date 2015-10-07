@@ -1,6 +1,5 @@
-
-
-font-family: 'symbols-sedona';
+@font-face {
+  font-family: 'symbols-sedona';
   src: url('../font/symbols-sedona.eot?60737633');
   src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
        url('../font/symbols-sedona.woff?60737633') format('woff'),
@@ -9,6 +8,7 @@ font-family: 'symbols-sedona';
   font-weight: normal;
   font-style: normal;
 }
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -19,8 +19,8 @@ font-family: 'symbols-sedona';
   }
 }
 */
- 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "symbols-sedona";
   font-style: normal;
   font-weight: normal;
@@ -50,15 +50,16 @@ font-family: 'symbols-sedona';
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 
+}
  
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-twitter:before { content: '\74'; } /* 't' */
-.icon-up-dir:before { content: '\25b2'; } /* '▲' */
-.icon-down-dir:before { content: '\25bc'; } /* '▼' */
-.icon-star:before { content: '\2605'; } /* '★' */
-.icon-check-off:before { content: '\2610'; } /* '☐' */
-.icon-check-on:before { content: '\2611'; } /* '☑' */
-.icon-calendar:before { content: '\e800'; } /* '' */
-.icon-plus:before { content: '\e801'; } /* '' */
-.icon-minus:before { content: '\e802'; } /* '' */
-.icon-youtube:before { content: '\f39e'; } /* '' */
+.icon-facebook:before { content: '\66'; }
+.icon-twitter:before { content: '\74'; }
+.icon-up-dir:before { content: '\25b2'; }
+.icon-down-dir:before { content: '\25bc'; }
+.icon-star:before { content: '\2605'; }
+.icon-check-off:before { content: '\2610'; }
+.icon-check-on:before { content: '\2611'; }
+.icon-calendar:before { content: '\e800'; }
+.icon-plus:before { content: '\e801'; }
+.icon-minus:before { content: '\e802'; }
+.icon-youtube:before { content: '\f39e'; }

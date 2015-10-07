@@ -11,7 +11,13 @@
     </head>
 
     <body>
-
+        <!-- 
+        1. Привести в порядок отступы и оформление
+        2. Передалть как в index общие блоки
+        3. Переделать названия классов с - на _
+        4. Убрать все wrapper которые не нужны
+        5. Поправить комментарии что описаны ниже
+         -->
         <div class="page-header__wrapper">
         <div class="page-header">
 
@@ -76,13 +82,20 @@
 
         <div class="post__wrapper">
         <div class="post">
-            
+            <!-- 
+            Лучше использовать h2
+             -->
             <h1 class="post__title">
                Внимание! Сбежала моя домашняя анаконда 
             </h1>
             <p class="post__preview">
                Жители Седоны и&nbsp;гости города, будьте бдительны&nbsp;&mdash; сбежала моя домашняя змея. Увидевшему срочно звонить 911 и&nbsp;бежать от&nbsp;неё подальше. 
             </p>
+            <!-- 
+                Лучше сделать post__footer и внутри такую разметку как ниже
+                <time class="post__param post__param--date" datetime="">Неделю назад</time>
+                <span class="post__param post__param--tag">Интересное</span>
+             -->
             <div class="post__links">
                 <div class="post__read-more">
                     <a href="/post.html">
@@ -231,20 +244,25 @@
         </div>
         </div>
 
-
+        <!-- 
+            Пагинатор wrapper убрать
+            paginator__item сделать ссылками
+         -->
         <div class="paginator__wrapper">
-        <div class="paginator">
-            
-            <div class="paginator__item  pagonator__item--active">1</div>
-            <div class="paginator__item">2</div>
-            <div class="paginator__item">3</div>
-            <div class="paginator__item">4</div>
-            <div class="paginator__item">5</div>
+            <div class="paginator">
+                
+                <div class="paginator__item  pagonator__item--active">1</div>
+                <div class="paginator__item">2</div>
+                <div class="paginator__item">3</div>
+                <div class="paginator__item">4</div>
+                <div class="paginator__item">5</div>
 
+            </div>
         </div>
-        </div>
 
-
+        <!-- 
+            Wrapper убрать
+         -->
         <div class="main-footer__wrapper">
         <footer class="main-footer">
 
