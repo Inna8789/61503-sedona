@@ -8,15 +8,15 @@
 	background-size: cover;
 
 	&:after {
-	background: url("../img/white_mask.png");
-	background-size: contain;
-	content: '';
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 27px;
+		background: url("../img/white_mask.png");
+		background-size: contain;
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 27px;
 	}
 }
 

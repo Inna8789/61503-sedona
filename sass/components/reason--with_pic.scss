@@ -1,36 +1,55 @@
 
 
-.reason-with-pic {
+.reason--with_pic {
 	width: 320px;
 	margin: 0 auto;	
 	color: $color--3;
 	text-align: center;
 	background: $color--4;
 	text-align: center;
-
+}
 	
 
-	&__item {
+	.reason--with_pic__item {
 		position: relative;
 		color: $color--1;
 		padding-top: 45px;
 		padding-bottom: 45px;
 
 		&:first-child {
-		padding-top: 60px;
-	}
+			padding-top: 60px;
+		}
 
-		h3 {
+		&:first-child:before {
+			position: absolute;
+			background: url(../img/white_mask_2.png) no-repeat 0 100%;
+    		background-size: contain;
+    		content: '';
+    		display: block;
+    		left: 0;
+    		right: 0;
+    		top: 0px;
+    		height: 37px;
+		}
+
+		p {
+			margin: 0;
+			margin-top: 10px;
+		}
+	}
+	
+		.reason__title {
 			margin: 0;
 			margin-bottom: 10px;
 			color: $color--1;
 		}
-		span {
-			position: relative;
-		}
 
-		span:before,
-		span:after {
+		.reason__number {
+			position: relative;
+		
+
+			&:before,
+			&:after {
 				position: absolute;
     			content: '';
     			top: 50%;
@@ -41,27 +60,8 @@
     			opacity: 0.5;
     			margin: -1px 0 0;
 			}
-
-		span:after {
-			left: 25px;
-		}
-
-		p {
-			margin: 0;
-			margin-top: 10px;
-		}
-	}
-
-	&__item:first-child:before {
-		position: absolute;
-		background: url(../img/white_mask_2.png) no-repeat 0 100%;
-    	background-size: contain;
-    	content: '';
-    	display: block;
-    	left: 0;
-    	right: 0;
-    	top: 0px;
-    	height: 37px;
-	}
 	
-}
+			&:after {
+				left: 25px;
+			}
+		}
