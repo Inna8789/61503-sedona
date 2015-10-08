@@ -8,10 +8,48 @@
 
 	.features__item {
 		position: relative;
+		margin-bottom: 40px;
 
 		&:first-child {
 		margin-top: 40px;
 		}
+
+		&--house:before {
+			position: absolute;
+			background: url("../img/icons/sprite-features.png");
+			background-position: 0 0;
+			content: "";
+			top: -10%;
+			left: -20%;
+			margin: 0;
+			width: 39px;
+			height: 39px;
+		}
+
+		&--gift:before {
+			position: absolute;
+			background: url("../img/icons/sprite-features.png");
+			background-position: 0 -85px;
+			content: "";
+			top: -10%;
+			left: -20%;
+			margin: 0;
+			width: 39px;
+			height: 39px;
+		}
+
+		&--hamburger:before {
+			position: absolute;
+			background: url("../img/icons/sprite-features.png");
+			background-position: 0 -170px;
+			content: "";
+			top: -10%;
+			left: -20%;
+			margin: 0;
+			width: 39px;
+			height: 39px;
+		}
+
 
 		p {
 			width: 230px;
@@ -20,46 +58,15 @@
 
 		.features__title {
 			margin: 0;
-			margin-bottom: 10px;
+			color: $color--text;
 			font-size: $font-size--heading;
 		}
 
 	
-	.features__item--house:before {
-		position: absolute;
-		background: url("../img/icons/sprite-features.png");
-		background-position: 0 0;
-		content: "";
-		top: -10%;
-		left: -20%;
-		margin: 0;
-		width: 39px;
-		height: 39px;
-	}
 	
-	.features__item--gift:before {
-		position: absolute;
-		background: url("../img/icons/sprite-features.png");
-		background-position: 0 -85px;
-		content: "";
-		top: -10%;
-		left: -20%;
-		margin: 0;
-		width: 39px;
-		height: 39px;
-	}
+	
+	
 
-	.features__item--hamburger:before {
-		position: absolute;
-		background: url("../img/icons/sprite-features.png");
-		background-position: 0 -170px;
-		content: "";
-		top: -10%;
-		left: -20%;
-		margin: 0;
-		width: 39px;
-		height: 39px;
-	}
-
+	
 
 	

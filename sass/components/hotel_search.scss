@@ -14,24 +14,24 @@
 		line-height: $line-height--title;
 	}
 
-	.hotel-search__text {
+	.hotel_search__text {
 		margin-bottom: 40px;
 		margin-top: 30px;
+		color: $color--text;
 		font-size: $font-size--text;
 		line-height: $line-height--title;
 	}
 
 	.hotel_search__find_button {
 		display: block;
-		width: 280px;
-		height: 58px;
-		margin: 0 auto;
-		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		color: $color--white;
 		font-size: $font-size--title;
-		background: $color--reason;
+		font-weight: bold;
 		text-decoration: none;
 		text-transform: uppercase;
+		background: $color--reason;
 		border: 0;
 		cursor: pointer;
 	}

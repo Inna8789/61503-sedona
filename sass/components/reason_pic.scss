@@ -1,18 +1,16 @@
 
 
-.reason--with_pic {
+.reason_pic {
 	width: 320px;
 	margin: 0 auto;	
-	color: $color--text;
-	text-align: center;
 	background: $color--reason;
 	text-align: center;
 }
 	
 
-	.reason--with_pic__item {
+	.reason_pic__item {
 		position: relative;
-		color: $color--1;
+		color: $color--white;
 		padding-top: 45px;
 		padding-bottom: 45px;
 
@@ -38,13 +36,13 @@
 		}
 	}
 	
-		.reason__title {
+		.reason_pic__title {
 			margin: 0;
 			margin-bottom: 10px;
 			color: $color--white;
 		}
 
-		.reason__number {
+		.reason_pic__number {
 			position: relative;
 		
 
