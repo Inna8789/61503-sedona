@@ -1,0 +1,53 @@
+
+
+.header_content {
+	position: relative;
+	height: 512px;
+	font-size: 0;
+	background: url("../img/bcg_main.jpg") no-repeat 50% 0;
+	background-size: cover;
+
+	&:after {
+	background: url("../img/white_mask.png");
+	background-size: contain;
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 27px;
+	}
+}
+
+		
+	.main_title__welcome {
+		position: absolute;
+		top: 100px;
+		left: 60px;
+		display: block;
+		width: 196px;
+		height: 66px;
+		background: url("../img/welcome.png") no-repeat 50% 50%;
+	}
+	
+	.main_title__sedona {
+		position: absolute;
+		top: 225px;
+		left: 20px;
+		width: 280px;
+		height: 48px;
+		background: url("../img/sedona.png") no-repeat 50% 50%;
+	}
+	
+
+	& blockquote {
+		position: absolute;
+		top: 345px;
+		left: 15px;
+		width: 197px;
+		height: 54px;
+		background: url("../img/because.png") no-repeat 50% 0;
+	}
+
+

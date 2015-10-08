@@ -1,27 +1,17 @@
 
 
 @import "variables";
-@import "components/body";
-@import "components/header-nav";
-@import "components/header-content";
-@import "components/index-header";
-@import "components/reason-with-pic";
+@import "mixins";
+@import "font-face";
+
+@import "components/layout";
+@import "components/main_header";
+@import "components/header_content";
+@import "components/index_header";
+@import "components/reason--with_pic";
 @import "components/features";
 @import "components/reason";
-@import "components/hotel-search";
-@import "components/dislocation-map";
-@import "components/main-footer";
+@import "components/hotel_search";
+@import "components/map";
+@import "components/main_footer";
 
-
-
-
-@font-face {
- font-family: 'symbols-sedona';
-  src: url('../font/symbols-sedona.eot?60737633');
-  src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
-       url('../font/symbols-sedona.woff?60737633') format('woff'),
-       url('../font/symbols-sedona.ttf?60737633') format('truetype'),
-       url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}

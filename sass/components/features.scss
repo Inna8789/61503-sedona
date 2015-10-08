@@ -4,27 +4,28 @@
 	margin-bottom: 40px;
 	padding-left: 70px;
 	text-align: left;
+}
 
-	&__item {
+	.features__item {
 		position: relative;
 
-		h4 {
+		&:first-child {
+		margin-top: 40px;
+		}
+
+		p {
+			width: 230px;
+		}
+	}
+
+		.features__title {
 			margin: 0;
 			margin-bottom: 10px;
 			font-size: $font-size--3;
 		}
 
-		p {
-			width: 230px;
 	
-		}
-	}
-
-	&__item:first-child {
-		margin-top: 40px;
-	}
-
-	&__item--house:before {
+	.features__item--house:before {
 		position: absolute;
 		background: url("../img/icons/sprite-features.png");
 		background-position: 0 0;
@@ -34,11 +35,9 @@
 		margin: 0;
 		width: 39px;
 		height: 39px;
-
-
 	}
 	
-	&__item--gift:before {
+	.features__item--gift:before {
 		position: absolute;
 		background: url("../img/icons/sprite-features.png");
 		background-position: 0 -85px;
@@ -48,10 +47,9 @@
 		margin: 0;
 		width: 39px;
 		height: 39px;
-
-
 	}
-	&__item--hamburger:before {
+
+	.features__item--hamburger:before {
 		position: absolute;
 		background: url("../img/icons/sprite-features.png");
 		background-position: 0 -170px;
@@ -65,4 +63,3 @@
 
 
 	
-}
