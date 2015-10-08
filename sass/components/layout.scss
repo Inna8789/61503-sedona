@@ -4,14 +4,14 @@ body {
 	margin: 0;
 	padding: 0; 
 	font-family: $font-family--main;
-	font-size: $font-size--1;
-	line-height: $line-height--1;
+	font-size: $font-size--text;
+	line-height: $line-height--text;
 	text-transform: uppercase;
 }
 
 .wrapper {
 	width: 320px;
-	background: $color--1;
+	background: $color--white;
 	margin: 0 auto;
 	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
