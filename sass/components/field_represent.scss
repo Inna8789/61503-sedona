@@ -1,0 +1,46 @@
+
+
+.field_represent {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-bottom: 1px solid $color--service;
+
+	& label {
+		display: block;
+		padding-left: 20px;
+		padding-bottom: 15px;
+		color: $color--text;
+		font-size: $font-size--text;
+
+			& span {
+				color: red;
+			}
+	}
+
+	& input {
+		width: 236px;
+		margin-left: 20px;
+		margin-bottom: 22px;
+		padding: 22px;
+		color: $color--black;
+		font-size: $font-size--title;
+		font-weight: bold;
+		text-transform: none;
+		border: 0;
+		background: $color--input;
+	}
+
+}
+
+	.field_represent__legend {
+		margin: 0 auto;
+		padding-top: 22px;
+		padding-bottom: 40px;
+		text-align: center;
+		color: $color--black;
+		font-size: $font-size--title;
+		font-weight: bold;
+		line-height: $line-height--title;
+
+	}

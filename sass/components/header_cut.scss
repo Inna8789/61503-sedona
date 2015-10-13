@@ -1,0 +1,31 @@
+
+
+.header_cut {
+	position: relative;
+	height: 214px;
+	font-size: 0;
+	background: url("../img/bcg_cut.jpg") no-repeat 50% 0;
+	background-size: cover;
+
+		&:after {
+		background: url("../img/white_mask.png");
+		background-size: contain;
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 27px;
+	}
+}
+
+	.inner_title__sedona {
+		position: absolute;
+		top: 105px;
+		left: 70px;
+		display: block;
+		width: 174px;
+		height: 30px;
+		background: url("../img/sedona-min.png");
+	}

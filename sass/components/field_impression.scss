@@ -1,0 +1,57 @@
+
+
+.field_impression {
+	margin: 0;
+	margin-bottom: 10px;
+	border: 0;
+	border-bottom: 1px solid $color--service;
+
+	& input[type="radio"] {
+		display: none;
+	}
+
+	& label {
+		@include inline-block;
+		width: 20px;
+		height: 20px;
+		margin-right: 25px;
+		border: 20px solid $color--input;
+		border-radius: 50%;
+		background: $color--input;
+	}
+
+	& p {
+		@include inline-block;
+	}
+
+}
+
+	.field_impression__legend {
+		margin: 0 auto;
+		padding-top: 22px;
+		padding-bottom: 25px;
+		text-align: center;
+		color: $color--black;
+		font-size: $font-size--title;
+		font-weight: bold;
+		line-height: $line-height--title;
+	}
+
+	.field_impression__filter_radio {
+		@include no-list;
+		margin-left: 20px;
+		margin-bottom: 25px;
+		font-size: $font-size--title;
+		font-weight: bold;
+		text-transform: none;
+
+		& li {
+			margin-bottom: 15px;
+		}
+	}
+
+		#answer_pos:checked ~ .field_impression label[for="answer_pos"],
+		#answer_neg:checked ~ .field_impression label[for="answer_neg"] {
+
+			background: $color--text;	
+		}
