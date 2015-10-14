@@ -2,13 +2,16 @@
 
 .header_content {
 	position: relative;
+	top: -18px;
+	width: 320px;
 	height: 512px;
+	margin: 0 auto;
 	font-size: 0;
 	background: url("../img/bcg_main.jpg") no-repeat 50% 0;
 	background-size: cover;
 
 	&:after {
-		background: url("../img/white_mask.png");
+		background: url("../img/white_mask.png") no-repeat 0 50%;
 		background-size: contain;
 		content: '';
 		display: block;

@@ -14,8 +14,7 @@
 		height: 55px;
 		margin: 0;
 		text-align: center;
-		background: $color--white;
-		z-index: 10;
+		z-index: 20;
 
 		& a {
 			width: 138px;
@@ -51,6 +50,17 @@
 			}
 		}
 			
+	}
+
+	.nav__item--logo {
+		position: relative;
+		width: 140px;
+		height: 72px;
+		left: 50%;
+		margin-left: -70px;
+		background: url("../img/form-logo-triangle.svg");
+		background-size: contain;
+		z-index: 10;
 	}
 
 	.menu_btn {

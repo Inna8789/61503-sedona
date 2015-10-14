@@ -1,6 +1,8 @@
 
 
 .features {
+	width: 250px;
+	margin: 0 auto;
 	margin-bottom: 40px;
 	padding-left: 70px;
 	text-align: left;
@@ -14,40 +16,39 @@
 		margin-top: 40px;
 		}
 
-		&--house:before {
-			position: absolute;
-			background: url("../img/icons/sprite-features.png");
-			background-position: 0 0;
+		&:before {
 			content: "";
+			position: absolute;
 			top: -10%;
 			left: -20%;
-			margin: 0;
-			width: 39px;
-			height: 39px;
+			
+		}
+
+		&--house:before {
+			content: "";
+			width: 40px;
+			height: 40px;
+			background: url("../img/icon-house.svg") no-repeat;
+			background-size: contain;
+			
 		}
 
 		&--gift:before {
-			position: absolute;
-			background: url("../img/icons/sprite-features.png");
-			background-position: 0 -85px;
 			content: "";
-			top: -10%;
-			left: -20%;
-			margin: 0;
-			width: 39px;
-			height: 39px;
+			position: absolute;
+			background: url("../img/icon-gift.svg") no-repeat;
+			width: 38px;
+			height: 38px;
+			background-size: contain;
 		}
 
 		&--hamburger:before {
-			position: absolute;
-			background: url("../img/icons/sprite-features.png");
-			background-position: 0 -170px;
 			content: "";
-			top: -10%;
-			left: -20%;
-			margin: 0;
-			width: 39px;
-			height: 39px;
+			position: absolute;
+			background: url("../img/icon-burger.svg") no-repeat;
+			width: 37px;
+			height: 37px;
+			background-size: contain;
 		}
 
 
