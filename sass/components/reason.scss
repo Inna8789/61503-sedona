@@ -1,0 +1,50 @@
+
+
+.reason {
+	width: 320px;
+	margin: 0 auto;	
+	color: $color--text;
+	text-align: center;
+	background: $color--gray;
+}
+
+	.reason__item {
+		padding: 30px 55px;
+		border-bottom: 1px solid $color--service;
+
+		p {
+			margin: 0;
+			margin-top: 10px;
+		}
+	}
+
+		.reason__title {
+			margin: 0;
+			margin-bottom: 10px;
+			color: $color--black;
+    		font-size: $font-size--title;
+    		font-weight: bold;
+		}
+
+		.reason-number {
+			position: relative;
+		
+
+			&:before,
+			&:after {
+				position: absolute;
+    			content: "";
+    			top: 50%;
+    			left: -15px;
+    			height: 2px;
+    			width: 8px;
+    			background: $color--text;
+    			opacity: 0.5;
+    			margin: -1px 0 0;
+			}
+	
+			&:after {
+				left: 25px;
+			}
+		}
+	

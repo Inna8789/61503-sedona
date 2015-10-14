@@ -1,0 +1,116 @@
+
+
+.field_number {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-bottom: 1px solid $color--service;
+
+
+	& label {
+		display: block;
+		padding-left: 20px;
+		padding-bottom: 15px;
+		color: $color--text;
+		font-size: $font-size--text;
+	}
+
+	& input {
+		display: block;
+		margin: 0 20px 25px 20px;
+		border: 0;
+		padding: 20px;
+		color: $color--black;
+		font-size: $font-size--title;
+		font-weight: bold;
+		text-transform: none;
+		background: $color--input;
+	}
+
+	& span {
+		color: red;
+	}
+
+}
+
+	.field_number__legend {
+		margin: 0 auto;
+		padding-top: 22px;
+		padding-bottom: 30px;
+		text-align: center;
+		color: $color--black;
+		font-size: $font-size--title;
+		font-weight: bold;
+		line-height: $line-height--title;
+	}
+
+	.field_number__special button,
+	.field_number__complex button {
+			@include inline-block;
+			vertical-align: top;
+			width: 60px;
+			height: 60px;
+			padding: 0;
+			border: 0;
+			color: $color--icon;
+			font-size: 20px;
+			background: $color--input;
+	    }
+
+	.field_number__sign {
+		@include inline-block;
+	}
+
+
+	.field_number__special {
+		margin: 0 20px 25px 20px;
+		font-size: 0;
+
+		& input {
+			@include inline-block;
+			width: 96px;
+			margin: 0 10px;
+		}
+
+	    & label {
+	    	@include inline-block;
+	    }
+
+	}
+
+	.field_number__complex {
+		margin: 0 20px 25px 20px;
+		font-size: 0;
+
+		& input {
+			@include inline-block;
+			width: 170px;
+			margin: 0;
+			margin-left: 10px;
+		}
+
+		& button {
+			color: $color--text;
+			font-weight: bold;
+		}
+	}
+
+	.field_number__single {
+		margin-left: 90px;
+
+		& input {
+			width: 170px;
+			margin-left: 0;
+		}
+
+		& label {
+			margin-left: 0;
+		}
+	}
+
+	
+
+	
+
+
+	

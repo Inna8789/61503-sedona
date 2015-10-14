@@ -1,0 +1,26 @@
+
+
+.form_header {
+	margin-top: 40px;
+	padding-bottom: 25px;
+	text-align: center;
+	border-bottom: 1px solid $color--service;
+	
+
+	p {
+		width: 280px;
+		margin: 0 auto;
+		font-size: $font-size--text;
+		line-height: $line-height--title;	
+	}
+}
+
+	.form_header__title {
+		margin: 0;
+		margin-bottom: 35px;
+		color: $color--black;
+		font-size: $font-size--title;
+		line-height: $line-height--title;
+	}
+
+	

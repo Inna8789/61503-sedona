@@ -1,0 +1,25 @@
+
+
+.index_header {
+	width: 260px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	text-align: center;
+
+	p {
+		margin: 0;
+		font-size: $font-size--text;
+		line-height: $line-height--title;	
+	}
+}
+
+	.index_header__title {
+		margin: 0;
+		margin-bottom: 35px;
+		color: $color--black;
+		font-size: $font-size--title;
+		line-height: $line-height--title;
+	}
+
+	
