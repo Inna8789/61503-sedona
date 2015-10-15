@@ -20,7 +20,7 @@
 
 		&:first-child:before {
 			position: absolute;
-			background: url(../img/white_mask_2.png) no-repeat 0 100%;
+			background: url("../img/other/white_mask_2.png") no-repeat 50% 100%;
     		background-size: contain;
     		content: '';
     		display: block;

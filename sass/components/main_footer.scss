@@ -40,7 +40,7 @@
 			top: 15px;
 			left: 15px;
 			content: "";
-			background: url("../img/icon-twitter.svg") no-repeat;
+			background: url("../img/icons/icon-twitter.svg") no-repeat;
 			width: 20px;
 			height: 20px;
 			background-size: contain;
@@ -56,7 +56,7 @@
 			top: 15px;
 			left: 20px;
 			content: "";
-			background: url("../img/icon-facebook.svg") no-repeat;
+			background: url("../img/icons/icon-facebook.svg") no-repeat;
 			width: 20px;
 			height: 20px;
 			background-size: contain;
@@ -72,7 +72,7 @@
 			top: 20px;
 			left: 15px;
 			content: "";
-			background: url("../img/icon-youtube.svg") no-repeat;
+			background: url("../img/icons/icon-youtube.svg") no-repeat;
 			width: 20px;
 			height: 20px;
 			background-size: contain;
@@ -85,7 +85,7 @@
     	&__htmlacademy {
     		@include inline-block(middle);
     		margin-left: 10px;
-    		background: url("../img/htmlacademy.svg") no-repeat;
+    		background: url("../img/icons/htmlacademy.svg") no-repeat;
     		width: 30px;
     		height: 35px;
             background-size: contain;
