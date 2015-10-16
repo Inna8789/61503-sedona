@@ -7,22 +7,6 @@
 	margin: 0 auto;
 }
 
-	.logo {
-		position: absolute;
-		top: 214px;
-		width: 100%;
-		height: 55px;
-		margin: 0;
-		text-align: center;
-		z-index: 20;
-
-		& a {
-			width: 138px;
-			height: 70px;
-		}
-
-	}
-
 	.nav {
 		position: relative;
 
@@ -61,6 +45,18 @@
 		background: url("../img/svg/form-logo-triangle.svg");
 		background-size: contain;
 		z-index: 10;
+
+		& a {
+			display: block;
+			width: 67px;
+			height: 56px;
+			margin: 0 auto;
+		}
+
+		& a img {
+			position: relative;
+			z-index: 20;
+		}
 	}
 
 	.menu_btn {
