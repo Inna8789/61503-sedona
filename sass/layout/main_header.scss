@@ -1,0 +1,138 @@
+
+
+
+.main_header {
+    position: relative;
+    // width: 320px;
+    margin: 0 auto;
+}
+
+    .nav {
+        position: relative;
+
+        ul {
+            @include no-list;
+            font-size: 0;
+        }
+
+        &__item {
+            display: block;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            text-align: center;
+            background: $color--reason;
+            border-bottom: 1px solid $color--support;
+
+
+            a {
+                text-decoration: none;
+                color: $color--white;
+                font-family: $font-family--main;
+                font-weight: bold;
+                font-size: $font-size--title;
+                text-transform: uppercase;  
+            }
+
+            @media all and (min-width: $media-tablet) {
+                
+                background: none;
+                border: 0;
+                display: inline-block;
+                width: 20%;
+
+                a {
+                    color: #000;
+                    font-size: 14px;
+                }
+            }
+        
+            // Условие ниже сработает для экрана от <= 1024px И >= 1200px
+            @media all and (min-width: 1024px) and (max-width: 1200px) {
+
+            }
+        }            
+    }
+
+    .nav__logo {
+        position: relative;
+        width: 140px;
+        height: 72px;
+        left: 50%;
+        margin-left: -70px;
+        background: url("../img/svg/form-logo-triangle.svg");
+        background-size: contain;
+        z-index: 10;
+
+        & a {
+            display: block;
+            width: 67px;
+            height: 56px;
+            margin: 0 auto;
+        }
+
+        & img {
+            position: relative;
+            z-index: 20;
+        }
+    }
+
+    .menu_btn {
+        border: 1px solid red;
+        background: none;
+        position: absolute;
+        right: 20px;
+        top: 235px;
+        border: 0;
+        padding: 0;
+        width: 25px;
+        height: 25px; 
+        z-index: 10;
+        
+        &:before,
+        &:after,
+        span {
+            background: $color--reason;
+            content: "";
+            position: absolute;
+            font-size: 0;
+            height: 4px;
+            width: 25px;
+        }
+
+        &:before {
+            top: 0;
+        }
+
+        &:after {
+            bottom: 0;
+        }
+
+        span {
+            top: 50%;
+            margin: -2px 0 0;
+        }
+
+        &--close {
+            right: 20px;
+            top: 20px;
+
+            &:before,
+            &:after {
+                background: $color--white;
+                top: 10px;
+            }
+
+            span {
+                display: none;
+            }
+
+            &:before {
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                transform: rotate(45deg);
+            }
+        }
+    }
+

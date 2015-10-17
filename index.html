@@ -10,14 +10,50 @@
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
         <link href="css/style.css" type="text/css" rel="stylesheet">
     </head>
+<!-- 
+    
+    По хорошему тег picture сводится к использованию в след ситуациях
+    
+    1. Мы должны разделить все изображения на 3 типа
+     - Мобайл (320px)
+     - Планшет (768px)
+     - Декстоп (от 1024px)
 
+    2. Мы должны предусмотреть что все изображения должны быть "ретинизированы"
+
+
+    <picture>
+        <source media="(min-width: 320px)"
+                srcset="img/other/background-mobile@2x.png 2x,
+                        img/other/background-mobile@1x.png">
+
+        <source media="(min-width: 768px)"
+                srcset="img/other/background-tablet@2x.png 2x,
+                        img/other/background-tablet@1x.png">
+
+        <source media="(min-width: 1024px)"
+                srcset="img/other/background@2x.png 2x,
+                        img/other/background@1x.png">
+
+        <img src="img/other/background@1x.png" alt="a cute kitten">
+    </picture>
+
+    img/other/background-mobile@1x.png - должно быть 320px по ширине
+    img/other/background-mobile@2x.png - должно быть 640px по ширине
+    
+    Второй вариант чтобы предусмотреть повороты экрана
+    Все что до 640px - считать мобайлом
+    Все что от 640 до 1024 - считать планшетом
+    Все что выше 1024 считать десктопом
+
+ -->
     <body>
         <div class="wrapper">
 
 
             <header class="main_header">
                 <nav class="nav">
-                    <button type="button" class="menu_btn menu_btn--close js-closeMenu"></button>
+                    <button type="button" class="menu_btn menu_btn--close"></button>
                     <ul>
                         <li class="nav__item">
                             <a href="#">Карта штата</a>
@@ -31,20 +67,28 @@
                         <li class="nav__item">
                             <a href="#">Гостиницы</a>
                         </li>
-                        <li class="nav__item--logo">
+                        <li class="nav__logo">
                             <a href="index.html">
-                                <picture>
-                                    <source
-                                        media="(min-width:320px)"
-                                            srcset="img/other/logo-sedona@1x.png,
-                                                    img/other/logo-sedona@1x.png">    
+                                <!-- <picture>
+                                    <source media="(min-width: 1200px)"
+                                            srcset="img/other/logo-sedona@2x.png 2x,
+                                                    img/other/logo-sedona@1x.png">
                                     <img src="img/other/logo-sedona@1x.png" width="67" height="56">
-                                </picture>  
+                                </picture>   -->
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                            srcset="img/other/logo-sedona@2x.png 2x,
+                                                    img/other/logo-sedona@1x.png">
+                                    <img src="img/other/logo-sedona@1x.png" alt="a cute kitten">
+                                </picture>
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <button type="button" class="menu_btn menu_btn--open js-openMenu"></button>
+                <button type="button" class="menu_btn js-openMenu">
+                    <span>Menu</span>
+                </button>
             </header>
 
 
@@ -79,7 +123,7 @@
                         <picture>
                             <source
                                 media="(min-width:320px)"
-                                    srcset="img/photos/photo-city@2x.jpg,
+                                    srcset="img/photos/photo-city@2x.jpg 2x,
                                             img/photos/photo-city@1x.jpg">    
                             <img src="img/photos/photo-city@1x.jpg" width="320" height="258">
                         </picture>
