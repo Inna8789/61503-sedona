@@ -1,38 +1,32 @@
-// Сейчас жестко заданы везде размеры ширины, от этого необходимо избавится
-// Ширина должна высчитываться автоматически
+
 
 @import "utils/variables";
 @import "utils/mixins";
 
-@import "base/normalize"; // Нужно добавить normalize
+@import "base/normalize"; 
 @import "base/fonts";
 
 @import "layout/base";
 @import "layout/main_header";
 @import "layout/main_footer";
 
-// В блоках лучше сделать папки и внутри папок хранить блоки
-// blocks/index/header_content - это удобнее и понятно что это относится к странице index
-// blocks/header_content - не совсем понятно где используется
 
-// blocks/social_btns - такие блоки лучше прям в корне blocks держать
-
-@import "blocks/header_content";
-@import "blocks/index_header";
-@import "blocks/reason_pic";
-@import "blocks/features";
-@import "blocks/reason";
-@import "blocks/hotel_search";
-@import "blocks/map";
+@import "blocks/index/header_content";
+@import "blocks/index/index_header";
+@import "blocks/index/reason_pic";
+@import "blocks/index/features";
+@import "blocks/index/reason";
+@import "blocks/index/hotel_search";
+@import "blocks/index/map";
 
 
-@import "blocks/header_cut";
-@import "blocks/form_header";
-@import "blocks/field_represent";
-@import "blocks/field_impression";
-@import "blocks/field_dates";
-@import "blocks/field_number";
-@import "blocks/field_places";
-@import "blocks/field_photos";
+@import "blocks/form/header_cut";
+@import "blocks/form/form_header";
+@import "blocks/form/field_represent";
+@import "blocks/form/field_impression";
+@import "blocks/form/field_dates";
+@import "blocks/form/field_number";
+@import "blocks/form/field_places";
+@import "blocks/form/field_photos";
 
 
