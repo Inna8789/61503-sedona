@@ -1,29 +1,55 @@
 
 
 .reason {
-	width: 320px;
 	margin: 0 auto;	
-	color: $color--text;
 	text-align: center;
 	background: $color--gray;
+	font-size: 0;
 }
 
 	.reason__item {
 		padding: 30px 55px;
+		color: $color--text;
+		font-size: $font-size--text;
+		line-height: $line-height--text;
 		border-bottom: 1px solid $color--service;
 
+		@media all and (min-width: $media-tablet) {
+			@include inline-block;
+			width: 23.33%;
+			padding: 52px 5%;
+			border: 0;
+		}	
+
 		p {
-			margin: 0;
+			width: 250px;
+			margin: 0 auto;
 			margin-top: 10px;
+
+			@media all and (min-width: $media-tablet) {
+				width: 160px;
+			}
+
+			@media all and (min-width: $media-desktop) {
+				width: 250px;
+			}
 		}
 	}
 
 		.reason__title {
-			margin: 0;
+			width: 180px;
+			margin: 0 auto;
 			margin-bottom: 10px;
+			font-size: $font-size--text;
 			color: $color--black;
-    		font-size: $font-size--title;
+    		
     		font-weight: bold;
+
+    		@media all and (min-width: $media-tablet) {
+				width: 130px;
+				font-size: $font-size--heading;
+    			line-height: $line-height--title;
+			}
 		}
 
 		.reason-number {

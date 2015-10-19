@@ -2,86 +2,110 @@
 
 .header_content {
 	position: relative;
-	top: -18px;
-	width: 320px;
-	height: 390px;
+	height: 392px;
 	margin: 0 auto;
+	margin-top: 74px;
+	padding-top: 48px;
 	font-size: 0;
 	background: url("../img/photos/photo-background@1x.jpg") no-repeat 50% 0;
-	background-size: auto 390px;
+
+	@media (min-resolution: 1.5dppx) {
+			background: url("../img/photos/photo-background@2x.jpg 2x") no-repeat 50% 0;	
+	}
+
+	@media all and (min-width: $media-tablet) {
+		height: 515px;
+		margin-top: 0;
+	}
+
+	@media all and (min-width: $media-desktop) {
+		height: 530px;
+	}
+
 
 	&:after {
 		content: "";
 		display: block;
 		position: absolute;
 		bottom: 0;
-		left: -220px;
-		width: 768px;
-		height: 45px;
-		background: url("../img/svg/intro-triangle.svg") no-repeat 50% 100%;
+		left: 0;
+		right: 0;
+		height: 77px;
+		margin: 0 auto;
+		background: url("../img/svg/intro-triangle.svg") no-repeat 0 100%;
 		background-size: contain;
+
 	}
+
 }
 
-@media (min-resolution: 144dpi),
-		(min-resolution: 1.5dppx) {
-		.header_content {
-			position: relative;
-			top: -18px;
-			width: 320px;
-			height: 390px;
-			margin: 0 auto;
-			font-size: 0;
-		}
-
-		background: url("../img/photos/photo-background@2x.jpg") no-repeat 50% 0;
-		background-size: auto 390px;	
-}
+	
 
 
 		
 	.main_title__welcome {
-		position: absolute;
-		top: 44px;
-		left: 90px;
 		display: block;
-		width: 150px;
-		height: 35px;
+		width: 142px;
+		height: 36px;
+		margin: 0 auto 0;
 		background: url("../img/svg/text-welcome.svg") no-repeat 50% 50%;
 		background-size: contain;
+
+		@media all and (min-width: $media-tablet) {
+			width: 192px;
+			height: 48px;
+            margin: 30px auto 0;
+        }
+
 	}
 
 
 	.main_title__tothegorgeous {
-		position: absolute;
-		top: 85px;
-		left: 62px;
 		display: block;
 		width: 198px;
 		height: 25px;
+		margin: 6px auto 0;
 		background: url("../img/svg/text-tothegorgeous.svg") no-repeat 50% 50%;
 		background-size: contain;
+
+		@media all and (min-width: $media-tablet) {
+			width: 256px;
+			height: 34px;
+            margin: 12px auto 0;
+        }
+
 	}
 	
 	.main_title__sedona {
-		position: absolute;
-		top: 170px;
-		left: 20px;
+		display: block;
 		width: 280px;
 		height: 50px;
+		margin: 58px auto 0;
 		background: url("../img/svg/text-sedona.svg") no-repeat 50% 50%;
 		background-size: contain;
+
+		@media all and (min-width: $media-tablet) {
+			width: 456px;
+			height: 80px;
+            margin: 48px auto 0;
+        }
+
 	}
 	
 
 	& blockquote {
-		position: absolute;
-		top: 290px;
-		left: 25px;
-		width: 190px;
+		width: 200px;
 		height: 54px;
+		margin: 65px auto 0;
 		background: url("../img/svg/text-becausecanyon.svg") no-repeat 50% 0;
 		background-size: contain;
+
+		@media all and (min-width: $media-tablet) {
+			width: 294px;
+			height: 80px;
+            margin: 56px auto 0;
+        }
+
 	}
 
 

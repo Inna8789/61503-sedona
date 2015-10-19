@@ -2,6 +2,11 @@
         margin-bottom: 40px;
         text-align: center;
         font-size: 0;
+
+        @media all and (min-width: $media-tablet) {
+            @include inline-block(middle);
+            width: 33.33%;
+        }
         
         &_btn {
             @include inline-block;
