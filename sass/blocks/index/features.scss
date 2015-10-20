@@ -6,11 +6,11 @@
 	text-align: left;
 
 	@media all and (min-width: $media-tablet) {
-    	margin: 56px 0 30px;
-    	padding: 0;
-    	text-align: center;
-    	font-size: 0;	    
-    }
+		margin: 56px 0 30px;
+		padding: 0;
+		text-align: center;
+		font-size: 0;	    
+	}
 }
 
 	.features__item {
@@ -21,15 +21,15 @@
 		line-height: $line-height--text;
 
 		@media all and (min-width: $media-tablet) {
-    		@include inline-block;
-    		width: 23.33%;
-    		padding: 104px 5% 0;
+			@include inline-block;
+			width: 23.33%;
+			padding: 104px 5% 0;
 
-    	& p {
-    		margin: 0 auto;
-    	}
+			& p {
+				margin: 0 auto;
+			}
 
-    }
+		}
 
 		&:before {
 			content: "";
@@ -66,7 +66,7 @@
 
 		p {
 			width: 230px;
-			margin: 20px 0 0 0 ;
+			margin: 20px 0 0;
 
 			@media all and (min-width: $media-tablet) {
 				width: 170px;
@@ -84,12 +84,3 @@
 			color: $color--text;
 			font-size: $font-size--heading;
 		}
-
-	
-	
-	
-	
-
-	
-
-	

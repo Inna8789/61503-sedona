@@ -8,21 +8,48 @@
 
 	& input[type="radio"] {
 		display: none;
+
+		&:checked + label:before {
+			display: block;
+		}
 	}
 
 	& label {
+		cursor: pointer;
+		position: relative;
 		@include inline-block;
-		width: 20px;
-		height: 20px;
-		margin-right: 25px;
-		border: 20px solid $color--input;
-		border-radius: 50%;
-		background: $color--input;
+		line-height: 60px;
+		padding: 0 0 0 85px;
+		
+		&:after {
+			border: 20px solid $color--input;
+			border-radius: 50%;
+			background: $color--input;
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 20px;
+			height: 20px;
+			z-index: 1;
+		}
+
+		&:before {
+			background: #000;
+			border-radius: 100%;
+			display: none;
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			margin: -10px 0 0;
+			height: 20px;
+			width: 20px;
+			z-index: 2;
+		}
 	}
 
-	& p {
-		@include inline-block;
-	}
+
 
 }
 

@@ -3,9 +3,10 @@
 
     <head>
     	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     	<title>HTML Academy: sedona_form</title>
-     	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    	<link href="css/normalize.css" type="text/css" rel="stylesheet">
+     	<!-- Исправить на двойные кавычки, чтобы код везде был одинаков -->
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     	<link href="css/style.css" type="text/css" rel="stylesheet">
     </head>
 
@@ -71,15 +72,31 @@
                         </legend>
 
         
-                    	<label>Фамилия:<span>*</span></label>
+                    	<label class="form__label">Фамилия:<span>*</span></label>
                     	<input type="text" value="Иванов" required>
                     	<label>Имя:<span>*</span></label>
                     	<input type="text" value="Пётр" required>
                     	<label>Отчество:<span>*</span></label>
-                    	<input type="text" value="Александрович">
-        
+                    	<input type="text" value="Александрович">        
                     </fieldset>
+                    
+                    <!-- 
+                        Fieldset что ниже размечен правильно 
+                        Нужно использовать БЭМ-классы для всего (label, input)
+                        Таким образом мы сократим наш код и сделаем его более расширяемым и универсальным, а также легкоподдерживаемым
+                    -->
+                    <fieldset class="form__fieldset form__fieldset--тут_модификатор">
 
+                        <legend class="form__legend">
+                            Регистрация
+                        </legend>
+                        
+                        <label class="form__label">Email:<span>*</span></label>
+                        <input class="form__field" type="email">
+                        
+                        <label class="form__label" >Пароль:<span>*</span></label>
+                        <input class="form__field form__field--small" type="password">
+                    </fieldset>
 
                     <fieldset class="field_impression">
 
@@ -90,13 +107,11 @@
                         <ul class="field_impression__filter_radio">
                             <li>
                                 <input id="answer_pos" name="answer" type="radio" checked>
-                    	        <label for="answer_pos"></label>
-                                <p>Скорее положительное</p>
+                    	        <label for="answer_pos">Скорее положительное</label>
                             </li>
                             <li>
                                 <input id="answer_neg" name="answer" type="radio">
-                    	        <label for="answer_neg"></label>
-                                <p>Скорее отрицательное</p>
+                    	        <label for="answer_neg">Скорее отрицательное</label>
                             </li>
                         </ul>
 
@@ -204,7 +219,7 @@
                     	<input type="button" value="Выбрать фотографии">
                     	<div class="field_photos__gallery">
                     		<div class="field_photos__item">
-                    			<img src="../img/photo_1.jpg" width="70" height="70" alt="">
+                    			<img src="img/photos/photo_1.jpg" width="70" height="70" alt="">
                     		</div>
                     		<div class="field_photos__item">
                     			<img src="../img/photo_2_3.jpg" alt="">

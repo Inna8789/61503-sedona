@@ -3,7 +3,7 @@
 @import "utils/variables";
 @import "utils/mixins";
 
-@import "base/normalize"; 
+@import "base/normalize";
 @import "base/fonts";
 
 @import "layout/base";
@@ -30,4 +30,38 @@
 @import "blocks/form/field_places";
 @import "blocks/form/field_photos";
 
+
+.form {
+
+
+    &__label {
+        display: block;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        color: $color--text;
+        font-size: $font-size--text;
+
+        & span {
+            color: red;
+        }
+    }
+
+    &__field {
+        width: 236px;
+        margin-left: 20px;
+        margin-bottom: 22px;
+        padding: 22px;
+        color: $color--black;
+        font-size: $font-size--title;
+        font-weight: bold;
+        text-transform: none;
+        border: 0;
+        background: $color--input;
+
+        &--small {
+            width: 186px;
+        }
+    }
+
+}
 

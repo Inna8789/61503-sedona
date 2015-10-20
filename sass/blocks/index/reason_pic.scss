@@ -7,10 +7,21 @@
 	font-size: 0;
 	
 	@media all and (min-width: $media-tablet) {
-			height: 256px;
-           	margin: 0;
-        }
+    	height: 256px;
+       	margin: 0;
+    }
 	
+    &__item {
+
+    }
+
+        &__title {
+
+        }
+
+        &__number {
+            
+        }
 }
 	
 
@@ -38,8 +49,7 @@
 
 			@media all and (min-width: $media-tablet) {
            		width: 130px;
-
-        }
+            }
 		}
 
 		.reason_pic__number {

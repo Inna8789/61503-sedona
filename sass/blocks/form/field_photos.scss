@@ -43,16 +43,24 @@
 	.field_photos__gallery {
 		display: flex;
 		margin: 55px 20px 50px;
-		justify-content: between;
+		justify-content: space-between;
 		flex-wrap: wrap;
+		// overflow: hidden;
 		
 	}
 
 	.field_photos__item {
+		// float: left;
 		width: 70px;
 		height: 70px;
-		margin-right: 35px;
+		// margin-right: 35px;
 		margin-bottom: 35px;
+		
+		// @media all and (max-width: 640px) {
+		// 	&:nth-child(3n) {
+		// 		margin-right: 0;
+		// 	}
+		// }
 
 		& img {
 			width: 70px;
