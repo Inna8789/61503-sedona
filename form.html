@@ -13,20 +13,25 @@
   		
         <div class="wrapper">
 
-            <header class="main_header">
-                <div class="logo">
-                    <a href="index.html">
-                        <img class="logo__img" src="img/logo.png" alt="">
-                    </a>
-                </div>
+             <header class="main_header">
                 <nav class="nav">
-                    <!-- <button type="button" class="menu_btn menu_btn--close js-closeMenu"></button> -->
+                    <button type="button" class="menu_btn menu_btn--close"></button>
                     <ul>
                         <li class="nav__item">
                             <a href="#">Карта штата</a>
                         </li>
                         <li class="nav__item">
                             <a href="#">Информация</a>
+                        </li>
+                        <li class="nav__logo">
+                            <a href="index.html">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                            srcset="img/other/logo-sedona@2x.png 2x,
+                                                    img/other/logo-sedona@1x.png">
+                                    <img src="img/other/logo-sedona@1x.png" width="67" height="56">
+                                </picture>  
+                            </a>
                         </li>
                         <li class="nav__item">
                             <a href="#">Фото и видео</a>
@@ -36,7 +41,9 @@
                         </li>
                     </ul>
                 </nav>
-                <button type="button" class="menu_btn menu_btn--open js-openMenu"></button>
+                <button type="button" class="menu_btn js-openMenu">
+                    <span>Menu</span>
+                </button>
             </header>
 
 
@@ -215,7 +222,7 @@
                     			<img src="../img/photo_6.jpg" alt="">
                     		</div>
                     		<div class="field_photos__item">
-                    			<img src="../img/photo_7.jpg" alt="">
+                    			<img src="img/photo_7.jpg" alt="">
                     		</div>
                     	</div>
 
