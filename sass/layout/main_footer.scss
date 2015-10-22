@@ -44,6 +44,7 @@
 
         &__htmlacademy {
             @include inline-block(middle);
+            font-size: 0;
             margin-left: 10px;
             background: url("../img/svg/htmlacademy.svg") no-repeat;
             width: 30px;

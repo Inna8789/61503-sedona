@@ -7,10 +7,10 @@
 	margin-top: 74px;
 	padding-top: 48px;
 	font-size: 0;
-	background: url("../img/photos/photo-background@1x.jpg") no-repeat 50% 0;
+	background: url("../img/photos/photo-background@1x.jpg") no-repeat 50% 40%;
 
 	@media all and (min-resolution: 1.5dppx) {
-		background: url("../img/photos/photo-background@2x.jpg") no-repeat 50% 0;	
+		background: url("../img/photos/photo-background@2x.jpg") no-repeat 50% 40%;	
 		background-size: cover;
 	}
 
@@ -53,55 +53,55 @@
 
 }
 
-.main_title {
+	.main_title {
+		
+		&__welcome {
+			display: block;
+			width: 142px;
+			height: 36px;
+			margin: 0 auto 0;
+			background: url("../img/svg/text-welcome.svg") no-repeat 50% 50%;
+			background-size: contain;
 	
-	&__welcome {
-		display: block;
-		width: 142px;
-		height: 36px;
-		margin: 0 auto 0;
-		background: url("../img/svg/text-welcome.svg") no-repeat 50% 50%;
-		background-size: contain;
-
-		@media all and (min-width: $media-tablet) {
-			width: 192px;
-			height: 48px;
-			margin: 30px auto 0;
-		}
-
-	}
-
-
-	&__tothegorgeous {
-		display: block;
-		width: 198px;
-		height: 25px;
-		margin: 6px auto 0;
-		background: url("../img/svg/text-tothegorgeous.svg") no-repeat 50% 50%;
-		background-size: contain;
-
-		@media all and (min-width: $media-tablet) {
-			width: 256px;
-			height: 34px;
-			margin: 12px auto 0;
-		}
-
-	}
+			@media all and (min-width: $media-tablet) {
+				width: 192px;
+				height: 48px;
+				margin: 30px auto 0;
+			}
 	
-	&__sedona {	
-		display: block;
-		width: 280px;
-		height: 50px;
-		margin: 58px auto 0;
-		background: url("../img/svg/text-sedona.svg") no-repeat 50% 50%;
-		background-size: contain;
-
-		@media all and (min-width: $media-tablet) {
-			width: 456px;
-			height: 80px;
-			margin: 48px auto 0;
 		}
-
-	}
-}	
+	
+	
+		&__tothegorgeous {
+			display: block;
+			width: 198px;
+			height: 25px;
+			margin: 6px auto 0;
+			background: url("../img/svg/text-tothegorgeous.svg") no-repeat 50% 50%;
+			background-size: contain;
+	
+			@media all and (min-width: $media-tablet) {
+				width: 256px;
+				height: 34px;
+				margin: 12px auto 0;
+			}
+	
+		}
+	
+		&__sedona {	
+			display: block;
+			width: 280px;
+			height: 50px;
+			margin: 58px auto 0;
+			background: url("../img/svg/text-sedona.svg") no-repeat 50% 50%;
+			background-size: contain;
+	
+			@media all and (min-width: $media-tablet) {
+				width: 456px;
+				height: 80px;
+				margin: 48px auto 0;
+			}
+	
+		}
+	}		
 

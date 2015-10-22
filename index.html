@@ -9,31 +9,6 @@
         <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         <link href="css/style.css" type="text/css" rel="stylesheet">
     </head>
-<!-- 
-    <picture>
-        <source media="(min-width: 320px)"
-                srcset="img/other/background-mobile@2x.png 2x,
-                        img/other/background-mobile@1x.png">
-
-        <source media="(min-width: 768px)"
-                srcset="img/other/background-tablet@2x.png 2x,
-                        img/other/background-tablet@1x.png">
-
-        <source media="(min-width: 1024px)"
-                srcset="img/other/background@2x.png 2x,
-                        img/other/background@1x.png">
-
-        <img src="img/other/background@1x.png" alt="a cute kitten">
-    </picture>
-
-    img/other/background-mobile@1x.png - должно быть 320px по ширине
-    img/other/background-mobile@2x.png - должно быть 640px по ширине
-    
-    Второй вариант чтобы предусмотреть повороты экрана
-    Все что до 640px - считать мобайлом
-    Все что от 640 до 1024 - считать планшетом
-    Все что выше 1024 считать десктопом
- -->
 
     <body>
         <div class="wrapper">
@@ -55,7 +30,7 @@
                                     <source media="(min-width: 1200px)"
                                             srcset="img/other/logo-sedona@2x.png 2x,
                                                     img/other/logo-sedona@1x.png">
-                                    <img src="img/other/logo-sedona@1x.png" width="67" height="56">
+                                    <img src="img/other/logo-sedona@1x.png" width="68" height="62">
                                 </picture>  
                             </a>
                         </li>
@@ -200,8 +175,17 @@
                 </div>
         
                 <div class="map">
-                    <!-- Должен быть img -->
-                    Map
+                    <picture>
+                            <source
+                                media="(min-width: 320px)"
+                                    <img src="img/other/map.jpg" alt="Map">
+                            <source
+                                media="(min-width: 640px)"
+                                    <img src="img/other/map_tab.jpg" alt="Map">
+                            <source
+                                media="(min-width: 1024px)"
+                                    <img src="img/other/map_desktop.jpg" alt="Map">       
+                    </picture>
                 </div>
         
             </main>
@@ -212,11 +196,9 @@
                     <a href="#">#Visitsedona</a>
                 </div>
                 <div class="social">
-                    <!-- Сделать font-size:0 -->
                     <a href="#" class="social_btn social_btn--twitter">Twitter</a>
-                    <!-- Надо поправить разметку -->
-                    <a href="#" class="social_btn"><i class="social_btn--facebook"></i></a>
-                    <a href="#" class="social_btn"><i class="social_btn--youtube"></i></a>
+                    <a href="#" class="social_btn social_btn--facebook">Facebook</a>
+                    <a href="#" class="social_btn social_btn--youtube">Youtube</a>
                 </div>
                 <div class="copyright">
                     Разработано 

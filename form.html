@@ -2,11 +2,10 @@
 <html lang="ru">
 
     <head>
-    	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta charset="utf-8">
     	<title>HTML Academy: sedona_form</title>
-     	<!-- Исправить на двойные кавычки, чтобы код везде был одинаков -->
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     	<link href="css/style.css" type="text/css" rel="stylesheet">
     </head>
 
@@ -30,7 +29,7 @@
                                     <source media="(min-width: 1200px)"
                                             srcset="img/other/logo-sedona@2x.png 2x,
                                                     img/other/logo-sedona@1x.png">
-                                    <img src="img/other/logo-sedona@1x.png" width="67" height="56">
+                                    <img src="img/other/logo-sedona@1x.png" width="68" height="62">
                                 </picture>  
                             </a>
                         </li>
@@ -65,158 +64,166 @@
                 <form class="form" action="/echo" method="post">
 
 
-                    <fieldset class="field_represent">
+                    <fieldset class="fieldset">
 
-                    	<legend class="field_represent__legend">
+                    	<legend class="fieldset__legend">
                             Представьтесь, пожалуйста: 
                         </legend>
 
-        
-                    	<label class="form__label">Фамилия:<span>*</span></label>
-                    	<input type="text" value="Иванов" required>
-                    	<label>Имя:<span>*</span></label>
-                    	<input type="text" value="Пётр" required>
-                    	<label>Отчество:<span>*</span></label>
-                    	<input type="text" value="Александрович">        
-                    </fieldset>
-                    
-                    <!-- 
-                        Fieldset что ниже размечен правильно 
-                        Нужно использовать БЭМ-классы для всего (label, input)
-                        Таким образом мы сократим наш код и сделаем его более расширяемым и универсальным, а также легкоподдерживаемым
-                    -->
-                    <fieldset class="form__fieldset form__fieldset--тут_модификатор">
+                        <div class="fieldset__flex">
+                            <div class="fieldset__item">
+                    	      <label class="fieldset__label">Фамилия:<span>*</span></label>
+                    	      <input class="fieldset__field" type="text" value="Иванов" required>
+                            </div>
+                            <div class="fieldset__item">
+                    	      <label class="fieldset__label">Имя:<span>*</span></label>
+                    	      <input class="fieldset__field" type="text" value="Пётр" required>
+                            </div>
+                            <div class="fieldset__item">
+                    	      <label class="fieldset__label">Отчество:<span>*</span></label>
+                    	      <input class="fieldset__field" type="text" value="Александрович">
+                            </div>
+                        </div>
 
-                        <legend class="form__legend">
-                            Регистрация
-                        </legend>
-                        
-                        <label class="form__label">Email:<span>*</span></label>
-                        <input class="form__field" type="email">
-                        
-                        <label class="form__label" >Пароль:<span>*</span></label>
-                        <input class="form__field form__field--small" type="password">
                     </fieldset>
 
-                    <fieldset class="field_impression">
+                    <fieldset class=" fieldset fieldset_radio">
 
-                    	<legend class="field_impression__legend">
+                    	<legend class="fieldset__legend">
                             Ваше общее впечатление:
                         </legend>
 
-                        <ul class="field_impression__filter_radio">
+                        <ul class="fieldset_radio__filter">
                             <li>
-                                <input id="answer_pos" name="answer" type="radio" checked>
-                    	        <label for="answer_pos">Скорее положительное</label>
+                                <input class="fieldset_radio__button" id="answer_pos" name="answer" type="radio" checked>
+                    	        <label class="fieldset_radio__label" for="answer_pos">Скорее положительное</label>
                             </li>
                             <li>
-                                <input id="answer_neg" name="answer" type="radio">
-                    	        <label for="answer_neg">Скорее отрицательное</label>
+                                <input class="fieldset_radio__button" id="answer_neg" name="answer" type="radio">
+                    	        <label class="fieldset_radio__label" for="answer_neg">Скорее отрицательное</label>
                             </li>
                         </ul>
 
                     </fieldset>
 
 
-                    <fieldset class="field_dates">
+                    <fieldset class="fieldset">
         
-                    	<legend class="field_dates__legend">
+                    	<legend class="fieldset__legend">
                             Даты вашей поездки
                         </legend>
-        
-                    	<label>Дата приезда:<span>*</span></label>
-                    	<input type="text" value="4 июля 2015" required>
-                    	<label>Длительность пребывания:<span>*</span></label>
-                        <div class="field_dates__special">
-                            <button class="icon_plus"><i class="icon-plus"></i></button>
-                    	    <input type="number" value="14" placeholder ="дн." required>
-                            <button class="icon_minus"><i class="icon-minus"></i></button>
-                        </div>
-                    	<label>Дата отъезда:<span>*</span></label>
-                    	<input type="text" value="28 июля 2015" required>
+                            <div class="fieldset__flex">
+                                <div class="fieldset__item">
+                    	            <label class="fieldset__label">Дата приезда:<span>*</span></label>
+                    	            <input class="fieldset__field" type="text" value="4 июля 2015" required>
+                                </div>
+                                <div class="fieldset__item">
+                    	            <label class="fieldset__label">Длительность пребывания:<span>*</span></label>
+                                    <div class="fieldset__triple">
+                                        <button class="fieldset__field--btn"><i class="icon-minus"></i></button>
+                    	                <input class="fieldset__field--number" type="number" value="14" required>
+                                        <button class="fieldset__field--btn"><i class="icon-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="fieldset__item">
+                    	            <label class="fieldset__label">Дата отъезда:<span>*</span></label>
+                    	            <input class="fieldset__field fieldset--border" type="text" value="28 июля 2015" required>
+                                </div>
+                            </div>
 
                     </fieldset>
 
 
-                    <fieldset class="field_number">
+                    <fieldset class="fieldset">
         
-                    	<legend class="field_number__legend">
+                    	<legend class="fieldset__legend">
                             Кол-во путешественников:
                         </legend>
-        
-                    	<label>Количество путешественников:<span>*</span></label>
-                        <div class="field_number__special">
-                            <button class="icon_plus"><i class="icon-plus"></i></button>
-                            <input type="number" value="2" placeholder="чел." required>
-                            <button class="icon_minus"><i class="icon-minus"></i></button>
-                    	</div>
-                        <div class="field_number__special">
-                    	    <label class="field_number__sign">№</label>
-                            <label>Фамилия:<span>*</span></label>
+                        
+                        <div class="fieldset__center">
+                    	   <label class="fieldset__label">Количество путешественников:<span>*</span></label>
+                            <div class="fieldset__triple">
+                                <button class="fieldset__field--btn"><i class="icon-minus"></i></button>
+                                <input class="fieldset__field--number" type="number" value="2" placeholder="чел." required>
+                                <button class="fieldset__field--btn"><i class="icon-plus"></i></button>
+                    	   </div>
                         </div>
-                        <div class="field_number__complex">
-                            <button type="button" value="1">1</button>
-                            <input class="field_number__name" type="text" value="Иванов" required>
+                        <div class="fieldset__flex">
+                            <div class="fieldset__double">
+                                <div class="fieldset__number">
+                                    <label class="fieldset__label">№</label>
+                                    <input class="fieldset__field--number" type="text" value="1">   
+                                </div>
+                                <div class="fieldset__name">
+                                    <label class="fieldset__label">Фамилия:<span>*</span></label>
+                                    <input class="fieldset__field sum" type="text" value="Иванов" required>   
+                                </div>
+                            </div>
+                    	    <div class="fieldset__special">
+                                <label class="fieldset__label">Имя:<span>*</span></label>   
+                                <input class="fieldset__field sum" type="text" value="Пётр" required> 
+                            </div>
+                            <div class="fieldset__special">
+                                <label class="fieldset__label">Отчество:<span>*</span></label>
+                                <input class="fieldset__field sum" type="text" value="Александрович">   
+                            </div>
+                            <div class="fieldset__double">
+                                <div class="fieldset__number">
+                                    <label class="fieldset__label">№</label>
+                                    <input class="fieldset__field--number" type="text" value="2">
+                                </div>
+                                <div class="fieldset__name">
+                                    <label class="fieldset__label">Фамилия:<span>*</span></label>
+                                    <input class="fieldset__field sum" type="text" value="Иванов" required>   
+                                </div>
+                            </div>
+                            <div class="fieldset__special">
+                                <label class="fieldset__label">Имя:<span>*</span></label>
+                                <input class="fieldset__field sum" type="text" value="Пётр" required> 
+                            </div>
+                    	    <div class="fieldset__special">
+                    	       <label class="fieldset__label">Отчество:<span>*</span></label>
+                    	       <input class="fieldset__field sum" type="text" value="Александрович">
+                            </div>
                         </div>
-                        <div class="field_number__single"> 
-                    	    <label>Имя:<span>*</span></label>   
-                            <input class="field_number__name" type="text" value="Пётр" required>
-                            <label>Отчество:<span>*</span></label>
-                    	    <input class="field_number__name" type="text" value="Александрович">
-                        </div>
-                        <div class="field_number__special">
-                            <label class="field_number__sign">№</label>
-                            <label>Фамилия:<span>*</span></label>
-                        </div>
-                        <div class="field_number__complex">
-                            <button type="button" value="2">2</button>
-                            <input class="field_number__name" type="text" value="Иванов" required>
-                        </div>
-                        <div class="field_number__single">
-                    	    <label>Имя:<span>*</span></label>
-                    	    <input class="field_number__name" type="text" value="Пётр" required>
-                    	    <label>Отчество:<span>*</span></label>
-                    	    <input class="field_number__name" type="text" value="Александрович">
-                        </div>
-                    	
-        
+                        
                     </fieldset>
 
 
-                    <fieldset class="field_places">
+                   <!--  <fieldset class="form__fieldset field__places">
         
-                        <legend class="field_places__legend">
+                        <legend class="form__legend" class="field_places__legend">
                             Посещённые достопримечательности
                         </legend>
                         <ul class="field_places__filter_check">
                             <li>
-                                <input id="place_one" type="checkbox" checked>
-                                <label for="place_one">Мост Дьявола</label>  
+                                <input class="form__field" id="place_one" type="checkbox" checked>
+                                <label class="form__label" for="place_one">Мост Дьявола</label>  
                             </li>
                             <li>
-                                <input id="place_two" type="checkbox">
-                                <label for="place_two">Слайд-парк</label>  
+                                <input class="form__field" id="place_two" type="checkbox">
+                                <label class="form__label" for="place_two">Слайд-парк</label>  
                             </li>
                             <li>
-                                <input id="place_three" type="checkbox" checked>
-                                <label for="place_three">Гора-Колокол</label>
+                                <input class="form__field" id="place_three" type="checkbox" checked>
+                                <label class="form__label" for="place_three">Гора-Колокол</label>
                             </li>
                             <li>
-                                <input id="place_four" type="checkbox" checked>
-                                <label for="place_four">Красные Скалы</label>
+                                <input class="form__field" id="place_four" type="checkbox" checked>
+                                <label class="form__label" for="place_four">Красные Скалы</label>
                             </li>
                         </ul>
                     	
-                    </fieldset>
+                    </fieldset> -->
 
 
-                    <fieldset class="field_photos">
+                    <!-- <fieldset class="form__fieldset field__photos">
         
-                    	<legend class="field_photos__legend">
+                    	<legend class="form__legend" class="field_photos__legend">
                             Загрузите фотографии:
                         </legend>
         
-                    	<input type="button" value="Выбрать фотографии">
+                    	<input class="form__field" type="button" value="Выбрать фотографии">
                     	<div class="field_photos__gallery">
                     		<div class="field_photos__item">
                     			<img src="img/photos/photo_1.jpg" width="70" height="70" alt="">
@@ -244,28 +251,27 @@
                         <input type="submit" value="Отправить отзыв">
         
                     </fieldset>
-
+ -->
                 </form>
 
             </main>
-      
             <footer class="main_footer">
                    
                 <div class="contacts">
                     <a href="#">#Visitsedona</a>
                 </div>
                 <div class="social">
-                    <a href="#" class="social_btn social_btn--tw"><i class="icon-twitter"></i></a>
-                    <a href="#" class="social_btn social_btn--fb"><i class="icon-facebook"></i></a>
-                    <a href="#" class="social_btn social_btn--youtube"><i class="icon-youtube"></i></a>
+                    <a href="#" class="social_btn social_btn--twitter">Twitter</a>
+                    <a href="#" class="social_btn social_btn--facebook">Facebook</a>
+                    <a href="#" class="social_btn social_btn--youtube">Youtube</a>
                 </div>
                 <div class="copyright">
                     Разработано 
-                    <a class="copyright__htmlacademy" href="http://htmlacademy.ru" target="_blank"></a>
+                    <a class="copyright__htmlacademy" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
                 </div>
                     
             </footer>
-
+      
         </div>
 
 	</body>

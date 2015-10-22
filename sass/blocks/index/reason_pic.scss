@@ -12,20 +12,6 @@
     }
 	
     &__item {
-
-    }
-
-        &__title {
-
-        }
-
-        &__number {
-            
-        }
-}
-	
-
-	.reason_pic__item {
 		color: $color--white;
 		font-size: $font-size--text;
 		line-height: $line-height--text;
@@ -40,8 +26,8 @@
 			margin: 20px auto 0;
 		}
 	}
-	
-		.reason_pic__title {
+
+        &__title {
 			margin: 0 auto;
 			margin-bottom: 10px;
 			color: $color--white;
@@ -52,7 +38,7 @@
             }
 		}
 
-		.reason_pic__number {
+        &__number {
 			position: relative;
 		
 
@@ -73,7 +59,8 @@
 				left: 25px;
 			}
 		}
-
+}
+	
 	.reason__picture {
 		height: 256px;
 		overflow: hidden;
