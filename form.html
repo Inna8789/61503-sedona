@@ -190,69 +190,108 @@
                     </fieldset>
 
 
-                   <!--  <fieldset class="form__fieldset field__places">
+                    <fieldset class="fieldset_check">
         
-                        <legend class="form__legend" class="field_places__legend">
-                            Посещённые достопримечательности
+                        <legend class="fieldset_check__legend">
+                            Посещённые достопримечательности:
                         </legend>
-                        <ul class="field_places__filter_check">
-                            <li>
-                                <input class="form__field" id="place_one" type="checkbox" checked>
-                                <label class="form__label" for="place_one">Мост Дьявола</label>  
-                            </li>
-                            <li>
-                                <input class="form__field" id="place_two" type="checkbox">
-                                <label class="form__label" for="place_two">Слайд-парк</label>  
-                            </li>
-                            <li>
-                                <input class="form__field" id="place_three" type="checkbox" checked>
-                                <label class="form__label" for="place_three">Гора-Колокол</label>
-                            </li>
-                            <li>
-                                <input class="form__field" id="place_four" type="checkbox" checked>
-                                <label class="form__label" for="place_four">Красные Скалы</label>
-                            </li>
+
+                        <ul class="fieldset_check__filter">
+                            <div class="fieldset_check__flex">
+                                <div class="flex__complex">
+                                    <li>
+                                        <input class="fieldset_check__field" id="place_one" type="checkbox" checked>
+                                        <label class="fieldset_check__label" for="place_one">Мост Дьявола</label>  
+                                    </li>
+                                    <li>
+                                        <input class="fieldset_check__field" id="place_two" type="checkbox">
+                                        <label class="fieldset_check__label" for="place_two">Слайд-парк</label>  
+                                    </li>
+                                </div>
+                                <div class="flex__complex">
+                                    <li>
+                                        <input class="fieldset_check__field" id="place_three" type="checkbox" checked>
+                                        <label class="fieldset_check__label" for="place_three">Гора-Колокол</label>
+                                    </li>
+                                    <li>
+                                        <input class="fieldset_check__field" id="place_four" type="checkbox" checked>
+                                        <label class="fieldset_check__label" for="place_four">Красные Скалы</label>
+                                    </li>
+                                </div>
+                            </div>
                         </ul>
                     	
-                    </fieldset> -->
+                    </fieldset>
 
 
-                    <!-- <fieldset class="form__fieldset field__photos">
+                    <fieldset class="fieldset_load">
         
-                    	<legend class="form__legend" class="field_photos__legend">
+                    	<legend class="fieldset__legend">
                             Загрузите фотографии:
                         </legend>
         
-                    	<input class="form__field" type="button" value="Выбрать фотографии">
-                    	<div class="field_photos__gallery">
-                    		<div class="field_photos__item">
-                    			<img src="img/photos/photo_1.jpg" width="70" height="70" alt="">
+                    	<input class="fieldset_load__btn" type="button" value="Выбрать фотографии">
+
+                    	<div class="fieldset_load__gallery">
+
+                    		<div class="fieldset_load__item">
+                                <input type="file" name="file" id="file_1" class="inputfile_1" />
+                                <label for="file_1">IMG-686</label>                                
+                                <img src="img/photos/photo_1.jpg" alt="">
+                            </div>
+                    		<div class="fieldset_load__item">
+                                <input type="file" name="file" id="file_2" class="inputfile_2" />
+                                <label for="file_2">IMG-687</label> 
+                    			<img src="img/photos/photo_2_3.jpg" alt="">
                     		</div>
-                    		<div class="field_photos__item">
-                    			<img src="../img/photo_2_3.jpg" alt="">
+                    		<div class="fieldset_load__item">
+                                <input type="file" name="file" id="file_3" class="inputfile_3" />
+                                <label for="file_3">IMG-688</label> 
+                    			<img src="img/photos/photo_2_3.jpg" alt="">
                     		</div>
-                    		<div class="field_photos__item">
-                    			<img src="../img/photo_2_3.jpg" alt="">
+                    		<div class="fieldset_load__item">
+                                <input type="file" name="file" id="file_4" class="inputfile_4" />
+                                <label for="file_4">IMG-689</label> 
+                    			<img src="img/photos/photo_4.jpg" alt="">
                     		</div>
-                    		<div class="field_photos__item">
-                    			<img src="../img/photo_4.jpg" alt="">
+                    		<div class="fieldset_load__item">
+                                <input type="file" name="file" id="file_5" class="inputfile_5" />
+                                <label for="file_5">IMG-690</label> 
+                    			<img src="img/photos/photo_5.jpg" alt="">
                     		</div>
-                    		<div class="field_photos__item">
-                    			<img src="../img/photo_5.jpg" alt="">
+                    		<div class="fieldset_load__item">
+                                <input type="file" name="file" id="file_6" class="inputfile_6" />
+                                <label for="file_6">IMG-691</label> 
+                    			<img src="img/photos/photo_6.jpg" alt="">
                     		</div>
-                    		<div class="field_photos__item">
-                    			<img src="../img/photo_6.jpg" alt="">
-                    		</div>
-                    		<div class="field_photos__item">
-                    			<img src="img/photo_7.jpg" alt="">
+                    		<div class="fieldset_load__item">
+                                <input type="file" name="file" id="file_7" class="inputfile_7" />
+                                <label for="file_7">IMG-692</label> 
+                    			<img src="img/photos/photo_7.jpg" alt="">
                     		</div>
                     	</div>
 
                         <input type="submit" value="Отправить отзыв">
         
                     </fieldset>
- -->
+
                 </form>
+
+                <div class="popup_first">
+                    <h2 class="popup_first__title">Что-то пошло не так!</h2>
+                    <p>Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить.</p>
+                    <button class="popup_first__btn" type="button">ok</button>
+                </div>
+
+                <div class="popup_second">
+                    <h2 class="popup_second__title">Ваш отзыв отправлен!</h2>
+                    <p>
+                        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+                    </p>
+                    <div class="popup_second__footer">
+                        <button class="popup_second__btn" type="button">Закрыть окно</button>
+                    </div>
+                </div>
 
             </main>
             <footer class="main_footer">
