@@ -1,0 +1,62 @@
+
+
+.post_start {
+	margin: 0 auto;
+
+	
+
+	&__title {
+		position: relative;
+		width: 248px;
+		margin: 0 auto;
+		margin-bottom: 35px;
+		text-align: center;
+		color: $color--black;
+		font-size: $font-size--heading;
+		line-height: 34px;
+
+		@media all and (min-width: $media-tablet) {
+			width: 496px;
+			font-size: 40px;
+			line-height: 50px;
+		}
+	}
+
+		&__title:before,
+		&__title:after {
+			position: absolute;
+			content: "";
+			top: -47px;
+			right: 430px;
+			width: 190px;
+			height: 2px;
+			background: $color--gray;
+			display: none;
+	
+			@media all and (min-width: $media-tablet) {
+				display: block;
+			}
+		}
+
+		&__title:after {
+			top: -47px;
+			left: 390px;
+		}
+
+		&__text {
+			width: 290px;
+			margin: 0 auto;
+			text-align: center;
+			color: $color--support;
+			font-size: $font-size--title;
+			line-height: $line-height--title;
+			text-transform: none;
+	
+			@media all and (min-width: $media-tablet) {
+				width: 670px;
+				font-size: $font-size--heading;
+				line-height: 30px;
+			}
+		}
+
+}

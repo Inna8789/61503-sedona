@@ -1,0 +1,85 @@
+
+
+.post_article {
+	padding: 0 20px;
+
+	@media all and (min-width: $media-tablet) {
+		padding: 0 45px;
+	}
+
+	@media all and (min-width: $media-desktop) {
+		padding: 0 200px;
+	}
+
+	&__title {
+		margin-bottom: 35px;
+		// padding-left: 20px;
+		color: $color--black;
+		font-size: $font-size--gigant;
+		text-align: left;
+	}
+
+	&__text {
+		margin: 0;
+		// padding-left: 20px;
+		text-align: left;
+		color: $color--text;
+		font-size: $font-size--text;
+		line-height: $line-height--text;
+		text-transform: uppercase;
+	}
+
+	&__list {
+		@include no-list;
+		margin: 35px 0;
+		padding-left: 15px;
+		font-weight: bold;
+	
+	}
+		&__list_item {
+			position: relative;
+		}
+
+		&__list_item:before {
+			position: absolute;
+			content: "";
+			top: 6px;
+			left: -15px;
+			width: 7px;
+			height: 7px;
+			background: $color--reason;
+			
+		}
+
+		&__quote {
+			position: relative;
+			width: 248px;
+			margin: 0;
+			padding: 35px 0 15px 35px;
+			
+		}
+
+		&__quote:before {
+			position: absolute;
+			content: "";
+			top: 40px;
+			left: 20px;
+			width: 2px;
+			height: 80px;
+			background: $color--reason;	
+		}
+
+		span {
+			color: $color--support;
+			font-size: $font-size--text;
+			text-decoration: underline
+;	
+		}
+
+		i {
+			color: $color--support;
+			font-size: $font-size--text;
+			font-style: italic;
+			text-transform: none;
+		}
+}	

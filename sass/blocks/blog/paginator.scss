@@ -1,0 +1,89 @@
+
+
+.paginator {
+	margin: 0 auto;
+	padding-top: 45px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	font-size: 0;
+	border-bottom: 2px solid $color--gray;
+	border-top: 2px solid $color--gray;
+
+
+	@media all and (min-width: $media-tablet) {
+		padding-left: 40px;
+		border: 0;
+	}
+
+	@media all and (min-width: $media-desktop) {
+		width: 800px;
+		padding-left: 0;
+		margin-left: 0;	
+	}
+
+
+	&__items {
+		float: left;
+		width: 280px;
+
+		a {
+			text-decoration: none;
+		}
+		
+		@media all and (min-width: $media-tablet) {
+			width: 350px;
+		}
+
+		@media all and (min-width: $media-desktop) {
+			width: 400px;
+			text-align: center;	
+		}
+
+	}
+
+	&__title {
+		float: left; 
+		width: 120px;
+		margin: 0;
+		color: $color--black;
+		font-size: $font-size--heading;
+		font-weight: bold;
+		line-height: 60px;
+		text-align: left;
+		vertical-align: middle;
+		display: none;
+
+		@media all and (min-width: $media-tablet) {
+			width: 180px;
+			display: block;
+		}
+
+		@media all and (min-width: $media-desktop) {
+			width: 400px;
+			text-align: center;	
+		}
+
+	}
+
+		&__item{
+			@include inline-block;
+			width: 60px;
+			height: 40px;
+			padding-top: 20px;
+			margin: 0;
+			margin-right: 10px;
+			margin-bottom: 20px;
+			text-align: center;
+			font-size: $font-size--title;
+			font-weight: bold;
+			color: $color--white;
+			background: $color--reason;
+	
+			&--active {
+				color: $color--black;
+				background: $color--gray;
+			}
+	
+		}
+}
+

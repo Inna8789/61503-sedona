@@ -2,8 +2,9 @@
 <html lang="ru">
 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>Sedona</title>
+        <title>Blog_Sedona</title>
 
         <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
@@ -13,21 +14,25 @@
     <body>
         
         <div class="wrapper">
-
-            <header class="main_header">
-                <div class="logo">
-                    <a href="index.html">
-                        <img class="logo__img" src="img/logo.png" alt="">
-                    </a>
-                </div>
+             <header class="main_header">
                 <nav class="nav">
-                    <!-- <button type="button" class="menu_btn menu_btn--close js-closeMenu"></button> -->
+                    <button type="button" class="menu_btn menu_btn--close"></button>
                     <ul>
                         <li class="nav__item">
                             <a href="#">Карта штата</a>
                         </li>
                         <li class="nav__item">
                             <a href="#">Информация</a>
+                        </li>
+                        <li class="nav__logo">
+                            <a href="index.html">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                            srcset="img/other/logo-sedona@2x.png 2x,
+                                                    img/other/logo-sedona@1x.png">
+                                    <img src="img/other/logo-sedona@1x.png" width="68" height="62">
+                                </picture>  
+                            </a>
                         </li>
                         <li class="nav__item">
                             <a href="#">Фото и видео</a>
@@ -37,134 +42,149 @@
                         </li>
                     </ul>
                 </nav>
-               <!--  <button type="button" class="menu_btn menu_btn--open js-openMenu"></button> -->
+                <button type="button" class="menu_btn js-openMenu">
+                    <span>Menu</span>
+                </button>
             </header>
+            
 
-            <main class="blog_content">
+            <main class="blog_main">
+
+                <div class="header_cut">
+                    <h1 class="inner_title">
+                        <span class="inner_title__sedona">Sedona</span>
+                    </h1>
+                </div>
 
                 <div class="blog_header">
                     <h2 class="blog_header__title">
                         Блог шерифа
                     </h2>
                     <p>
-                        Cедона удивительный город! Горы здесь красного цвета. А&nbsp;местный шериф ведёт блог и&nbsp;общается на&nbsp;  форумах.
+                        Cедона удивительный город! Горы здесь красного цвета.<br> А&nbsp;местный шериф ведёт блог и&nbsp;общается на&nbsp;  форумах.
                     </p>
                 </div>
-      
-                <div class="post">
 
-                    <h2 class="post__title">
-                       Внимание! Сбежала моя домашняя анаконда 
-                    </h2>
-                    <p class="post__preview">
-                       Жители Седоны и&nbsp;гости города, будьте бдительны&nbsp;&mdash; сбежала моя домашняя змея. Увидевшему срочно звонить        911 и&nbsp;бежать от&nbsp;неё подальше. 
-                    </p>
-                    <div class="post__footer">
-                        <time class="post__param post__param--date" datetime="">Позавчера</time>
-                        <span class="post__param post__param--tag">Происшествия</span>
+                <div class="post_content">
+      
+                    <div class="post">
+
+                        <h2 class="post__title">
+                           Внимание! Сбежала моя домашняя анаконда 
+                        </h2>
+                        <p class="post__preview">
+                           Жители Седоны и&nbsp;гости города, будьте бдительны&nbsp;&mdash; сбежала моя домашняя змея. Увидевшему   срочно звонить        911 и&nbsp;бежать от&nbsp;неё подальше. 
+                        </p>
+                        <div class="post__footer">
+                            <time class="post__param post__param--date" datetime="">Позавчера</time>
+                            <div class="post__param post__param--tag">Происшествия</div>
+                        </div>
+
+                    </div>
+       
+                    <div class="post">
+                        
+                        <h2 class="post__title">
+                            Принят антитабачный закон штата
+                        </h2>
+                        <p class="post__preview">
+                           Уважаемые туристы, пожалуйста не&nbsp;забывайте, что курение сигарет и&nbsp;сигар в&nbsp;общественных местах     города      Седона категорически запрещено. 
+                        </p>
+                        <div class="post__footer">
+                            <time class="post__param post__param--date" datetime="">2дня назад</time>
+                            <div class="post__param post__param--tag">Законы</div>
+                        </div>
+            
+                    </div>
+      
+                    <div class="post">
+                        
+                        <h2 class="post__title">
+                           Маньяк задержан, даёт показания 
+                        </h2>
+                        <p class="post__preview">
+                            Жители Седоны могут спать спокойно. Задержан маньяк-эксгибиционист, державший в&nbsp;страхе весь город.     Пострадавшим        обращаться в&nbsp;911.
+                        </p>
+                        <div class="post__footer">
+                            <time class="post__param post__param--date" datetime="">3 дня назад</time>
+                            <div class="post__param post__param--tag">Происшествия</div>
+                        </div>
+            
+                    </div>
+        
+                    <div class="post">
+                        
+                        <h2 class="post__title">
+                            Водопад закрыт на реконструкцию
+                        </h2>
+                        <p class="post__preview">
+                            Всем, кто планировал посещать водопад на&nbsp;этих выходных придётся изменить планы, на&nbsp;нём ведутся    ремонтные      работы по&nbsp;улучшению подачи воды.
+                        </p>
+                        <div class="post__footer">
+                            <time class="post__param post__param--date" datetime="">Неделю назад</time>
+                            <div class="post__param post__param--tag">Интересное</div>
+                        </div>
+            
+                    </div>
+       
+                    <div class="post">
+                        
+                        <h2 class="post__title">
+                            Открылся новый стейкхаус &laquo;Горный Бык&raquo;
+                        </h2>
+                        <p class="post__preview">
+                            Лучшие стейки в&nbsp;Аризоне! Приемлемые цены и&nbsp;только самые лучшие продукты. Заходите попробовать!    Действует      акция: съешь два и&nbsp;получи третий!
+                        </p>
+                        <div class="post__footer">
+                            <time class="post__param post__param--date" datetime="">Месяц назад</time>
+                            <div class="post__param post__param--tag">Еда</div>
+                        </div>
+            
+                    </div>
+        
+                    <div class="post">
+                        
+                        <h2 class="post__title">
+                            Прогноз погоды на ближайшие выходные
+                        </h2>
+                        <p class="post__preview">
+                            Синоптики обещают, что будет ясно, безветрено и&nbsp;около 90 по&nbsp;Фаренгейту. Как в&nbsp;пустыне!   Проверим их&nbsp;     слова уже через пару дней.
+                        </p>
+                        <div class="post__footer">
+                            <time class="post__param post__param--date" datetime="">Год  назад</time>
+                            <div class="post__param post__param--tag">Погода</div>
+                        </div>
+            
                     </div>
 
                 </div>
-       
-                <div class="post">
-                    
-                    <h2 class="post__title">
-                        Принят антитабачный закон штата
-                    </h2>
-                    <p class="post__preview">
-                       Уважаемые туристы, пожалуйста не&nbsp;забывайте, что курение сигарет и&nbsp;сигар в&nbsp;общественных местах города      Седона категорически запрещено. 
-                    </p>
-                    <div class="post__footer">
-                        <time class="post__param post__param--date" datetime="">2дня назад</time>
-                        <span class="post__param post__param--tag">Законы</span>
+        
+                <div class="paginator clearfix">
+
+                    <h2 class="paginator__title">Страница</h2>
+                    <div class="paginator__items">
+                        <a href="" class="paginator__item  paginator__item--active">1</a>
+                        <a href="" class="paginator__item">2</a>
+                        <a href="" class="paginator__item">3</a>
+                        <a href="" class="paginator__item">4</a>
+                        <a href="" class="paginator__item">5</a>
                     </div>
-        
-                </div>
-      
-                <div class="post">
-                    
-                    <h2 class="post__title">
-                       Маньяк задержан, даёт показания 
-                    </h2>
-                    <p class="post__preview">
-                        Жители Седоны могут спать спокойно. Задержан маньяк-эксгибиционист, державший в&nbsp;страхе весь город. Пострадавшим        обращаться в&nbsp;911.
-                    </p>
-                    <div class="post__footer">
-                        <time class="post__param post__param--date" datetime="">3 дня назад</time>
-                        <span class="post__param post__param--tag">Происшествия</span>
-                    </div>
-        
-                </div>
-        
-                <div class="post">
-                    
-                    <h2 class="post__title">
-                        Водопад закрыт на реконструкцию
-                    </h2>
-                    <p class="post__preview">
-                        Всем, кто планировал посещать водопад на&nbsp;этих выходных придётся изменить планы, на&nbsp;нём ведутся ремонтные      работы по&nbsp;улучшению подачи воды.
-                    </p>
-                    <div class="post__footer">
-                        <time class="post__param post__param--date" datetime="">Неделю назад</time>
-                        <span class="post__param post__param--tag">Интересное</span>
-                    </div>
-        
-                </div>
-       
-                <div class="post">
-                    
-                    <h2 class="post__title">
-                        Открылся новый стейкхаус &laquo;Горный Бык&raquo;
-                    </h2>
-                    <p class="post__preview">
-                        Лучшие стейки в&nbsp;Аризоне! Приемлемые цены и&nbsp;только самые лучшие продукты. Заходите попробовать! Действует      акция: съешь два и&nbsp;получи третий!
-                    </p>
-                    <div class="post__footer">
-                        <time class="post__param post__param--date" datetime="">Месяц назад</time>
-                        <span class="post__param post__param--tag">Еда</span>
-                    </div>
-        
-                </div>
-        
-                <div class="post">
-                    
-                    <h2 class="post__title">
-                        Прогноз погоды на ближайшие выходные
-                    </h2>
-                    <p class="post__preview">
-                        Синоптики обещают, что будет ясно, безветрено и&nbsp;около 90 по&nbsp;Фаренгейту. Как в&nbsp;пустыне! Проверим их&nbsp;     слова уже через пару дней.
-                    </p>
-                    <div class="post__footer">
-                        <time class="post__param post__param--date" datetime="">Год  назад</time>
-                        <span class="post__param post__param--tag">Погода</span>
-                    </div>
-        
-                </div>
-        
-                <div class="paginator">
-                    
-                    <a class="paginator__item  pagonator__item--active">1</a>
-                    <a class="paginator__item">2</a>
-                    <a class="paginator__item">4</a>
-                    <a class="paginator__item">5</a>
-    
                 </div>
 
             </main>
-       
             <footer class="main_footer">
                    
                 <div class="contacts">
                     <a href="#">#Visitsedona</a>
                 </div>
                 <div class="social">
-                    <a href="#" class="social_btn social_btn--tw"><i class="icon-twitter"></i></a>
-                    <a href="#" class="social_btn social_btn--fb"><i class="icon-facebook"></i></a>
-                    <a href="#" class="social_btn social_btn--youtube"><i class="icon-youtube"></i></a>
+                    <a href="#" class="social_btn social_btn--twitter">Twitter</a>
+                    <a href="#" class="social_btn social_btn--facebook">Facebook</a>
+                    <a href="#" class="social_btn social_btn--youtube">Youtube</a>
                 </div>
                 <div class="copyright">
                     Разработано 
-                    <a class="copyright__htmlacademy" href="http://htmlacademy.ru" target="_blank"></a>
+                    <a class="copyright__htmlacademy" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
                 </div>
                     
             </footer>

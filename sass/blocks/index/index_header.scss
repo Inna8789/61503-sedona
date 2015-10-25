@@ -29,21 +29,7 @@
 		}
 	}
 
-	p {
-		width: 255px;
-		margin: 0 auto;
-		padding-bottom: 45px;
-		font-size: $font-size--text;
-		line-height: $line-height--title;
-
-		@media all and (min-width: $media-tablet) {
-		width: 490px;
-		}
-	}
-
-}
-
-	.index_header__title {
+	&__title {
 		width: 260px;
 		margin: 0 auto;
 		margin-bottom: 35px;
@@ -52,9 +38,23 @@
 		line-height: $line-height--title;
 
 		@media all and (min-width: $media-tablet) {
-		width: 445px;
+			width: 445px;
 		}
 
 	}
+
+	p {
+		width: 255px;
+		margin: 0 auto;
+		padding-bottom: 45px;
+		font-size: $font-size--text;
+		line-height: $line-height--title;
+
+		@media all and (min-width: $media-tablet) {
+			width: 490px;
+		}
+	}
+
+}
 
 	
