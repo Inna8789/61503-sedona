@@ -18,18 +18,26 @@
 
         ul {
             @include no-list;
-            height: 58px;
             font-size: 0;
         }
 
 
         &__item {
             display: block;
-            padding-top: 16px;
-            padding-bottom: 16px;
             text-align: center;
             background: $color--reason;
-            border-bottom: 1px solid $color--support;
+            border-top: 1px solid #9ac2db;
+            border-bottom: 1px solid #678fa8;
+            height: 58px;
+            line-height: 60px;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
 
 
             a {
@@ -62,7 +70,7 @@
 
     .nav__logo {
         position: absolute;
-        top: 244px;
+        top: 238px;
         width: 140px;
         height: 72px;
         left: 50%;

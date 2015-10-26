@@ -7,6 +7,7 @@
 	margin-top: 74px;
 	padding-top: 48px;
 	font-size: 0;
+	overflow: hidden;
 	background: url("../img/photos/photo-background@1x.jpg") no-repeat 50% 40%;
 
 	@media all and (min-resolution: 1.5dppx) {
@@ -22,19 +23,24 @@
 	@media all and (min-width: $media-desktop) {
 		height: 530px;
 	}
-
-
+	
 	&:after {
 		content: "";
 		display: block;
 		position: absolute;
+		left: 50%;
 		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 77px;
 		margin: 0 auto;
-		background: url("../img/svg/intro-triangle.svg") no-repeat 0 100%;
+		background: url("../img/svg/intro-triangle.svg") no-repeat 50% 100%;
 		background-size: contain;
+		height: 37px;
+		width: 768px;
+		transform: translate(-50%, 0);
+
+		@media all and (min-width: $media-tablet) {
+			height: 77px;
+			width: 100%;
+		}
 	}
 
 	& blockquote {
