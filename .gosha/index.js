@@ -36,6 +36,7 @@ module.exports = function(grunt, config) {
   }
 
   grunt.registerTask('gosha', tasks);
+  grunt.registerTask('default', ['watch']);
 
   return config;
 };

@@ -1,0 +1,73 @@
+
+
+.reason_pic {
+	margin: 0 auto;	
+	background: $color--reason;
+	text-align: center;
+	font-size: 0;
+	
+	@media all and (min-width: $media-tablet) {
+    	height: 256px;
+       	margin: 0;
+    }
+	
+    &__item {
+		color: $color--white;
+		font-size: $font-size--text;
+		line-height: $line-height--text;
+		padding: 52px 5%;
+
+		@media all and (min-width: $media-tablet) {
+           	@include inline-block;
+           	width: 23.333%;
+        }
+
+		p {
+			margin: 20px auto 0;
+		}
+	}
+
+        &__title {
+			margin: 0 auto;
+			margin-bottom: 10px;
+			color: $color--white;
+			font-size: $font-size--title;
+
+			@media all and (min-width: $media-tablet) {
+           		width: 130px;
+            }
+		}
+
+        &__number {
+			position: relative;
+		
+
+			&:before,
+			&:after {
+				position: absolute;
+    			content: "";
+    			top: 50%;
+    			left: -15px;
+    			height: 2px;
+    			width: 8px;
+    			background: #fff;
+    			opacity: 0.5;
+    			margin: -1px 0 0;
+			}
+	
+			&:after {
+				left: 25px;
+			}
+		}
+}
+	
+	.reason__picture {
+		height: 256px;
+		overflow: hidden;
+	
+		@media all and (min-width: $media-tablet) {
+           	@include inline-block;
+           	width: 66.667%;
+           	overflow: hidden;
+        }
+	}

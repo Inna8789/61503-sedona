@@ -1,0 +1,32 @@
+
+
+.blog_header {
+	text-align: center;
+
+	&__title {
+		margin: 45px auto 35px;
+		color: $color--black;
+		font-size: $font-size--gigant;
+
+		@media all and (min-width: $media-tablet) {
+			margin-top: 70px;
+		}
+
+		@media all and (min-width: $media-desktop) {
+			margin-top: 100px;
+		}
+
+	}
+
+	p {
+		width: 255px;
+		margin: 0 auto;
+		padding-bottom: 45px;
+		font-size: $font-size--text;
+		line-height: 26px;
+
+		@media all and (min-width: $media-tablet) {
+			width: 420px;
+		}
+	}
+}

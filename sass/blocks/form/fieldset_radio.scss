@@ -1,0 +1,86 @@
+
+
+.fieldset_radio {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	border-bottom: 1px solid $color--service;
+
+	@media all and (min-width: $media-tablet) {
+		width: 664px;
+		border-top: 1px solid $color--service;
+		border-bottom: 0;
+	}
+
+	@media all and (min-width: $media-desktop) {
+		width: 960px;
+	}
+
+
+	&__filter {
+		@include no-list;
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+		margin-bottom: 10px;
+		font-size: $font-size--title;
+		font-weight: bold;
+		text-transform: none;
+
+
+		@media all and (min-width: $media-tablet) {
+			flex-direction: row;
+			justify-content: space-between;
+			width: 650px;
+			margin: 0 auto;
+			margin-bottom: 50px;
+		}
+
+	}
+
+		&__button {
+			display: none;
+	
+			&:checked + label:before {
+				display: block;
+			}
+		}
+	
+		&__label {
+			position: relative;
+			display: block;
+			height: 60px;
+			line-height: 60px;
+			margin-bottom: 15px;
+			padding: 0 0 0 85px;
+			cursor: pointer;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 30px;
+				left: 20px;
+				margin: -10px 0 0;
+				width: 20px;
+				height: 20px;
+				background: $color--text;
+				border-radius: 100%;
+				display: none;
+				z-index: 2;
+			}
+		
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 20px;
+				height: 20px;
+				border: 20px solid $color--input;
+				border-radius: 50%;
+				background: $color--input;
+				z-index: 1;
+			}
+	
+		}
+}

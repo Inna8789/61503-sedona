@@ -1,0 +1,306 @@
+
+
+.fieldset {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	border-bottom: 1px solid $color--service;
+
+	@media all and (min-width: $media-tablet) {
+		width: 664px;
+		border-top: 1px solid $color--service;
+		border-bottom: 0;
+	}
+
+	@media all and (min-width: $media-desktop) {
+		width: 960px;
+	}
+
+			&__field {
+				display: block;
+				width: 240px;
+				padding: 20px;
+				color: $color--black;
+				font-size: $font-size--title;
+				font-weight: bold;
+				text-transform: none;
+				border: 0;
+				background: $color--input;
+
+				@media all and (min-width: $media-tablet) {
+					width: 132px;
+				}
+				@media all and (min-width: $media-desktop) {
+					width: 232px;
+				}	
+			}
+
+			& .sum {
+				width: 170px;
+
+				@media all and (min-width: $media-tablet) {
+					width: 150px;
+			}
+
+				@media all and (min-width: $media-desktop) {
+					width: 170px;
+				}
+			}
+
+			&__field--btn {
+				@include inline-block;
+				width: 60px;
+				height: 60px;
+				padding: 0;
+				border: 0;
+				color: $color--icon;
+				font-size: 20px;
+				background: $color--input;
+			}
+
+			&__field--number {
+				@include inline-block;
+				width: 120px;
+				height: 60px;
+				margin: 0 10px;
+				padding: 0;
+				padding-left: 20px;
+				border: 0;
+				color: $color--text;
+				font-size: 20px;
+				font-weight: bold;
+				background: $color--input;
+
+				@media all and (min-width: $media-tablet) {
+					width: 56px;
+					margin: 0;
+				}
+
+				@media all and (min-width: $media-desktop) {
+					width: 120px;
+					margin: 0 10px;
+				}
+			}
+
+			&__label {
+				display: block;
+				padding-left: 20px;
+    			padding-bottom: 12px;
+				color: $color--text;
+				font-size: $font-size--text;
+		
+				& span {
+    				color: red;
+    			}
+			}
+
+
+	&__legend {
+		margin: 0 auto;
+		padding-top: 22px;
+		padding-bottom: 30px;
+		text-align: center;
+		vertical-align: middle;
+		color: $color--black;
+		font-size: $font-size--title;
+		font-weight: bold;
+		line-height: $line-height--title;
+
+		@media all and (min-width: $media-tablet) {
+			width: 400px;
+			font-size: $font-size--heading;	
+		}
+	}
+
+
+
+		&__flex {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+	
+			@media all and (min-width: $media-tablet) {
+				flex-direction: row;	
+				justify-content: flex-start;
+			}
+
+			@media all and (min-width: $media-desktop) {	
+				justify-content: space-between;
+			}
+	
+		}
+
+		&__item {
+			padding-left: 20px;
+			padding-bottom: 20px;
+			font-size: 0;
+
+		}
+
+		&__special {
+			margin-left: 90px;
+			padding-bottom: 20px;
+			
+
+			@media all and (min-width: $media-tablet) {
+				margin-left: 10px;
+				padding-left: 0;
+			}
+
+			@media all and (min-width: $media-desktop) {
+				margin-left: 60px;
+			}
+		}
+
+		&__double {
+			padding-left: 20px;
+
+			@media all and (min-width: $media-tablet) {
+				padding-left: 0;
+			}
+		}
+
+		&__center {
+			display: block;
+			margin-left: 20px;
+			margin-bottom: 40px;
+			
+			@media all and (min-width: $media-tablet) {
+				text-align: center;
+			}
+
+			@media all and (min-width: $media-desktop) {
+				margin-left: 0;
+				text-align: left;
+			}	
+		}
+
+
+			&__triple {
+				font-size: 0;
+			}
+
+			&__number {
+				float: left;
+
+				& input {
+					width: 40px;
+					margin-left: 0;
+					margin-right: 10px;
+				}
+			}
+
+			&__name {
+				float: left;
+
+				.sum {
+					margin-left: 0;
+				}
+			}
+
+		&--border {
+			border: 2px solid $color--icon;
+		}
+			
+}
+
+
+
+.popup_first { 
+	width: 400px;
+	padding: 60px 60px 50px;
+	color: $color--text;
+	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+	display: none;
+	
+	@media all and (min-width: $media-tablet) {
+		display: block;
+	}
+
+	@media all and (min-width: $media-desktop) {
+		
+	}
+
+	&__title {
+		width: 220px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		text-align: center;
+		font-size: $font-size--gigant;
+		line-height: 36px;
+	}
+	& p {
+		width: 285px;
+		margin: 0 auto;
+	}
+
+	&__btn {
+		display: block;
+		width: 264px;
+		margin: 0 auto;
+		margin-top: 40px;
+		padding-top: 19px;
+		padding-bottom: 19px;
+		border: none;
+		color: $color--white;
+		font-size: $font-size--heading;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		background: $color--reason;
+	}	
+}
+
+.popup_second { 
+	width: 642px;
+	padding-top: 60px;
+	color: $color--text;
+	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+	display: none;
+	
+	@media all and (min-width: $media-tablet) {
+		display: block;
+	}
+
+	@media all and (min-width: $media-desktop) {
+		
+	}
+
+	&__title {
+		width: 350px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		text-align: center;
+		font-size: $font-size--gigant;
+		line-height: 36px;
+	}
+
+	& p {
+		width: 420px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	&__footer {
+		background: #F2f2f2;
+		padding-top: 45px;
+		padding-bottom: 40px;
+	}
+
+	&__btn {
+		display: block;
+		width: 460px;
+		margin: 0 auto;
+		padding-top: 19px;
+		padding-bottom: 19px;
+		border: none;
+		color: $color--white;
+		font-size: $font-size--heading;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		background: $color--reason;
+	}	
+}
+

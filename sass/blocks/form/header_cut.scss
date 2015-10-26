@@ -1,0 +1,55 @@
+
+
+.header_cut {
+	position: relative;
+	height: 110px;
+	margin-top: 74px;
+	padding-top: 50px;
+	font-size: 0;
+	background: url("../img/photos/photo-background@1x.jpg") no-repeat 50% 50%;
+	background-size: cover;
+
+	@media (min-resolution: 1.5dppx) {
+			background: url("../img/photos/photo-background@2x.jpg 2x") no-repeat 50% 50%;	
+	}
+
+	@media all and (min-width: $media-tablet) {
+		height: 240px;
+		margin-top: 0;
+		padding-top: 52px;
+	}
+
+	@media all and (min-width: $media-desktop) {
+		height: 240px;
+	}
+
+		&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 77px;
+		margin: 0 auto;
+		background: url("../img/svg/intro-triangle.svg") no-repeat 0 100%;
+		background-size: contain;
+
+	}
+}
+
+	.inner_title__sedona {
+		display: block;
+		width: 180px;
+		height: 30px;
+		margin: 0 auto;
+		background: url("../img/svg/text-sedona.svg") no-repeat 50% 50%;
+		background-size: contain;
+
+		@media all and (min-width: $media-tablet) {
+			width: 456px;
+			height: 80px;
+            margin: 48px auto 0;
+        }
+
+	}

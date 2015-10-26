@@ -1,0 +1,80 @@
+
+
+.post {
+	margin: 0 auto;
+	padding-top: 35px;
+	text-align: center;
+	border-top: 2px solid $color--gray;
+	border-bottom: 2px solid $color--gray;
+
+
+	@media all and (min-width: $media-tablet) {
+		width: 320px;
+	}
+
+	&__title {
+		width: 270px;
+		margin: 0 auto 30px;
+		line-height: 26px;
+	}
+
+	& p {
+		width: 270px;
+		margin: 0 auto 25px;
+
+		@media all and (min-width: $media-tablet) {
+			width: 310px;
+		}
+	}
+
+	&__footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		width: 280px;
+		margin:0 auto;
+		padding-bottom: 35px;
+		color: $color--service;
+		font-size: 0;
+		font-style: italic;
+
+		@media all and (min-width: $media-tablet) {
+			width: 320px;
+		}
+	}
+
+		&__param {
+			flex-basis: 50%;
+			position: relative;
+			padding-left: 15px;
+			font-size: $font-size--text;
+			text-align: left;
+		}
+
+		&__param--date:before {
+			content: "";
+			position: absolute;
+    		top: 3px;
+    		left: 1px;
+    		content: "";
+    		background: url("../img/icons/icon-calendar.svg") no-repeat;
+    		width: 12px;
+    		height: 12px;
+    		background-size: contain;
+    		z-index: 10;
+			}
+
+			&__param--tag:before {
+			content: "";
+			position: absolute;
+    		top: 5px;
+    		left: 1px;
+    		content: "";
+    		background: url("../img/icons/icon-cross.svg") no-repeat;
+    		width: 10px;
+    		height: 10px;
+    		background-size: contain;
+    		z-index: 10;
+			}
+
+}

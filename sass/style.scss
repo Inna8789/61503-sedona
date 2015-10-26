@@ -1,0 +1,42 @@
+
+
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "base/normalize";
+@import "base/fonts";
+
+@import "layout/base";
+@import "layout/main_header";
+@import "layout/main_footer";
+
+
+@import "blocks/index/header_content";
+@import "blocks/index/index_header";
+@import "blocks/index/reason_pic";
+@import "blocks/index/features";
+@import "blocks/index/reason";
+@import "blocks/index/hotel_search";
+@import "blocks/index/map";
+@import "blocks/social";
+
+
+@import "blocks/form/header_cut";
+@import "blocks/form/form_header";
+@import "blocks/form/fieldset";
+@import "blocks/form/fieldset_radio";
+@import "blocks/form/fieldset_check";
+@import "blocks/form/fieldset_load";
+
+@import "blocks/blog/blog_header";
+@import "blocks/blog/post_content";
+@import "blocks/blog/post";
+@import "blocks/blog/paginator";
+
+@import "blocks/post/post_start";
+@import "blocks/post/post_article";
+@import "blocks/post/post_paginator";
+
+
+
+

@@ -1,0 +1,40 @@
+
+
+.form_header {
+	margin-top: 40px;
+	padding-bottom: 25px;
+	text-align: center;
+	border-bottom: 1px solid $color--service;
+
+	@media all and (min-width: $media-tablet) {
+		padding-bottom: 70px;
+		border: 0;
+	}
+	
+
+	p {
+		width: 280px;
+		margin: 0 auto;
+		font-size: $font-size--text;
+		line-height: $line-height--title;
+
+		@media all and (min-width: $media-tablet) {
+			width: 440px;
+		}	
+	}
+
+
+	&__title {
+		margin: 0;
+		margin-bottom: 35px;
+		color: $color--black;
+		font-size: $font-size--title;
+		line-height: $line-height--title;
+
+		@media all and (min-width: $media-tablet) {
+			font-size: $font-size--gigant;
+			}
+	}
+}
+
+	
