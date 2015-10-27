@@ -6,6 +6,7 @@
 	padding-top: 40px;
 	padding-bottom: 48px;
 	text-align: center;
+	overflow: hidden;
 
 	@media all and (min-width: $media-tablet) {
 		width: 640px;
@@ -18,7 +19,7 @@
 		left: 50%;
 		bottom: 0;
 		margin: 0 auto;
-		background: url("../img/svg/intro-triangle.svg") no-repeat 50% 100%;
+		background: url("../img/svg/intro-triangle--blue.svg") no-repeat 50% 100%;
 		background-size: contain;
 		height: 37px;
 		width: 768px;
