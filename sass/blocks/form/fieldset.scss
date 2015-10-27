@@ -42,7 +42,8 @@
 					background: $color--white;
 					outline: 3px solid darken($color--input, 5%);
 					border: 0;
-				}	
+				}
+
 			}
 
 			& .sum {
@@ -66,6 +67,18 @@
 				color: $color--icon;
 				font-size: 20px;
 				background: $color--input;
+
+				&:hover {
+					background: darken($color--input, 3%);
+					color: darken($color--icon, 20%);
+				}
+
+				&:active {
+					
+					background: darken($color--input, 7%);
+					color: lighten($color--icon, 10%);
+				}
+				
 			}
 
 			&__field--number {
