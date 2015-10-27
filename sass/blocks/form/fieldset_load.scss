@@ -16,8 +16,19 @@
 		width: 960px;
 	}
 
-	& input[type="button"],
-	& input[type="submit"] {
+	& label {
+
+		&:hover {
+			background: darken($color--input, 3%);
+		}
+
+		&:active {
+			background: darken($color--input, 5%);
+			color: darken($color--input, 10%);
+		}
+	}
+
+	&__btn {
 		display: block;
 		width: 280px;
 		margin: 0 auto;
@@ -31,11 +42,12 @@
 		text-align: center;
 		text-transform: uppercase;
 		background: $color--input;
-	}
 
-	& input[type="submit"] {
-		color: $color--white;
-		background: $color--reason;
+		
+		&--submit {
+			color: $color--white;
+			background: $color--reason;	
+		}
 	}
 
 	&__gallery {
@@ -58,9 +70,11 @@
 
 	&__item {
 		position: relative;
+		border: 1px solid red;
 		flex-basis: 70px;
 		margin-bottom: 20px;
 		z-index: 1;
+
 
 		input:before {
 			position: absolute;
@@ -103,64 +117,15 @@
 				display: block;
 			}
 		}
+	}
 
-		.inputfile_1 {
-			background: url("img/photos/photo_1.jpg") no-repeat 50% 0;
-			background-size: cover;
-
-			@media all and (min-width: $media-tablet) {
-				background: url("img/photos/img-686.jpg") no-repeat 50% 0;
-				background-size: cover;	
-			}
-		}
-		.inputfile_2 {
-			background: url("img/photos/photo_2_3.jpg") no-repeat 50% 0;
-
-			@media all and (min-width: $media-tablet) {
-				background: url("img/photos/img-687.jpg") no-repeat 50% 0;
-				background-size: cover;	
-			}
-		}
-		.inputfile_3 {
-			background: url("img/photos/photo_2_3.jpg") no-repeat 50% 0;
-
-			@media all and (min-width: $media-tablet) {
-				background: url("img/photos/img-688.jpg") no-repeat 50% 0;
-				background-size: cover;	
-			}
-		}
-		.inputfile_4 {
-			background: url("img/photos/photo_4.jpg") no-repeat 50% 0;
-
-			@media all and (min-width: $media-tablet) {
-				background: url("img/photos/img-689.jpg") no-repeat 50% 0;
-				background-size: cover;	
-			}
-		}
-		.inputfile_5{
-			background: url("img/photos/photo_5.jpg") no-repeat 50% 0;
-
-			@media all and (min-width: $media-tablet) {
-				background: url("img/photos/img-690.jpg") no-repeat 50% 0;
-				background-size: cover;	
-			}
-		}
-		.inputfile_6 {
-			background: url("img/photos/photo_6.jpg") no-repeat 50% 0;
-
-			@media all and (min-width: $media-tablet) {
-				background: url("img/photos/img-691.jpg") no-repeat 50% 0;
-				background-size: cover;	
-			}
-		}
-		.inputfile_7 {
-			background: url("img/photos/photo_7.jpg") no-repeat 50% 0;
-			background-size: cover;
-
-			@media all and (min-width: $media-tablet) {
-				background: url("img/photos/img-692.jpg") no-repeat 50% 0;
-				background-size: cover;	
-			}
-		}	
+	&__btnDelete {
+		border-radius: 100%;
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		width: 30px;
+		height: 30px;
+		background: $color--input;
 	}
 }

@@ -44,6 +44,7 @@
 			&:checked + label:before {
 				display: block;
 			}
+
 		}
 	
 		&__label {
@@ -54,6 +55,7 @@
 			margin-bottom: 15px;
 			padding: 0 0 0 85px;
 			cursor: pointer;
+
 
 			&:before {
 				content: "";
@@ -67,6 +69,10 @@
 				border-radius: 100%;
 				display: none;
 				z-index: 2;
+
+				&:hover {
+					background: darken($color--input, 3%);
+				}
 			}
 		
 			&:after {
@@ -81,6 +87,6 @@
 				background: $color--input;
 				z-index: 1;
 			}
-	
+
 		}
 }

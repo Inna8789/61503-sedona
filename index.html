@@ -27,8 +27,8 @@
                         <li class="nav__logo">
                             <a href="index.html">
                                 <picture>
-                                    <source media="(min-width: 1200px)"
-                                            srcset="img/other/logo-sedona@2x.png 2x,
+                                    <source media="(min-width: 1200px)" 
+                                            srcset="img/other/logo-sedona@2x.png 2x, 
                                                     img/other/logo-sedona@1x.png">
                                     <img src="img/other/logo-sedona@1x.png" width="68" height="62">
                                 </picture>  
@@ -176,15 +176,12 @@
         
                 <div class="map">
                     <picture>
-                            <source
-                                media="(min-width: 320px)"
-                                    <img src="img/other/map.jpg" alt="Map">
-                            <source
-                                media="(min-width: 640px)"
-                                    <img src="img/other/map_tab.jpg" alt="Map">
-                            <source
-                                media="(min-width: 1024px)"
-                                    <img src="img/other/map_desktop.jpg" alt="Map">       
+                        <source media="(min-width: 768px)"
+                                srcset="img/other/map_desktop.jpg">
+                        <source media="(min-width: 320px)"
+                                srcset="img/other/map_tab.jpg">
+                        
+                        <img class="map__image" src="img/other/map.jpg" alt="Map">
                     </picture>
                 </div>
         
@@ -206,9 +203,6 @@
                 </div>
                     
             </footer>
-
         </div>
-
     </body>
-
 </html>

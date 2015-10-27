@@ -28,6 +28,9 @@
 @import "blocks/form/fieldset_check";
 @import "blocks/form/fieldset_load";
 
+@import "blocks/form/btn";
+@import "blocks/form/photoupload_list";
+
 @import "blocks/blog/blog_header";
 @import "blocks/blog/post_content";
 @import "blocks/blog/post";
@@ -37,6 +40,4 @@
 @import "blocks/post/post_article";
 @import "blocks/post/post_paginator";
 
-
-
-
+@import "blocks/popup";

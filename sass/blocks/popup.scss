@@ -1,0 +1,43 @@
+.popup { 
+    display: block;
+    box-sizing: border-box;
+    color: $color--text;
+    width: 400px;
+    padding: 60px 60px 50px;
+    background: #fff;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+    &__title {
+        width: 220px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        text-align: center;
+        font-size: $font-size--gigant;
+        line-height: 36px;
+    }
+
+    & p {
+        width: 285px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    &--success {
+        width: 642px;
+        padding: 60px 0 0;
+    }
+
+     &__footer {
+        width: 100%;
+        background: #f2f2f2;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    } 
+}
+
+    
+
+
+   
+
+   

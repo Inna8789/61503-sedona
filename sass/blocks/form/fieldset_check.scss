@@ -28,7 +28,7 @@
 			justify-content: space-between;
 		}
 		
-		.flex__complex{
+		.flex__complex {
 			display: flex;
 			flex-direction: column;
 			flex-basis: 50%;
@@ -78,7 +78,12 @@
 	}
 
 		&__field {
+			position: relative;
 			display: none;
+
+			&:hover {
+			background: darken($color--reason, 3%);
+			}
 		}
 	
 		&__field+label:before {
@@ -93,16 +98,14 @@
 			text-align: center;
 			border-radius: 5px;
 			background: $color--input;
+
 		}
 	
 		&__field:checked+label:before {
 			content: "\2611";
-			font-size: 60px;
 		}
 	
-		&__label {
-			@include inline-block;
-		}
+		
 }
 
 

@@ -18,19 +18,35 @@
 
         ul {
             @include no-list;
-            height: 58px;
             font-size: 0;
         }
 
 
         &__item {
             display: block;
-            padding-top: 16px;
-            padding-bottom: 16px;
             text-align: center;
             background: $color--reason;
-            border-bottom: 1px solid $color--support;
+            border-top: 1px solid #9ac2db;
+            border-bottom: 1px solid #678fa8;
+            height: 58px;
+            line-height: 60px;
 
+            &:first-child {
+                border-top: 0;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+            
+            &:hover {
+                background: darken($color--reason, 3%);
+            }
+
+            &:active {
+                background: darken($color--reason, 5%);
+                color: lighten($color--reason, 10%);
+            }
 
             a {
                 text-decoration: none;
@@ -38,31 +54,38 @@
                 font-family: $font-family--main;
                 font-weight: bold;
                 font-size: $font-size--title;
-                text-transform: uppercase;  
+                text-transform: uppercase;   
+
+                &:active {
+                    color: lighten($color--reason, 10%);
+                }
             }
 
             @media all and (min-width: $media-tablet) {
-                display: inline-block;
+                @include inline-block;
                 width: 20%;
-                background: none;
+                background: $color--white;
                 border: 0;
 
+                &:hover {
+                    background: $color--white;
+                }
+
+                &:active {
+                    background: $color--white;
+                } 
+
                 a {
-                    color: #000;
+                   color: #000;
                     font-size: $font-size--text;
                 }
-            }
-        
-            // Условие ниже сработает для экрана от <= 1024px И >= 1200px
-            // @media all and (min-width: 1024px) and (max-width: 1200px) {
-
-            // }
+            }    
         }            
     }
 
     .nav__logo {
         position: absolute;
-        top: 244px;
+        top: 238px;
         width: 140px;
         height: 72px;
         left: 50%;

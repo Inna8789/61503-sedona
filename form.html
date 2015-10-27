@@ -120,9 +120,9 @@
                                 <div class="fieldset__item">
                     	            <label class="fieldset__label">Длительность пребывания:<span>*</span></label>
                                     <div class="fieldset__triple">
-                                        <button class="fieldset__field--btn"><i class="icon-minus"></i></button>
+                                        <button class="fieldset__field--btn" type="button"><i class="icon-minus"></i></button>
                     	                <input class="fieldset__field--number" type="number" value="14" required>
-                                        <button class="fieldset__field--btn"><i class="icon-plus"></i></button>
+                                        <button class="fieldset__field--btn" type="button"><i class="icon-plus"></i></button>
                                     </div>
                                 </div>
                                 <div class="fieldset__item">
@@ -143,9 +143,9 @@
                         <div class="fieldset__center">
                     	   <label class="fieldset__label">Количество путешественников:<span>*</span></label>
                             <div class="fieldset__triple">
-                                <button class="fieldset__field--btn"><i class="icon-minus"></i></button>
+                                <button class="fieldset__field--btn" type="button"><i class="icon-minus"></i></button>
                                 <input class="fieldset__field--number" type="number" value="2" placeholder="чел." required>
-                                <button class="fieldset__field--btn"><i class="icon-plus"></i></button>
+                                <button class="fieldset__field--btn" type="button"><i class="icon-plus"></i></button>
                     	   </div>
                         </div>
                         <div class="fieldset__flex">
@@ -230,66 +230,103 @@
                             Загрузите фотографии:
                         </legend>
         
-                    	<input class="fieldset_load__btn" type="button" value="Выбрать фотографии">
+                    	<!-- <input class="fieldset_load__btn" type="button" value="Выбрать фотографии"> -->
+                        <label class="btn" for="fileupload">Выбрать фотографии</label>
+                        <input type="file" name="file" id="fileupload" class="fieldset_load__file" style="display: none;">
+                        
+                        <ul class="photouploadList">
+                            <li>
+                                <img class="photouploadList__preview" src="img/photos/img-686.jpg" alt=""> 
+                                <div class="photouploadList__title">IMG-686.JPG</div>
 
-                    	<div class="fieldset_load__gallery">
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+                            <li>
+                                <img class="photouploadList__preview" src="img/photos/img-687.jpg" alt=""> 
+                                <div class="photouploadList__title">IMG-687.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+                            <li>
+                                <img class="photouploadList__preview" src="img/photos/img-688.jpg" alt=""> 
+                                <div class="photouploadList__title">IMG-688.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+                            <li>
+                                <img class="photouploadList__preview" src="img/photos/img-686.jpg" alt=""> 
+                                <div class="photouploadList__title">IMG-686.JPG</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+                            <li>
+                                <img class="photouploadList__preview" src="img/photos/img-687.jpg" alt=""> 
+                                <div class="photouploadList__title">IMG-687</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+                            <li>
+                                <img class="photouploadList__preview" src="img/photos/img-688.jpg" alt=""> 
+                                <div class="photouploadList__title">IMG-688</div>
+
+                                <button class="photouploadList__btnDelete"></button>
+                            </li>
+
+                        </ul>
+
+                    	<!-- 
+                        <div class="fieldset_load__gallery">
 
                     		<div class="fieldset_load__item">
-                                <input type="file" name="file" id="file_1" class="inputfile_1" />
-                                <label for="file_1">IMG-686</label>                                
-                                <img src="img/photos/photo_1.jpg" alt="">
+                                <img class="fieldset_load__preview" src="img/photos/photo_1.jpg" alt=""> 
+                                <div class="fieldset_load__title">IMG-686</div>
+
+                                <button class="fieldset_load__btnDelete" type="button"></button>
                             </div>
                     		<div class="fieldset_load__item">
-                                <input type="file" name="file" id="file_2" class="inputfile_2" />
                                 <label for="file_2">IMG-687</label> 
                     			<img src="img/photos/photo_2_3.jpg" alt="">
                     		</div>
                     		<div class="fieldset_load__item">
-                                <input type="file" name="file" id="file_3" class="inputfile_3" />
                                 <label for="file_3">IMG-688</label> 
                     			<img src="img/photos/photo_2_3.jpg" alt="">
                     		</div>
                     		<div class="fieldset_load__item">
-                                <input type="file" name="file" id="file_4" class="inputfile_4" />
                                 <label for="file_4">IMG-689</label> 
                     			<img src="img/photos/photo_4.jpg" alt="">
                     		</div>
                     		<div class="fieldset_load__item">
-                                <input type="file" name="file" id="file_5" class="inputfile_5" />
                                 <label for="file_5">IMG-690</label> 
                     			<img src="img/photos/photo_5.jpg" alt="">
                     		</div>
                     		<div class="fieldset_load__item">
-                                <input type="file" name="file" id="file_6" class="inputfile_6" />
                                 <label for="file_6">IMG-691</label> 
                     			<img src="img/photos/photo_6.jpg" alt="">
                     		</div>
                     		<div class="fieldset_load__item">
-                                <input type="file" name="file" id="file_7" class="inputfile_7" />
                                 <label for="file_7">IMG-692</label> 
                     			<img src="img/photos/photo_7.jpg" alt="">
                     		</div>
                     	</div>
 
-                        <input type="submit" value="Отправить отзыв">
-        
+                         -->
                     </fieldset>
+
+                    <input type="submit" class="btn btn--blue" value="Отправить отзыв">
 
                 </form>
 
-                <div class="popup_first">
-                    <h2 class="popup_first__title">Что-то пошло не так!</h2>
+                <div class="popup">
+                    <h2 class="popup__title">Что-то пошло не так!</h2>
                     <p>Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить.</p>
-                    <button class="popup_first__btn" type="button">ok</button>
+                    <button class="btn btn--blue btn--sm" type="button">ok</button>
                 </div>
 
-                <div class="popup_second">
-                    <h2 class="popup_second__title">Ваш отзыв отправлен!</h2>
-                    <p>
-                        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-                    </p>
-                    <div class="popup_second__footer">
-                        <button class="popup_second__btn" type="button">Закрыть окно</button>
+                <div class="popup popup--success">
+                    <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+                    <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+                    <div class="popup__footer">
+                        <button class="btn btn--blue" type="button">Закрыть окно</button>
                     </div>
                 </div>
 

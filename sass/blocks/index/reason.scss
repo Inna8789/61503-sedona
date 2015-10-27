@@ -8,31 +8,28 @@
 }
 
 	.reason__item {
-		padding: 30px 55px;
+		padding: 30px 15px;
 		color: $color--text;
 		font-size: $font-size--text;
 		line-height: $line-height--text;
-		border-bottom: 1px solid $color--service;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		margin: 0 20px;
+
+		&:last-child {
+			border: 0;
+		}
 
 		@media all and (min-width: $media-tablet) {
 			@include inline-block;
+			margin: 0;
 			width: 23.33%;
 			padding: 52px 5%;
 			border: 0;
 		}	
 
 		p {
-			width: 250px;
-			margin: 0 auto;
-			margin-top: 10px;
-
-			@media all and (min-width: $media-tablet) {
-				width: 160px;
-			}
-
-			@media all and (min-width: $media-desktop) {
-				width: 250px;
-			}
+			margin: 10px auto 0;
+			max-width: 250px;
 		}
 	}
 

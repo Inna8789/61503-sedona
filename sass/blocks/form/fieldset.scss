@@ -32,7 +32,18 @@
 				}
 				@media all and (min-width: $media-desktop) {
 					width: 232px;
-				}	
+				}
+
+				&:hover {
+					background: darken($color--input, 5%);
+				}
+
+				&:active {
+					background: $color--white;
+					outline: 3px solid darken($color--input, 5%);
+					border: 0;
+				}
+
 			}
 
 			& .sum {
@@ -56,6 +67,18 @@
 				color: $color--icon;
 				font-size: 20px;
 				background: $color--input;
+
+				&:hover {
+					background: darken($color--input, 3%);
+					color: darken($color--icon, 20%);
+				}
+
+				&:active {
+					
+					background: darken($color--input, 7%);
+					color: lighten($color--icon, 10%);
+				}
+				
 			}
 
 			&__field--number {
@@ -203,104 +226,3 @@
 		}
 			
 }
-
-
-
-.popup_first { 
-	width: 400px;
-	padding: 60px 60px 50px;
-	color: $color--text;
-	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
-	display: none;
-	
-	@media all and (min-width: $media-tablet) {
-		display: block;
-	}
-
-	@media all and (min-width: $media-desktop) {
-		
-	}
-
-	&__title {
-		width: 220px;
-		margin: 0 auto;
-		margin-bottom: 30px;
-		text-align: center;
-		font-size: $font-size--gigant;
-		line-height: 36px;
-	}
-	& p {
-		width: 285px;
-		margin: 0 auto;
-	}
-
-	&__btn {
-		display: block;
-		width: 264px;
-		margin: 0 auto;
-		margin-top: 40px;
-		padding-top: 19px;
-		padding-bottom: 19px;
-		border: none;
-		color: $color--white;
-		font-size: $font-size--heading;
-		font-weight: bold;
-		text-align: center;
-		text-transform: uppercase;
-		background: $color--reason;
-	}	
-}
-
-.popup_second { 
-	width: 642px;
-	padding-top: 60px;
-	color: $color--text;
-	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
-	display: none;
-	
-	@media all and (min-width: $media-tablet) {
-		display: block;
-	}
-
-	@media all and (min-width: $media-desktop) {
-		
-	}
-
-	&__title {
-		width: 350px;
-		margin: 0 auto;
-		margin-bottom: 30px;
-		text-align: center;
-		font-size: $font-size--gigant;
-		line-height: 36px;
-	}
-
-	& p {
-		width: 420px;
-		margin: 0 auto;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	&__footer {
-		background: #F2f2f2;
-		padding-top: 45px;
-		padding-bottom: 40px;
-	}
-
-	&__btn {
-		display: block;
-		width: 460px;
-		margin: 0 auto;
-		padding-top: 19px;
-		padding-bottom: 19px;
-		border: none;
-		color: $color--white;
-		font-size: $font-size--heading;
-		font-weight: bold;
-		text-align: center;
-		text-transform: uppercase;
-		background: $color--reason;
-	}	
-}
-
