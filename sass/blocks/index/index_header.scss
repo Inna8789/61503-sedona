@@ -3,21 +3,16 @@
 .index_header {
 	position: relative;
 	margin: 0 auto;
-	padding-top: 40px;
-	padding-bottom: 48px;
+	padding: 40px 0;
 	text-align: center;
 	overflow: hidden;
 
-	@media all and (min-width: $media-tablet) {
-		width: 640px;
-	}
-
-	&:after {
+	 &:before {
 		content: "";
 		display: block;
 		position: absolute;
 		left: 50%;
-		bottom: 0;
+		bottom: 0px;
 		margin: 0 auto;
 		background: url("../img/svg/intro-triangle--blue.svg") no-repeat 50% 100%;
 		background-size: contain;
@@ -26,8 +21,7 @@
 		transform: translate(-50%, 0);
 
 		@media all and (min-width: $media-tablet) {
-			height: 77px;
-			width: 100%;
+			display: none;
 		}
 	}
 

@@ -1,11 +1,22 @@
-.popup { 
+
+.form {
+    position: relative;
+
+}
+
+.popup {
+    position: absolute;
+    bottom: 560px;
+    left: 50%;
     display: block;
     box-sizing: border-box;
     color: $color--text;
     width: 400px;
     padding: 60px 60px 50px;
     background: #fff;
+    transform: translate(-50%);
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+    display: none;
 
     &__title {
         width: 220px;
@@ -24,7 +35,8 @@
 
     &--success {
         width: 642px;
-        padding: 60px 0 0;
+        padding: 60px 0 0; 
+        bottom: 0;
     }
 
      &__footer {
