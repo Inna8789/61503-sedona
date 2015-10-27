@@ -44,6 +44,7 @@
 			&:checked + label:before {
 				display: block;
 			}
+
 		}
 	
 		&__label {
@@ -81,6 +82,6 @@
 				background: $color--input;
 				z-index: 1;
 			}
-	
+
 		}
 }

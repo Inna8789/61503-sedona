@@ -25,73 +25,41 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 z-index: 10;
+
+                &:active {
+                    color: lighten($color--reason, 10%);
+                }
             }
+
+            &:hover {
+                background: darken($color--reason, 3%);
+            }
+
 
             &--twitter {
 
                 &:after {
                     background-image: url("../img/icons/icon-twitter.svg");
+                    top: 15px;
+                    left: 15px;
                 }
             }
 
             &--facebook {
-
+                &:after {
+                    background-image: url("../img/icons/icon-facebook.svg");
+                    top: 15px;
+                    left: 15px;
+                }
             }
 
             &--youtube {
-
+                &:after {
+                    background-image: url("../img/icons/icon-youtube.svg");
+                    top: 18px;
+                    left: 15px;
+                }
             }
 
         }
     }
-// Нужно переделать как выше
-// Мы объединили общие вещи и сократили код
-
-    .social_btn--twitter {
-        
-    
-        &:after {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            content: "";
-            background: url("../img/icons/icon-twitter.svg") no-repeat;
-            width: 20px;
-            height: 20px;
-            background-size: contain;
-            z-index: 10;
-        }
-    }
-
-    .social_btn--facebook {
-        position: relative;
-        
-        &:after {
-            position: absolute;
-            top: 15px;
-            left: 20px;
-            content: "";
-            background: url("../img/icons/icon-facebook.svg") no-repeat;
-            width: 20px;
-            height: 20px;
-            background-size: contain;
-            z-index: 10;
-        }
-    }
-
-    .social_btn--youtube {
-        position: relative;
-
-        &:after {
-            position: absolute;
-            top: 20px;
-            left: 15px;
-            content: "";
-            background: url("../img/icons/icon-youtube.svg") no-repeat;
-            width: 20px;
-            height: 20px;
-            background-size: contain;
-            z-index: 10;
-            }
-    }
-        

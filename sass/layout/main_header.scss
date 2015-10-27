@@ -38,7 +38,15 @@
             &:last-child {
                 border-bottom: 0;
             }
+            
+            &:hover {
+                background: darken($color--reason, 3%);
+            }
 
+            &:active {
+                background: darken($color--reason, 5%);
+                color: lighten($color--reason, 10%);
+            }
 
             a {
                 text-decoration: none;
@@ -46,25 +54,32 @@
                 font-family: $font-family--main;
                 font-weight: bold;
                 font-size: $font-size--title;
-                text-transform: uppercase;  
+                text-transform: uppercase;   
+
+                &:active {
+                    color: lighten($color--reason, 10%);
+                }
             }
 
             @media all and (min-width: $media-tablet) {
-                display: inline-block;
+                @include inline-block;
                 width: 20%;
-                background: none;
+                background: $color--white;
                 border: 0;
 
+                &:hover {
+                    background: $color--white;
+                }
+
+                &:active {
+                    background: $color--white;
+                } 
+
                 a {
-                    color: #000;
+                   color: #000;
                     font-size: $font-size--text;
                 }
-            }
-        
-            // Условие ниже сработает для экрана от <= 1024px И >= 1200px
-            // @media all and (min-width: 1024px) and (max-width: 1200px) {
-
-            // }
+            }    
         }            
     }
 

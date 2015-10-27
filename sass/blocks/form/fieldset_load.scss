@@ -16,6 +16,18 @@
 		width: 960px;
 	}
 
+	& label {
+
+		&:hover {
+			background: darken($color--input, 3%);
+		}
+
+		&:active {
+			background: darken($color--input, 5%);
+			color: darken($color--input, 10%);
+		}
+	}
+
 	&__btn {
 		display: block;
 		width: 280px;
@@ -29,8 +41,9 @@
 		font-weight: bold;
 		text-align: center;
 		text-transform: uppercase;
-		background: $color--input;	
+		background: $color--input;
 
+		
 		&--submit {
 			color: $color--white;
 			background: $color--reason;	

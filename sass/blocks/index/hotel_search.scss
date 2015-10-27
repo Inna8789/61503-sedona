@@ -46,8 +46,22 @@
 		text-transform: uppercase;
 		background: $color--reason;
 		border: 0;
+
+		&:hover {
+			background: darken($color--reason, 3%); 
+		}
+
+		&:active {
+			background: darken($color--reason, 5%);
+			color: lighten($color--reason, 10%);
+		}
+
+		&:disabled {
+			background: #e5e5e5;
+		}
 		
 		@media all and (min-width: $media-tablet) {
 			width: 460px;
 		}
+
 	}

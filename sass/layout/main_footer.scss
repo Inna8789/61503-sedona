@@ -34,7 +34,6 @@
 
   
     .copyright {
-        // margin-bottom: 40px;
 
         @media all and (min-width: $media-tablet) {
             @include inline-block(middle);
@@ -50,5 +49,14 @@
             width: 30px;
             height: 35px;
             background-size: contain;
+
+            &:hover {
+                background: url("../img/svg/htmlacademy_hov.svg") no-repeat;
+            }
+
+            &:active {
+                background: url("../img/svg/htmlacademy_act.svg") no-repeat;
+            }
         }
+
     }
