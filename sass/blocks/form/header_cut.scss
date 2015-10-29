@@ -6,11 +6,11 @@
 	margin-top: 74px;
 	padding-top: 50px;
 	font-size: 0;
-	background: url("../img/photos/photo-background@1x.jpg") no-repeat 50% 50%;
+	background: url("../img/photos/photo-background@1x.jpg") no-repeat 50% 60%;
 	background-size: cover;
 
 	@media (min-resolution: 1.5dppx) {
-			background: url("../img/photos/photo-background@2x.jpg 2x") no-repeat 50% 50%;	
+			background: url("../img/photos/photo-background@2x.jpg 2x") no-repeat 50% 60%;	
 	}
 
 	@media all and (min-width: $media-tablet) {
@@ -20,7 +20,7 @@
 	}
 
 	@media all and (min-width: $media-desktop) {
-		height: 240px;
+		height: 250px;
 	}
 
 		&:after {

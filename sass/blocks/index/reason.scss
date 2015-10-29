@@ -23,12 +23,16 @@
 			@include inline-block;
 			margin: 0;
 			width: 23.33%;
-			padding: 52px 5%;
+			padding: 46px 5%;
 			border: 0;
+		}
+
+		@media all and (min-width: $media-desktop) {
+			padding: 52px 5%;
 		}	
 
 		p {
-			margin: 10px auto 0;
+			margin: 12px auto 0;
 			max-width: 250px;
 		}
 	}

@@ -6,7 +6,7 @@
 	text-align: left;
 
 	@media all and (min-width: $media-tablet) {
-		margin: 56px 0 30px;
+		margin: 52px 0 30px;
 		padding: 0;
 		text-align: center;
 		font-size: 0;	    
@@ -18,7 +18,7 @@
 		margin-bottom: 40px;
 		color: $color--text;
 		font-size: $font-size--text;
-		line-height: $line-height--text;
+		line-height: $line-height--text;	
 
 		@media all and (min-width: $media-tablet) {
 			@include inline-block;
@@ -28,7 +28,6 @@
 			& p {
 				margin: 0 auto;
 			}
-
 		}
 
 		&:before {

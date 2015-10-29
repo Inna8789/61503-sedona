@@ -2,21 +2,20 @@
 
 .fieldset_load {
 	margin: 0 auto;
+	margin-bottom: 15px;
 	padding: 0;
 	border: 0;
-	border-bottom: 1px solid $color--service;
 
 	@media all and (min-width: $media-tablet) {
-		width: 664px;
-		border-top: 1px solid $color--service;
-		border-bottom: 0;
+		border-top: 1px solid #e5e5e5;
 	}
 
-	@media all and (min-width: $media-desktop) {
-		width: 960px;
-	}
 
 	& label {
+		
+		@media all and (min-width: $media-tablet) {
+			margin-top: 40px;
+		}
 
 		&:hover {
 			background: darken($color--input, 3%);
@@ -43,7 +42,43 @@
 		text-transform: uppercase;
 		background: $color--input;
 
-		
+		@media all and (min-width: $media-tablet) {
+			width: 456px;
+		}
+
+		@media all and (min-width: $media-desktop) {
+			width: 956px;
+			color: $color--white;
+			background: $color--reason;	
+		}
+
+		&:hover {
+			background: darken($color--input, 3%);
+			color: darken($color--icon, 20%);
+		}
+
+		&:active {	
+			background: darken($color--input, 7%);
+			color: lighten($color--icon, 5%);
+		}
+
+		& span {
+			display: none;
+
+			@media all and (min-width: $media-desktop) {
+				display: inline;
+			}
+		}
+
+		& i {
+			font-style: normal;
+			display: inline;
+
+			@media all and (min-width: $media-desktop) {
+				display: none;
+			}
+		}
+
 		&--submit {
 			color: $color--white;
 			background: $color--reason;	

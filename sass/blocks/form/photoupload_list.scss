@@ -6,6 +6,10 @@
     list-style: none;
     text-align: center;
 
+    @media all and (min-width: $media-tablet) {
+        margin-top: 90px;
+    }
+
     li {
         @include inline-block;
         position: relative;

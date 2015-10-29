@@ -4,11 +4,11 @@
 	margin: 0 auto;
 	padding: 0;
 	border: 0;
-	border-bottom: 1px solid $color--service;
+	border-bottom: 1px solid #e5e5e5;
 
 	@media all and (min-width: $media-tablet) {
 		width: 664px;
-		border-top: 1px solid $color--service;
+		border-top: 1px solid #e5e5e5;
 		border-bottom: 0;
 	}
 
@@ -19,7 +19,7 @@
 			&__field {
 				display: block;
 				width: 240px;
-				padding: 20px;
+				padding: 18px 20px;
 				color: $color--black;
 				font-size: $font-size--title;
 				font-weight: bold;
@@ -28,10 +28,11 @@
 				background: $color--input;
 
 				@media all and (min-width: $media-tablet) {
-					width: 132px;
+					width: 136px;
 				}
 				@media all and (min-width: $media-desktop) {
 					width: 232px;
+					font-size: $font-size--title;
 				}
 
 				&:hover {
@@ -73,12 +74,10 @@
 					color: darken($color--icon, 20%);
 				}
 
-				&:active {
-					
+				&:active {	
 					background: darken($color--input, 7%);
-					color: lighten($color--icon, 10%);
-				}
-				
+					color: lighten($color--icon, 5%);
+				}	
 			}
 
 			&__field--number {
@@ -120,8 +119,8 @@
 
 	&__legend {
 		margin: 0 auto;
-		padding-top: 22px;
-		padding-bottom: 30px;
+		padding-top: 20px;
+		padding-bottom: 35px;
 		text-align: center;
 		vertical-align: middle;
 		color: $color--black;
@@ -144,12 +143,9 @@
 	
 			@media all and (min-width: $media-tablet) {
 				flex-direction: row;	
-				justify-content: flex-start;
-			}
-
-			@media all and (min-width: $media-desktop) {	
 				justify-content: space-between;
 			}
+
 	
 		}
 
@@ -157,6 +153,11 @@
 			padding-left: 20px;
 			padding-bottom: 20px;
 			font-size: 0;
+
+			@media all and (min-width: $media-tablet) {
+				padding-left: 0;
+				padding-bottom: 30px;
+			}
 
 		}
 

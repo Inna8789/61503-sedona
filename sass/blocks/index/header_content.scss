@@ -2,21 +2,22 @@
 
 .header_content {
 	position: relative;
-	height: 392px;
+	height: 344px;
 	margin: 0 auto;
-	margin-top: 74px;
+	margin-top: 70px;
 	padding-top: 48px;
 	font-size: 0;
 	overflow: hidden;
-	background: url("../img/photos/photo-background@1x.jpg") no-repeat 50% 40%;
+	background: url("../img/photos/photo-background@1x.jpg") no-repeat 50% 30%;
 
 	@media all and (min-resolution: 1.5dppx) {
-		background: url("../img/photos/photo-background@2x.jpg") no-repeat 50% 40%;	
+		background: url("../img/photos/photo-background@2x.jpg") no-repeat 50% 30%;	
 		background-size: cover;
 	}
 
 	@media all and (min-width: $media-tablet) {
-		height: 515px;
+		height: 440px;
+		padding-top: 74px;
 		margin-top: 0;
 	}
 
@@ -53,7 +54,7 @@
 		@media all and (min-width: $media-tablet) {
 			width: 294px;
 			height: 80px;
-			margin: 56px auto 0;
+			margin: 50px auto 0;
 		}
 	}
 
@@ -72,7 +73,11 @@
 			@media all and (min-width: $media-tablet) {
 				width: 192px;
 				height: 48px;
-				margin: 30px auto 0;
+				margin: 0 auto;
+			}
+
+			@media all and (min-width: $media-desktop) {
+				margin-top: 30px;
 			}
 	
 		}

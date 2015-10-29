@@ -4,11 +4,11 @@
 	margin: 0 auto;
 	padding: 0;
 	font-size: 0;
-	border-bottom: 1px solid $color--service;
+	border-bottom: 1px solid #e5e5e5;
 
 	@media all and (min-width: $media-tablet) {
 		width: 664px;
-		border-top: 1px solid $color--service;
+		border-top: 1px solid #e5e5e5;
 		border-bottom: 0;
 	}
 
@@ -49,8 +49,6 @@
 		}	
 	}
 
-
-
 	&__legend {
 		width: 242px;
 		margin: 0 auto;
@@ -80,10 +78,6 @@
 		&__field {
 			position: relative;
 			display: none;
-
-			&:hover {
-			background: darken($color--reason, 3%);
-			}
 		}
 	
 		&__field+label:before {
@@ -98,14 +92,12 @@
 			text-align: center;
 			border-radius: 5px;
 			background: $color--input;
-
 		}
 	
 		&__field:checked+label:before {
 			content: "\2611";
 		}
-	
-		
+				
 }
 
 
