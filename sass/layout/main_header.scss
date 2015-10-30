@@ -111,11 +111,10 @@
     }
 
     .menu_btn {
-        border: 1px solid red;
         background: none;
         position: absolute;
         right: 20px;
-        bottom: -60px;
+        bottom: -55px;
         border: 0;
         padding: 0;
         width: 25px;
@@ -152,7 +151,7 @@
 
         &--close {
             right: 20px;
-            top: 20px;
+            top: 17px;
 
             &:before,
             &:after {

@@ -2,130 +2,46 @@
 
 .fieldset_load {
 	margin: 0 auto;
+	margin-bottom: 15px;
 	padding: 0;
 	border: 0;
-	border-bottom: 1px solid $color--service;
 
 	@media all and (min-width: $media-tablet) {
-		width: 664px;
-		border-top: 1px solid $color--service;
-		border-bottom: 0;
-	}
-
-	@media all and (min-width: $media-desktop) {
-		width: 960px;
-	}
-
-	& label {
-
-		&:hover {
-			background: darken($color--input, 3%);
-		}
-
-		&:active {
-			background: darken($color--input, 5%);
-			color: darken($color--input, 10%);
-		}
+		border-top: 1px solid #e5e5e5;
 	}
 
 	&__btn {
+		@extend .btns;
+
 		display: block;
 		width: 280px;
-		margin: 0 auto;
-		margin-bottom: 50px;
-		padding-top: 19px;
-		padding-bottom: 19px;
-		border: none;
-		color: $color--icon;
-		font-size: $font-size--heading;
-		font-weight: bold;
-		text-align: center;
-		text-transform: uppercase;
-		background: $color--input;
-
-		
-		&--submit {
-			color: $color--white;
-			background: $color--reason;	
-		}
-	}
-
-	&__gallery {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		width: 278px;
-		margin: 0 auto;
-		margin-bottom: 50px;
+		margin: 0 auto 50px;	
 
 		@media all and (min-width: $media-tablet) {
-			width: 550px;
+			width: 456px;
 		}
 
 		@media all and (min-width: $media-desktop) {
-			width: 950px;
-		}
-	}
-
-	&__item {
-		position: relative;
-		border: 1px solid red;
-		flex-basis: 70px;
-		margin-bottom: 20px;
-		z-index: 1;
-
-
-		input:before {
-			position: absolute;
-			top: 25px;
-			margin-left: 20px;
-			content: "";
-			width: 30px;
-			height: 30px;
-			background: $color--input;
-			border-radius: 50%;
-			z-index: 2;
-
-			@media all and (min-width: $media-tablet) {
-				width: 60px;
-				height: 60px;		
-			}
+			width: 956px;
+			color: $color--white;
+			background: $color--reason;	
 		}
 
-		input:after {
-			position: absolute;
-			top: 25px;
-			margin-left: 20px;
-			content: "";
-			width: 30px;
-			height: 30px;
-			background-image: url("img/icons/icon-cross.svg");
-			background-size: contain;
-			z-index: 3;
-		}
-
-		@media all and (min-width: $media-tablet) {
-			flex-basis: 140px;		
-		}
-
-
-		& label {
+		& span {
 			display: none;
 
-			@media all and (min-width: $media-tablet) {
-				display: block;
+			@media all and (min-width: $media-desktop) {
+				display: inline;
 			}
 		}
-	}
 
-	&__btnDelete {
-		border-radius: 100%;
-		position: absolute;
-		top: -15px;
-		right: -15px;
-		width: 30px;
-		height: 30px;
-		background: $color--input;
+		& i {
+			font-style: normal;
+			display: inline;
+
+			@media all and (min-width: $media-desktop) {
+				display: none;
+			}
+		}
 	}
 }

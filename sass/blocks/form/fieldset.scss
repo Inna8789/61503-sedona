@@ -4,11 +4,11 @@
 	margin: 0 auto;
 	padding: 0;
 	border: 0;
-	border-bottom: 1px solid $color--service;
+	border-bottom: 1px solid #e5e5e5;
 
 	@media all and (min-width: $media-tablet) {
 		width: 664px;
-		border-top: 1px solid $color--service;
+		border-top: 1px solid #e5e5e5;
 		border-bottom: 0;
 	}
 
@@ -19,7 +19,7 @@
 			&__field {
 				display: block;
 				width: 240px;
-				padding: 20px;
+				padding: 18px 20px;
 				color: $color--black;
 				font-size: $font-size--title;
 				font-weight: bold;
@@ -28,17 +28,18 @@
 				background: $color--input;
 
 				@media all and (min-width: $media-tablet) {
-					width: 132px;
+					width: 136px;
 				}
 				@media all and (min-width: $media-desktop) {
 					width: 232px;
+					font-size: $font-size--title;
 				}
 
 				&:hover {
 					background: darken($color--input, 5%);
 				}
 
-				&:active {
+				&:focus {
 					background: $color--white;
 					outline: 3px solid darken($color--input, 5%);
 					border: 0;
@@ -69,16 +70,12 @@
 				background: $color--input;
 
 				&:hover {
-					background: darken($color--input, 3%);
-					color: darken($color--icon, 20%);
+					opacity: 0.5;
 				}
 
-				&:active {
-					
-					background: darken($color--input, 7%);
-					color: lighten($color--icon, 10%);
-				}
-				
+				&:active {	
+					opacity: 0.1;
+				}	
 			}
 
 			&__field--number {
@@ -103,6 +100,14 @@
 					width: 120px;
 					margin: 0 10px;
 				}
+
+				&:hover {
+					opacity: 0.5;
+				}
+
+				&:active {	
+					opacity: 0.1;
+				}	
 			}
 
 			&__label {
@@ -120,8 +125,8 @@
 
 	&__legend {
 		margin: 0 auto;
-		padding-top: 22px;
-		padding-bottom: 30px;
+		padding-top: 20px;
+		padding-bottom: 35px;
 		text-align: center;
 		vertical-align: middle;
 		color: $color--black;
@@ -144,10 +149,6 @@
 	
 			@media all and (min-width: $media-tablet) {
 				flex-direction: row;	
-				justify-content: flex-start;
-			}
-
-			@media all and (min-width: $media-desktop) {	
 				justify-content: space-between;
 			}
 	
@@ -157,6 +158,11 @@
 			padding-left: 20px;
 			padding-bottom: 20px;
 			font-size: 0;
+
+			@media all and (min-width: $media-tablet) {
+				padding-left: 0;
+				padding-bottom: 30px;
+			}
 
 		}
 
@@ -186,9 +192,10 @@
 		&__center {
 			display: block;
 			margin-left: 20px;
-			margin-bottom: 40px;
+			margin-bottom: 42px;
 			
 			@media all and (min-width: $media-tablet) {
+				margin-bottom: 32px;
 				text-align: center;
 			}
 

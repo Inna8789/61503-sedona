@@ -6,7 +6,7 @@
 	text-align: left;
 
 	@media all and (min-width: $media-tablet) {
-		margin: 56px 0 30px;
+		margin: 52px 0 30px;
 		padding: 0;
 		text-align: center;
 		font-size: 0;	    
@@ -18,7 +18,7 @@
 		margin-bottom: 40px;
 		color: $color--text;
 		font-size: $font-size--text;
-		line-height: $line-height--text;
+		line-height: $line-height--text;	
 
 		@media all and (min-width: $media-tablet) {
 			@include inline-block;
@@ -28,10 +28,13 @@
 			& p {
 				margin: 0 auto;
 			}
-
 		}
 
 		&:before {
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 50% 0;
+
 			content: "";
 			position: absolute;
 			top: -15px;
@@ -49,18 +52,15 @@
 		}
 
 		&--house:before {
-			background: url("../img/icons/icon-house.svg") no-repeat;
-			background-size: contain;	
+			background-image: url("../img/icons/icon-house.svg");
 		}
 
 		&--gift:before {
-			background: url("../img/icons/icon-gift.svg") no-repeat;
-			background-size: contain;
+			background-image: url("../img/icons/icon-gift.svg");
 		}
 
 		&--hamburger:before {
-			background: url("../img/icons/icon-burger.svg") no-repeat;
-			background-size: contain;
+			background-image: url("../img/icons/icon-burger.svg");
 		}
 
 

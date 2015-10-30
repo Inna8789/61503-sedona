@@ -3,11 +3,27 @@
 .index_header {
 	position: relative;
 	margin: 0 auto;
+<<<<<<< HEAD
 	padding: 40px 0;
 	text-align: center;
 	overflow: hidden;
 
 	 &:before {
+=======
+	text-align: center;
+	overflow: hidden;
+
+	@media all and (min-width: $media-tablet) {
+		padding: 54px 0;	
+	}
+
+	@media all and (min-width: $media-desktop) {
+		padding: 58px 0;	
+	}
+
+
+	&:after {
+>>>>>>> origin/module6-task1
 		content: "";
 		display: block;
 		position: absolute;
@@ -28,13 +44,16 @@
 	&__title {
 		width: 260px;
 		margin: 0 auto;
-		margin-bottom: 35px;
+		padding-top: 40px;
+		padding-bottom: 30px;
 		color: $color--black;
 		font-size: $font-size--title;
-		line-height: $line-height--title;
 
 		@media all and (min-width: $media-tablet) {
 			width: 445px;
+			padding-top: 0;
+			font-size: $font-size--heading;
+			line-height: 26px;
 		}
 
 	}
@@ -42,12 +61,13 @@
 	p {
 		width: 255px;
 		margin: 0 auto;
-		padding-bottom: 45px;
+		padding-bottom: 40px;
 		font-size: $font-size--text;
 		line-height: $line-height--title;
 
 		@media all and (min-width: $media-tablet) {
 			width: 490px;
+			padding-bottom: 0;
 		}
 	}
 
