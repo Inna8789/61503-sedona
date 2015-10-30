@@ -10,12 +10,37 @@
 		border-top: 1px solid #e5e5e5;
 	}
 
-	&__btn {
-		@extend .btns;
 
+	& label {
+		
+		@media all and (min-width: $media-tablet) {
+			margin-top: 40px;
+		}
+
+		&:hover {
+			background: darken($color--input, 3%);
+		}
+
+		&:active {
+			background: darken($color--input, 5%);
+			color: darken($color--input, 10%);
+		}
+	}
+
+	&__btn {
 		display: block;
 		width: 280px;
-		margin: 0 auto 50px;	
+		margin: 0 auto;
+		margin-bottom: 50px;
+		padding-top: 19px;
+		padding-bottom: 19px;
+		border: none;
+		color: $color--icon;
+		font-size: $font-size--heading;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		background: $color--input;
 
 		@media all and (min-width: $media-tablet) {
 			width: 456px;
@@ -25,6 +50,14 @@
 			width: 956px;
 			color: $color--white;
 			background: $color--reason;	
+		}
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		&:active {
+			opacity: 0.1;	
 		}
 
 		& span {
@@ -43,5 +76,89 @@
 				display: none;
 			}
 		}
+
+		&--submit {
+			color: $color--white;
+			background: $color--reason;	
+		}
+	}
+
+	&__gallery {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 278px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+
+		@media all and (min-width: $media-tablet) {
+			width: 550px;
+		}
+
+		@media all and (min-width: $media-desktop) {
+			width: 950px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		border: 1px solid red;
+		flex-basis: 70px;
+		margin-bottom: 20px;
+		z-index: 1;
+
+
+		input:before {
+			position: absolute;
+			top: 25px;
+			margin-left: 20px;
+			content: "";
+			width: 30px;
+			height: 30px;
+			background: $color--input;
+			border-radius: 50%;
+			z-index: 2;
+
+			@media all and (min-width: $media-tablet) {
+				width: 60px;
+				height: 60px;		
+			}
+		}
+
+		input:after {
+			position: absolute;
+			top: 25px;
+			margin-left: 20px;
+			content: "";
+			width: 30px;
+			height: 30px;
+			background-image: url("img/icons/icon-cross.svg");
+			background-size: contain;
+			z-index: 3;
+		}
+
+		@media all and (min-width: $media-tablet) {
+			flex-basis: 140px;		
+		}
+
+
+		& label {
+			display: none;
+
+			@media all and (min-width: $media-tablet) {
+				display: block;
+			}
+		}
+	}
+
+	&__btnDelete {
+		border-radius: 100%;
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		width: 30px;
+		height: 30px;
+		background: $color--input;
 	}
 }
