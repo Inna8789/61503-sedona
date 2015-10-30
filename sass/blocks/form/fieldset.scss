@@ -19,12 +19,13 @@
 			&__field {
 				display: block;
 				width: 240px;
-				padding: 18px 20px;
+				padding: 0 20px;
 				color: $color--black;
 				font-size: $font-size--title;
 				font-weight: bold;
 				text-transform: none;
 				border: 0;
+				height: 60px;
 				background: $color--input;
 
 				@media all and (min-width: $media-tablet) {
@@ -39,7 +40,7 @@
 					background: darken($color--input, 5%);
 				}
 
-				&:active {
+				&:focus {
 					background: $color--white;
 					outline: 3px solid darken($color--input, 5%);
 					border: 0;
@@ -81,7 +82,7 @@
 			&__field--number {
 				@include inline-block;
 				width: 120px;
-				height: 57px;
+				height: 60px;
 				margin: 0 10px;
 				padding: 0;
 				padding-left: 20px;

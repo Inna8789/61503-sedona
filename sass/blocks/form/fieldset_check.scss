@@ -63,28 +63,27 @@
 		&__field {
 			position: relative;
 			display: none;
-		}
-	
-		&__field+label:before {
-			@include inline-block(middle);
-			content: "";
-			width: 60px;
-			height: 60px;
-			margin-right: 30px;
-			margin-bottom: 25px;
-			text-align: center;
-			border-radius: 5px;
-			background: $color--input;
 
-			&:first-child {																											
-				@media all and (min-width: $media-tablet) {
-					
+			& + label {
+				
+				line-height: 60px;
+
+				&:before {
+					@include inline-block;
+					content: "";
+					width: 60px;
+					height: 60px;
+					margin-right: 30px;
+					margin-bottom: 25px;
+					text-align: center;
+					border-radius: 5px;
+					background: $color--input;
 				}
-			}																
-		}
-	
-		&__field:checked+label:before {
-			background: url("../img/icons/icon-checkbox.svg") no-repeat 50% 50%;
+			}
+
+			&:checked + label:before {
+				background: $color--input url("../img/icons/icon-checkbox.svg") no-repeat 50% 50%;	
+			}
 		}
 
 }
