@@ -15,7 +15,6 @@
             height: 58px;
         }
 
-
         ul {
             @include no-list;
             font-size: 0;
@@ -56,8 +55,12 @@
                 font-size: $font-size--title;
                 text-transform: uppercase;   
 
-                &:active {
-                    color: lighten($color--reason, 10%);
+                &:hover {
+                    color: $color--reason;
+                }
+
+                &:hover {
+                    color: #c7c7c7;
                 }
             }
 

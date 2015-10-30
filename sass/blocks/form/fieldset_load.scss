@@ -4,10 +4,11 @@
 	margin: 0 auto;
 	margin-bottom: 15px;
 	padding: 0;
-	border: 0;
 
 	@media all and (min-width: $media-tablet) {
+		width: 664px;
 		border-top: 1px solid #e5e5e5;
+		border-bottom: 0;
 	}
 
 
