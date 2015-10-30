@@ -1,16 +1,6 @@
 
 .form {
     position: relative;
-<<<<<<< HEAD
-
-}
-
-.popup {
-    position: absolute;
-    bottom: 560px;
-    left: 50%;
-    display: block;
-=======
     padding-bottom: 100px;
 }
 
@@ -18,7 +8,6 @@
     position: fixed; 
     top: 50%;
     left: 50%;
->>>>>>> origin/module6-task1
     box-sizing: border-box;
     color: $color--text;
     width: 402px;
@@ -26,14 +15,10 @@
     background: #fff;
     transform: translate(-50%);
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-<<<<<<< HEAD
-    display: none;
-=======
     transform: translate(-50%, -50%);
     display: none;
     z-index: 10;
->>>>>>> origin/module6-task1
-
+    
     &__title {
         margin: 0 auto;
         margin-bottom: 30px;
