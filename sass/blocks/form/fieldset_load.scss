@@ -53,13 +53,11 @@
 		}
 
 		&:hover {
-			background: darken($color--input, 3%);
-			color: darken($color--icon, 20%);
+			opacity: 0.5;
 		}
 
-		&:active {	
-			background: darken($color--input, 7%);
-			color: lighten($color--icon, 5%);
+		&:active {
+			opacity: 0.1;	
 		}
 
 		& span {
