@@ -31,6 +31,10 @@
 		}
 
 		&:before {
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 50% 0;
+
 			content: "";
 			position: absolute;
 			top: -15px;
@@ -48,18 +52,15 @@
 		}
 
 		&--house:before {
-			background: url("../img/icons/icon-house.svg") no-repeat;
-			background-size: contain;	
+			background-image: url("../img/icons/icon-house.svg");
 		}
 
 		&--gift:before {
-			background: url("../img/icons/icon-gift.svg") no-repeat;
-			background-size: contain;
+			background-image: url("../img/icons/icon-gift.svg");
 		}
 
 		&--hamburger:before {
-			background: url("../img/icons/icon-burger.svg") no-repeat;
-			background-size: contain;
+			background-image: url("../img/icons/icon-burger.svg");
 		}
 
 

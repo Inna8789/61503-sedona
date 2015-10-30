@@ -1,0 +1,34 @@
+.btns {
+    @include inline-block;
+
+    background: #81b3d2;
+    box-sizing: border-box;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0;
+    padding: 0 25px;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 58px;
+    text-align: center;
+    text-decoration: none;
+    height: 58px;
+
+    &:hover {
+        background: #669ec0;
+    }
+
+    &:active {
+        background: #5496bd;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled:active {
+        background: e5e5e5
+    }
+}

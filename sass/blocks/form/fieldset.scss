@@ -39,7 +39,7 @@
 					background: darken($color--input, 5%);
 				}
 
-				&:active {
+				&:focus {
 					background: $color--white;
 					outline: 3px solid darken($color--input, 5%);
 					border: 0;

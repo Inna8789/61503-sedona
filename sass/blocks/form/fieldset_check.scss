@@ -68,36 +68,51 @@
 
 	&__filter {
 		@include no-list;
+		font-size: 0;
 		margin-left: 20px;
 		margin-bottom: 25px;
 		font-size: $font-size--title;
 		font-weight: bold;
 		text-transform: none;
+
+		li {
+			@include inline-block;
+			margin-right: 40px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 
 		&__field {
 			position: relative;
 			display: none;
+
+			& + label {
+				@include inline-block;
+				cursor: pointer;
+				line-height: 60px;
+			}
+
+			& + label:before {
+				@include inline-block;
+				content: "";
+				width: 60px;
+				height: 60px;
+				margin-right: 30px;
+				margin-bottom: 25px;
+				text-align: center;
+				border-radius: 5px;
+				background: $color--input;
+			}
+
+			&:checked + label:before {
+				background: $color--input url(../img/icons/icon-checkbox.svg) no-repeat 50% 50%;
+			}
+
+
 		}
-	
-		&__field+label:before {
-			@include inline-block;
-			content: "";
-			width: 60px;
-			height: 40px;
-			padding-top: 20px;
-			margin-right: 30px;
-			margin-bottom: 25px;
-			vertical-align: middle;
-			text-align: center;
-			border-radius: 5px;
-			background: $color--input;
-		}
-	
-		&__field:checked+label:before {
-			content: "\2611";
-		}
-				
 }
 
 
