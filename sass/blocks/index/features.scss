@@ -1,33 +1,52 @@
 
 
 .features {
-	margin: 40px auto 0;
-	padding-left: 70px;
+	margin: 42px auto 0;
+	padding-left: 74px;
 	text-align: left;
 
 	@media all and (min-width: $media-tablet) {
-		margin: 52px 0 30px;
+		margin: 54px 0 28px;
 		padding: 0;
 		text-align: center;
 		font-size: 0;	    
 	}
-}
 
-	.features__item {
+	@media all and (min-width: $media-desktop) {
+		margin-bottom: 50px;			
+	}
+
+
+	&__title {
+			margin: 0;
+			padding-bottom: 18px;
+			color: $color--text;
+			font-size: $font-size--title;
+
+			@media all and (min-width: $media-tablet) {
+				padding-bottom: 28px;
+				font-size: $font-size--heading;
+			}
+	}
+
+
+	&__item {
 		position: relative;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 		color: $color--text;
 		font-size: $font-size--text;
-		line-height: $line-height--text;	
+		line-height: $line-height--text;
 
 		@media all and (min-width: $media-tablet) {
 			@include inline-block;
 			width: 23.33%;
-			padding: 104px 5% 0;
+			padding: 104px 4% 0;
+			margin-bottom: 32px;
+			line-height: 21px;
+		}
 
-			& p {
-				margin: 0 auto;
-			}
+		@media all and (min-width: $media-desktop) {
+			padding: 104px 5% 0;
 		}
 
 		&:before {
@@ -63,24 +82,20 @@
 			background-image: url("../img/icons/icon-burger.svg");
 		}
 
-
-		p {
-			width: 230px;
-			margin: 20px 0 0;
-
-			@media all and (min-width: $media-tablet) {
-				width: 170px;
-				margin: 20px auto 0;
-			}
-
-			@media all and (min-width: $media-desktop) {
-				width: 270px;
-			}
-		}
+		& p {
+				width: 230px;
+				margin: 0;
+	
+				@media all and (min-width: $media-tablet) {
+					width: 170px;
+					margin: 0;
+				}
+	
+				@media all and (min-width: $media-desktop) {
+					width: 270px;
+				}
+			}	
 	}
+}
 
-		.features__title {
-			margin: 0 auto 20px;
-			color: $color--text;
-			font-size: $font-size--heading;
-		}
+		

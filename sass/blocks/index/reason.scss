@@ -5,10 +5,10 @@
 	text-align: center;
 	background: $color--gray;
 	font-size: 0;
-}
 
-	.reason__item {
-		padding: 30px 15px;
+
+	&__item {
+		padding: 28px 15px;
 		color: $color--text;
 		font-size: $font-size--text;
 		line-height: $line-height--text;
@@ -23,55 +23,58 @@
 			@include inline-block;
 			margin: 0;
 			width: 23.33%;
-			padding: 46px 5%;
+			padding: 48px 5%;
 			border: 0;
 		}
 
 		@media all and (min-width: $media-desktop) {
-			padding: 52px 5%;
+			padding-bottom: 68px;
+			padding-top: 46px;
 		}	
 
 		p {
-			margin: 12px auto 0;
+			margin: 18px auto 0;
 			max-width: 250px;
 		}
 	}
 
-		.reason__title {
-			width: 180px;
+		&__title {
+			width: 200px;
 			margin: 0 auto;
 			margin-bottom: 10px;
-			font-size: $font-size--text;
+			font-size: $font-size--title;
 			color: $color--black;
     		
     		font-weight: bold;
 
     		@media all and (min-width: $media-tablet) {
 				width: 130px;
+				margin-bottom: 12px;
 				font-size: $font-size--heading;
-    			line-height: $line-height--title;
+    			line-height: 23px;
 			}
 		}
 
-		.reason-number {
+		&__number {
 			position: relative;
-		
 
 			&:before,
 			&:after {
 				position: absolute;
     			content: "";
     			top: 50%;
-    			left: -15px;
+    			left: -10px;
     			height: 2px;
     			width: 8px;
+    			margin: -1px 0 0;
     			background: $color--text;
     			opacity: 0.5;
-    			margin: -1px 0 0;
 			}
 	
 			&:after {
-				left: 25px;
+				left: auto;
+				right: -10px;
 			}
 		}
+}
 	

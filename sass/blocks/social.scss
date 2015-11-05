@@ -1,7 +1,7 @@
-  .social {
-        margin: 40px 0;
-        text-align: center;
-        font-size: 0;
+.social {
+    margin: 38px 0;
+    text-align: center;
+    font-size: 0;
 
         @media all and (min-width: $media-tablet) {
             @include inline-block(middle);
@@ -29,14 +29,15 @@
                 background-position: 50% 50%;
                 margin: -10px 0 0 -10px;
                 z-index: 10;
-
-                &:active {
-                    color: lighten($color--reason, 10%);
-                }
             }
 
             &:hover {
-                background: darken($color--reason, 3%);
+                background: #669ec0;
+            }
+
+            &:active {
+                background: #5496bd;
+                color: #88b6d1;
             }
 
 
@@ -53,4 +54,5 @@
             }
 
         }
-    }
+}
+

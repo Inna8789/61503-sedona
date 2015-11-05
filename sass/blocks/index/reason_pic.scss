@@ -22,6 +22,12 @@
 		@media all and (min-width: $media-tablet) {
            	@include inline-block;
            	width: 23.333%;
+           	padding: 45px 4%;
+        }
+
+        @media all and (min-width: $media-desktop) {
+           	@include inline-block;
+           	width: 23.333%;
            	padding: 52px 5%;
         }
 
@@ -38,6 +44,8 @@
 
 			@media all and (min-width: $media-tablet) {
            		width: 130px;
+           		font-size: $font-size--heading;
+           		line-height: 26px;
             }
 		}
 

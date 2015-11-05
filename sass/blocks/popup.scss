@@ -2,6 +2,10 @@
 .form {
     position: relative;
     padding-bottom: 100px;
+
+    @media all and (min-width: $media-desktop) {
+        padding-bottom: 64px;
+    }
 }
 
 .popup {

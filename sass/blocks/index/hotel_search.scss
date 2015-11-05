@@ -7,25 +7,26 @@
 	
 	&__title {
 		margin: 0;
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 25px;
+		padding-bottom: 20px;
 		color: $color--black;
-		font-size: $font-size--title;
+		font-size: $font-size--heading;
 		line-height: $line-height--title;
 
 		@media all and (min-width: $media-tablet) {
 			margin: 0;
-			padding-top: 55px;
+			padding-top: 42px;
+			padding-bottom: 28px;
 			font-size: $font-size--gigant;
 		}
 	}
 
 	&__text {
 		width: 260px;
-		margin: 0 auto 40px;
+		margin: 0 auto 35px;
 		color: $color--text;
 		font-size: $font-size--text;
-		line-height: $line-height--title;
+		line-height: 23px;
 
 		@media all and (min-width: $media-tablet) {
 			width: 440px;

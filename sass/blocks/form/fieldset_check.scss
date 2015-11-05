@@ -5,6 +5,7 @@
 	padding: 0;
 	font-size: 0;
 	border-bottom: 1px solid #e5e5e5;
+	border-bottom-color: red;
 
 	@media all and (min-width: $media-tablet) {
 		width: 664px;
@@ -20,45 +21,66 @@
 	&__legend {
 		width: 242px;
 		margin: 0 auto;
-		padding-top: 22px;
-		padding-bottom: 30px;
+		padding-top: 18px;
+		margin-bottom: 	15px;
 		text-align: center;
 		vertical-align: middle;
 		color: $color--black;
-		font-size: $font-size--title;
+		font-size: 21px;
 		font-weight: bold;
-		line-height: $line-height--title;
+		line-height: 24px;
+		color: red;
 
 			@media all and (min-width: $media-tablet) {
-				padding: 40px 80px;
+				padding: 30px 60px;
 		}
 	}
 
 	&__filter {
 		@include no-list;
 		margin-left: 20px;
-		margin-bottom: 25px;
 		font-size: $font-size--title;
 		font-weight: bold;
 		line-height: 60px;
 		text-transform: none;
+		color: red;
 
 		@media all and (min-width: $media-tablet) {
-			margin: 0 auto;
+			margin-left: 0;
+		}
+	
 
-			& li {
+		& li {
+
+			@media all and (min-width: $media-tablet) {
 				@include inline-block;
-				margin-left: 40px;
+
+				&:nth-child(odd) {
+					margin-left: 96px;
+				}
+
+				&:nth-child(even) {
+					margin-left: 70px;
+				}	
+			}
+	
+			@media all and (min-width: $media-desktop) {
+
+				&:nth-child(odd) {
+					margin-left: 48px;
+				}
+
+				&:nth-child(even) {
+					margin-left: 48px;
+				}	
 
 				&:first-child {
-					@media all and (min-width: $media-desktop) {
-						margin-left: 0;	
-					}
-					
-				}
+					margin-left: 0;			
+				}					
 			}
 		}
 	}
+	
 
 		&__field {
 			position: relative;
@@ -74,7 +96,7 @@
 					width: 60px;
 					height: 60px;
 					margin-right: 30px;
-					margin-bottom: 25px;
+					margin-bottom: 20px;
 					text-align: center;
 					border-radius: 5px;
 					background: $color--input;

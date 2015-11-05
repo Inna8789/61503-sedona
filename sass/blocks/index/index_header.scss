@@ -37,15 +37,15 @@
 		width: 260px;
 		margin: 0 auto;
 		padding-top: 40px;
-		padding-bottom: 30px;
+		padding-bottom: 28px;
 		color: $color--black;
 		font-size: $font-size--title;
+		line-height: 26px;
 
 		@media all and (min-width: $media-tablet) {
 			width: 445px;
 			padding-top: 0;
 			font-size: $font-size--heading;
-			line-height: 26px;
 		}
 
 	}
@@ -53,9 +53,9 @@
 	p {
 		width: 255px;
 		margin: 0 auto;
-		padding-bottom: 40px;
+		padding-bottom: 44px;
 		font-size: $font-size--text;
-		line-height: $line-height--title;
+		line-height: 23px;
 
 		@media all and (min-width: $media-tablet) {
 			width: 490px;

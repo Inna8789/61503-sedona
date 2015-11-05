@@ -2,6 +2,7 @@
 
 .main_footer {
     margin: 0 auto;
+    margin-top: 16px;
     padding: 0 0 20px;
     text-align: center;
 
@@ -21,15 +22,21 @@
 
         @media all and (min-width: $media-tablet) {
             @include inline-block(middle);
+            box-sizing: border-box;
             width: 33.33%;
-            text-align: center;
-            margin: 0;
+            padding-left: 60px;
+            text-align: left;
+        }
+
+        @media all and (min-width: $media-desktop) {
+            padding-left: 132px;
         }
 
         & a {
             color: $color--black;
             font-weight: bold;
             text-decoration: none;
+            color: red;
         }
     }
 
@@ -38,7 +45,10 @@
 
         @media all and (min-width: $media-tablet) {
             @include inline-block(middle);
+            box-sizing: border-box;
             width: 33.33%;
+            padding-right: 40px;
+            text-align: right;
             font-size: $font-size--text;
         }
 

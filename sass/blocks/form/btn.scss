@@ -18,6 +18,14 @@
     &--blue {
         background: $color--reason;
         color: #fff;
+
+        &:hover {
+            opacity: 0.1;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
     }
 
     &--sm {
