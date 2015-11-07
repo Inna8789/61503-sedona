@@ -20,12 +20,13 @@
         color: #fff;
 
         &:hover {
-            opacity: 0.1;
+            background: #669ec0;    
         }
 
         &:active {
-            opacity: 0.5;
-        }
+            background: #5496bd;
+            color: #88b6d1; 
+        }   
     }
 
     &--sm {

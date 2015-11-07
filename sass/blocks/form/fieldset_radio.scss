@@ -5,7 +5,6 @@
 	padding: 0;
 	border: 0;
 	border-bottom: 1px solid #e5e5e5;
-	border-bottom-color: red;
 
 	@media all and (min-width: $media-tablet) {
 		width: 664px;
@@ -36,16 +35,39 @@
 			margin: 0 auto;
 			padding-bottom: 20px;
 		}
-
 	}
 
 		&__button {
 			display: none;
 	
-			&:checked + label:before {
+			&:checked + label:after {
 				display: block;
 			}
 
+			&:checked + label {
+
+				&:hover {
+
+					&:before {
+						background: #e5e5e5;
+					}
+
+					&:after {
+						background: $color--text;
+					}
+				}
+
+				&:active {
+
+					&:before {
+						background: #d5d5d5;	
+					}
+
+					&:after {
+						opacity: 0.3;
+					}
+				}
+			}
 		}
 	
 		&__label {
@@ -56,37 +78,46 @@
 			margin-bottom: 10px;
 			padding: 0 0 0 85px;
 			cursor: pointer;
-			color: red;
+
+			&:hover {
+
+				&:before {
+					background: #e5e5e5;	
+				}
+			}
+
+			&:active {
+
+				&:before {
+					background: #d5d5d5;
+				}
+			}
 
 			&:before {
 				content: "";
 				position: absolute;
-				top: 30px;
-				left: 20px;
-				margin: -10px 0 0;
-				width: 20px;
-				height: 20px;
-				background: $color--text;
+				top: 0;
+				left: 0;
+				width: 60px;
+				height: 60px;
+				background: $color--input;
 				border-radius: 100%;
-				display: none;
-				z-index: 2;
+				z-index: 1;
 
-				&:hover {
-					background: darken($color--input, 3%);
-				}
 			}
 		
 			&:after {
 				content: "";
 				position: absolute;
-				left: 0;
-				top: 0;
+				display: none;
+				left: 20px;
+				top: 30px;
 				width: 20px;
 				height: 20px;
-				border: 20px solid $color--input;
+				margin: -10px 0 0;
 				border-radius: 50%;
-				background: $color--input;
-				z-index: 1;
+				background: $color--text;
+				z-index: 2;
 			}
 
 		}

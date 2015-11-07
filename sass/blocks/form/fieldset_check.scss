@@ -5,7 +5,6 @@
 	padding: 0;
 	font-size: 0;
 	border-bottom: 1px solid #e5e5e5;
-	border-bottom-color: red;
 
 	@media all and (min-width: $media-tablet) {
 		width: 664px;
@@ -29,7 +28,6 @@
 		font-size: 21px;
 		font-weight: bold;
 		line-height: 24px;
-		color: red;
 
 			@media all and (min-width: $media-tablet) {
 				padding: 30px 60px;
@@ -43,7 +41,6 @@
 		font-weight: bold;
 		line-height: 60px;
 		text-transform: none;
-		color: red;
 
 		@media all and (min-width: $media-tablet) {
 			margin-left: 0;
@@ -100,15 +97,49 @@
 					text-align: center;
 					border-radius: 5px;
 					background: $color--input;
+
 				}
+
+				&:hover {
+            		
+            		&:before {
+                		background: #e5e5e5;	
+            		}
+        		}
+
+        		&:active {
+            		
+            		&:before {
+                		background: #d5d5d5;	
+            		}
+        		}
 			}
 
 			&:checked + label:before {
 				background: $color--input url("../img/icons/icon-checkbox.svg") no-repeat 50% 50%;	
 			}
+
+			&:checked + label {
+
+				&:hover {
+					
+					&:before {
+						background: #e5e5e5;
+					}
+				}
+
+				&:active {
+            		
+            		&:before {
+                		background: #d5d5d5;	
+            		}
+        		}
+			}
+
 		}
 
 }
+	
 
 
 

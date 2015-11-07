@@ -27,20 +27,22 @@
 		@media all and (min-width: $media-desktop) {
 			width: 956px;
 			color: $color--white;
-			background: $color--reason;	
+			background: $color--reason;
+
+			& span {
+				display: none;
+			}
 		}
 
 		&:hover {
-			background: darken($color--input, 3%);
-			color: darken($color--icon, 20%);
+			background: #e5e5e5;
 		}
 
 		&:active {	
-			background: darken($color--input, 7%);
-			color: lighten($color--icon, 5%);
+			background: #d5d5d5;
 		}
-
-		& span {
+		
+		& p {
 			display: none;
 
 			@media all and (min-width: $media-desktop) {
@@ -48,20 +50,25 @@
 			}
 		}
 
-		& i {
-			font-style: normal;
-			display: inline;
-
-			@media all and (min-width: $media-desktop) {
-				display: none;
-			}
-		}
-
 		&--submit {
 			color: $color--white;
-			background: $color--reason;	
+			background: $color--reason;
 		}
 	}
-
-
 }
+
+	@media all and (min-width: $media-desktop) {
+		.fieldset_load__btn {
+			background: $color--reason;
+		}
+		.fieldset_load__btn:hover {
+			background: #669ec0;
+		}
+		.fieldset_load__btn:active {
+			background: #5496bd;
+            color: #88b6d1;
+		}		
+	}
+
+		
+	
