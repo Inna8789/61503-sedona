@@ -18,11 +18,17 @@
                 <nav class="nav">
                     <button type="button" class="menu_btn menu_btn--close"></button>
                     <ul>
-                         <li class="nav__item">
+                        <li class="nav__item--mob">
                             <a href="#">Карта штата</a>
                         </li>
                         <li class="nav__item">
                             <a href="#">Информация</a>
+                        </li>
+                        <li class="nav__item--mob">
+                            <a href="#">Информация</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Фото и видео</a>
                         </li>
                         <li class="nav__logo">
                             <a href="index.html">
@@ -34,8 +40,14 @@
                                 </picture>  
                             </a>
                         </li>
-                        <li class="nav__item">
+                        <li class="nav__item--mob">
                             <a href="#">Фото и видео</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li class="nav__item--mob">
+                            <a href="#">Гостиницы</a>
                         </li>
                         <li class="nav__item">
                             <a href="#">Гостиницы</a>
@@ -97,31 +109,60 @@
 
                 <div class="features">
         
+                    <div class="features__item--mob features__item--house">
+                        <h3 class="features__title">Жильё</h4>
+                        <p>Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
+                    </div>
                     <div class="features__item features__item--house">
                         <h3 class="features__title">Жильё</h4>
                         <p>Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
                     </div>
     
-                    <div class="features__item features__item--gift">
+                    <div class="features__item--mob features__item--gift">
                         <h3 class="features__title">Сувениры</h4>
                         <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
                     </div>
-            
                     <div class="features__item features__item--hamburger">
                         <h3 class="features__title">Еда</h4>
                         <p>Всегда заказывайте фирменный бургер,&nbspвы не&nbsp;разочаруетесь!</p>
+                    </div>
+            
+                    <div class="features__item--mob features__item--hamburger">
+                        <h3 class="features__title">Еда</h4>
+                        <p>Всегда заказывайте фирменный бургер,&nbspвы не&nbsp;разочаруетесь!</p>
+                    </div>
+                    <div class="features__item features__item--gift">
+                        <h3 class="features__title">Сувениры</h4>
+                        <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
                     </div>
         
                 </div>
         
     
                 <div class="reason_pic">
+                    <div class="reason__picture--tab">
+                       <picture>
+                            <source
+                                media="(min-width: 320px)"
+                                    srcset="img/photos/photo-bridge@2x.jpg 2x,
+                                            img/photos/photo-bridge@1x.jpg">
+                            <source
+                                media="(min-width: 640px)"
+                                    srcset="img/photos/photo-bridge@2x.jpg 2x,
+                                            img/photos/photo-bridge@1x.jpg">
+                            <source
+                                media="(min-width: 1024px)"
+                                    srcset="img/photos/photo-bridge@2x.jpg 2x,
+                                            img/photos/photo-bridge@1x.jpg">        
+                            <img src="img/photos/photo-bridge@1x.jpg">
+                        </picture>
+                    </div>     
                     <div class="reason_pic__item">
                         <h3 class="reason_pic__title">Там есть мост дьявола</h3>
                         <span class="reason_pic__number">№2</span>
                         <p>Да, по&nbsp;нему можно пройти! Если<br> конечно вы&nbsp;осмелитесь...</p>    
                     </div>
-                    <div class="reason__picture">
+                    <div class="reason__picture--mob">
                        <picture>
                             <source
                                 media="(min-width: 320px)"

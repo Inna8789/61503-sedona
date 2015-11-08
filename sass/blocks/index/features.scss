@@ -18,24 +18,52 @@
 
 
 	&__title {
-			margin: 0;
-			padding-bottom: 18px;
-			color: $color--text;
-			font-size: $font-size--title;
-
-			@media all and (min-width: $media-tablet) {
-				padding-bottom: 28px;
-				font-size: $font-size--heading;
-			}
+		margin: 0;
+		padding-bottom: 18px;
+		color: $color--text;
+		font-size: $font-size--title;
+		@media all and (min-width: $media-tablet) {
+			padding-bottom: 28px;
+			font-size: $font-size--heading;
+		}
 	}
 
 
-	&__item {
+	&__item--mob {
 		position: relative;
 		margin-bottom: 30px;
 		color: $color--text;
 		font-size: $font-size--text;
 		line-height: $line-height--text;
+
+		@media all and (min-width: $media-tablet) {
+			display: none;
+		}
+
+		&:before {
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 50% 0;
+			content: "";
+			position: absolute;
+			top: -15px;
+			left: -50px;
+			width: 40px;
+			height: 40px;
+		}
+
+		& p {
+			width: 230px;
+			margin: 0;
+		}
+	}
+
+		&__item {
+			position: relative;
+			color: $color--text;
+			font-size: $font-size--text;
+			line-height: $line-height--text;
+			display: none;
 
 		@media all and (min-width: $media-tablet) {
 			@include inline-block;
@@ -49,26 +77,25 @@
 			padding: 104px 5% 0;
 		}
 
-		&:before {
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-position: 50% 0;
-
-			content: "";
-			position: absolute;
-			top: -15px;
-			left: -50px;
-			width: 40px;
-			height: 40px;
-			
-			@media all and (min-width: $media-tablet) {
-				top: 0;
-				left: 50%;
-				margin-left: -38px;
-				width: 74px;
-				height: 74px;
+			&:before {
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: 50% 0;
+				content: "";
+				position: absolute;
+				top: -15px;
+				left: -50px;
+				width: 40px;
+				height: 40px;
+				
+				@media all and (min-width: $media-tablet) {
+					top: 0;
+					left: 50%;
+					margin-left: -38px;
+					width: 74px;
+					height: 74px;
+				}
 			}
-		}
 
 		&--house:before {
 			background-image: url("../img/icons/icon-house.svg");
@@ -83,9 +110,6 @@
 		}
 
 		& p {
-				width: 230px;
-				margin: 0;
-	
 				@media all and (min-width: $media-tablet) {
 					width: 170px;
 					margin: 0;

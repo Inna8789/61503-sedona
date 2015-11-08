@@ -82,3 +82,23 @@
            	overflow: hidden;
         }
 	}
+
+	.reason__picture--mob {
+		height: 256px;
+		overflow: hidden;
+	
+		@media all and (min-width: $media-tablet) {
+           display: none;
+        }
+	}
+
+	.reason__picture--tab {
+		display: none;
+	
+		@media all and (min-width: $media-tablet) {
+           	@include inline-block;
+           	width: 66.667%;
+           	height: 256px;
+           	overflow: hidden;
+        }
+	}
