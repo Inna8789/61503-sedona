@@ -12,32 +12,44 @@
 	}
 
 	&__title {
+		margin-top: 32px;
 		margin-bottom: 35px;
-		// padding-left: 20px;
+		padding-left: 10px;
 		color: $color--black;
 		font-size: $font-size--gigant;
 		text-align: left;
+		color: red;
 	}
 
 	&__text {
 		margin: 0;
-		// padding-left: 20px;
+		padding-left: 10px;
+		padding-bottom: 12px;
 		text-align: left;
 		color: $color--text;
 		font-size: $font-size--text;
-		line-height: $line-height--text;
+		line-height: 24px;
 		text-transform: uppercase;
+		color: red;
 	}
 
 	&__list {
 		@include no-list;
 		margin: 35px 0;
+		margin-bottom: 30px;
+		margin-left: 10px;
 		padding-left: 15px;
 		font-weight: bold;
+
+		@media all and (min-width: $media-tablet) {
+			margin-top: 12px;
+			margin-bottom: 25px;			
+		}
 	
 	}
 		&__list_item {
 			position: relative;
+			line-height: 23px;
 		}
 
 		&__list_item:before {
@@ -55,28 +67,41 @@
 			position: relative;
 			width: 248px;
 			margin: 0;
-			padding: 35px 0 15px 35px;
-			
+			padding: 12px 0 18px 25px;
+			line-height: 24px;
+
+			@media all and (min-width: $media-tablet) {
+				width: 452px;			
+			}
+
+			@media all and (min-width: $media-desktop) {
+				padding-bottom: 38px;
+			}
 		}
 
 		&__quote:before {
 			position: absolute;
 			content: "";
-			top: 40px;
-			left: 20px;
+			top: 15px;
+			left: 5px;
 			width: 2px;
 			height: 80px;
-			background: $color--reason;	
+			background: $color--reason;
+
+			@media all and (min-width: $media-tablet) {
+				height: 58px;			
+			}
+	
 		}
 
 		span {
 			color: $color--support;
 			font-size: $font-size--text;
-			text-decoration: underline
-;	
+			text-decoration: underline;
 		}
 
 		i {
+			display: block;
 			color: $color--support;
 			font-size: $font-size--text;
 			font-style: italic;

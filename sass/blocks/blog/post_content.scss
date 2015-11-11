@@ -3,14 +3,45 @@
 .post_content {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 
 	@media all and (min-width: $media-tablet) {
 			flex-direction: row;
 			justify-content: space-around;
 			flex-wrap: wrap;
+
+			&:before {
+				position: absolute;
+				content: "";
+				width: 2px;
+				min-height: 100%;
+				top: 0;
+				left: 50%;
+				background: #dbdbdb; 
+			}	
 	}
 
-	& .post {
+	@media all and (min-width: $media-desktop) {
+
+		&:before {
+				position: absolute;
+				content: "";
+				width: 2px;
+				min-height: 100%;
+				top: 0;
+				left: 33.33%;
+				background: #dbdbdb; 
+			}	
 		
-	} 
+		&:after {
+				position: absolute;
+				content: "";
+				width: 2px;
+				min-height: 100%;
+				top: 0;
+				left: 66.66%;
+				background: #dbdbdb; 
+			}	
+	}
+ 
 }

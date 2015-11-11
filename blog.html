@@ -14,28 +14,41 @@
     <body>
         
         <div class="wrapper">
-             <header class="main_header">
+
+            <header class="main_header">
                 <nav class="nav">
                     <button type="button" class="menu_btn menu_btn--close"></button>
                     <ul>
-                        <li class="nav__item">
+                        <li class="nav__item--mob">
                             <a href="#">Карта штата</a>
                         </li>
                         <li class="nav__item">
                             <a href="#">Информация</a>
                         </li>
-                        <li class="nav__logo">
-                            <a href="index.html">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                            srcset="img/other/logo-sedona@2x.png 2x,
-                                                    img/other/logo-sedona@1x.png">
-                                    <img src="img/other/logo-sedona@1x.png" width="68" height="62">
-                                </picture>  
-                            </a>
+                        <li class="nav__item--mob">
+                            <a href="#">Информация</a>
                         </li>
                         <li class="nav__item">
                             <a href="#">Фото и видео</a>
+                        </li>
+                        <li class="nav__logo">
+                            <a href="index.html">
+                                <picture>
+                                    <source media="(min-width: 1200px)" 
+                                            srcset="img/other/logo-sedona@2x.png 2x, 
+                                                    img/other/logo-sedona@1x.png">
+                                    <img src="img/other/logo-sedona@1x.png" width="67" height="56">
+                                </picture>  
+                            </a>
+                        </li>
+                        <li class="nav__item--mob">
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li class="nav__item--mob">
+                            <a href="#">Гостиницы</a>
                         </li>
                         <li class="nav__item">
                             <a href="#">Гостиницы</a>
@@ -88,7 +101,7 @@
                             Принят антитабачный закон штата
                         </h2>
                         <p class="post__preview">
-                           Уважаемые туристы, пожалуйста не&nbsp;забывайте, что курение сигарет и&nbsp;сигар в&nbsp;общественных местах     города      Седона категорически запрещено. 
+                           Уважаемые туристы, пожалуйста не забывайте, что курение сигарет и сигар в общественных местах     города      Седона категорически запрещено. 
                         </p>
                         <div class="post__footer">
                             <time class="post__param post__param--date" datetime="">2дня назад</time>
@@ -161,7 +174,7 @@
         
                 <div class="paginator clearfix">
 
-                    <h2 class="paginator__title">Страница</h2>
+                    <h2 class="paginator__title">Страница:</h2>
                     <div class="paginator__items">
                         <a href="" class="paginator__item  paginator__item--active">1</a>
                         <a href="" class="paginator__item">2</a>
@@ -172,21 +185,21 @@
                 </div>
 
             </main>
+            
             <footer class="main_footer">
                    
                 <div class="contacts">
                     <a href="#">#Visitsedona</a>
                 </div>
                 <div class="social">
-                    <a href="#" class="social_btn social_btn--twitter">Twitter</a>
-                    <a href="#" class="social_btn social_btn--facebook">Facebook</a>
-                    <a href="#" class="social_btn social_btn--youtube">Youtube</a>
+                    <a href="#" class="social__btn social__btn--twitter">Twitter</a>
+                    <a href="#" class="social__btn social__btn--facebook">Facebook</a>
+                    <a href="#" class="social__btn social__btn--youtube">Youtube</a>
                 </div>
                 <div class="copyright">
                     Разработано 
                     <a class="copyright__htmlacademy" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
-                </div>
-                    
+                </div>    
             </footer>
 
         </div>

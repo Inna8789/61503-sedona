@@ -1,32 +1,56 @@
 
 
 .blog_header {
+	margin: 0 auto;
 	text-align: center;
 
+
 	&__title {
-		margin: 45px auto 35px;
+		margin: 48px auto 35px;
 		color: $color--black;
 		font-size: $font-size--gigant;
 
 		@media all and (min-width: $media-tablet) {
-			margin-top: 70px;
+			margin-top: 72px;
 		}
 
 		@media all and (min-width: $media-desktop) {
-			margin-top: 100px;
+			margin-top: 110px;
 		}
-
 	}
 
 	p {
-		width: 255px;
+		width: 256px;
 		margin: 0 auto;
-		padding-bottom: 45px;
+		padding: 0 12px 32px;
 		font-size: $font-size--text;
-		line-height: 26px;
+		line-height: 24px;
 
 		@media all and (min-width: $media-tablet) {
 			width: 420px;
+			margin: 0 auto;
+			padding-bottom: 54px;
+			text-align: center;
+			border: 0;
+		}
+
+		@media all and (min-width: $media-desktop) {
+			padding-bottom: 64px;
+		}
+	}
+
+
+	&.blog_header--post {
+		p {
+			padding-bottom: 22px;
+
+			@media all and (min-width: $media-tablet) {
+				padding-bottom: 45px;
+			}
+
+			@media all and (min-width: $media-desktop) {
+				padding-bottom: 58px;
+			}
 		}
 	}
 }

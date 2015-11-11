@@ -2,35 +2,42 @@
 
 .paginator {
 	margin: 0 auto;
+	margin-bottom: 32px;
 	padding-top: 45px;
 	padding-bottom: 25px;
 	padding-left: 20px;
 	font-size: 0;
-	border-bottom: 2px solid $color--gray;
-	border-top: 2px solid $color--gray;
+	border-bottom: 2px solid #dbdbdb;
+	border-top: 2px solid #dbdbdb;
 
 
 	@media all and (min-width: $media-tablet) {
-		padding-left: 40px;
+		height: 60px;
+		padding-left: 45px;
+		padding-bottom: 0;
+		margin-bottom: 15px;
 		border: 0;
 	}
 
 	@media all and (min-width: $media-desktop) {
 		width: 800px;
+		padding-top: 58px;
 		padding-left: 0;
+		margin-bottom: 25px;
 		margin-left: 0;	
 	}
 
 
 	&__items {
-		float: left;
-		width: 280px;
+		width: 300px;
+		margin: 0 auto;
 
 		a {
 			text-decoration: none;
 		}
 		
 		@media all and (min-width: $media-tablet) {
+			float: left;
 			width: 350px;
 		}
 
@@ -42,7 +49,6 @@
 	}
 
 	&__title {
-		float: left; 
 		width: 120px;
 		margin: 0;
 		color: $color--black;
@@ -54,6 +60,7 @@
 		display: none;
 
 		@media all and (min-width: $media-tablet) {
+			float: left; 
 			width: 180px;
 			display: block;
 		}
@@ -71,13 +78,17 @@
 			height: 40px;
 			padding-top: 20px;
 			margin: 0;
-			margin-right: 10px;
-			margin-bottom: 20px;
+			margin-right: 14px;
+			margin-bottom: 15px;
 			text-align: center;
 			font-size: $font-size--title;
 			font-weight: bold;
 			color: $color--white;
 			background: $color--reason;
+
+			@media all and (min-width: $media-tablet) {
+				margin-right: 10px;
+			}
 	
 			&--active {
 				color: $color--black;
