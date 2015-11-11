@@ -15,7 +15,6 @@
 		color: $color--black;
 		font-size: 23px;
 		line-height: 34px;
-		color: red;
 
 		@media all and (min-width: $media-tablet) {
 			width: 496px;
@@ -53,7 +52,6 @@
 			font-size: $font-size--title;
 			line-height: $line-height--title;
 			text-transform: none;
-			color: red;
 	
 			@media all and (min-width: $media-tablet) {
 				width: 670px;
