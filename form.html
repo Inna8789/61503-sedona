@@ -132,9 +132,9 @@
                                 <div class="fieldset__item">
                     	            <label class="fieldset__label">Длительность пребывания:<span>*</span></label>
                                     <div class="fieldset__triple">
-                                        <button class="fieldset__field--btn" type="button"><i class="icon-minus"></i></button>
+                                        <button class="fieldset__field--btn_minus" type="button"><i class="icon-minus"></i></button>
                     	                <input class="fieldset__field--number" type="number" value="14" required>
-                                        <button class="fieldset__field--btn" type="button"><i class="icon-plus"></i></button>
+                                        <button class="fieldset__field--btn_plus" type="button"><i class="icon-plus"></i></button>
                                     </div>
                                 </div>
                                 <div class="fieldset__item">
@@ -155,9 +155,9 @@
                         <div class="fieldset__center">
                     	   <label class="fieldset__label">Количество путешественников:<span>*</span></label>
                             <div class="fieldset__triple">
-                                <button class="fieldset__field--btn" type="button"><i class="icon-minus"></i></button>
+                                <button class="fieldset__field--btn_minus" type="button"><i class="icon-minus"></i></button>
                                 <input class="fieldset__field--number" type="number" value="2" placeholder="чел." required>
-                                <button class="fieldset__field--btn" type="button"><i class="icon-plus"></i></button>
+                                <button class="fieldset__field--btn_plus" type="button"><i class="icon-plus"></i></button>
                     	   </div>
                         </div>
                         <div class="fieldset__flex">
@@ -242,47 +242,61 @@
                             <p>Перетащите фотографии сюда</p>
                         </label>
 
-                        <input type="file" name="file" id="fileupload" class="fieldset_load__file" style="display: none;">
+                        <input type="file" name="file" id="fileupload" multiple class="fieldset_load__file" style="display: none;">
                         
                         <ul class="photouploadList">
-                            <li>
-                                <img class="photouploadList__preview" src="img/photos/img-686.jpg" alt=""> 
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-686.jpg" name="photo" alt="" title="">
+                                </div> 
                                 <div class="photouploadList__title">IMG-686.JPG</div>
 
                                 <button class="photouploadList__btnDelete"></button>
                             </li>
-                            <li>
-                                <img class="photouploadList__preview" src="img/photos/img-687.jpg" alt=""> 
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-687.jpg" name="photo" alt="" title="">
+                                </div> 
                                 <div class="photouploadList__title">IMG-687.JPG</div>
 
                                 <button class="photouploadList__btnDelete"></button>
                             </li>
-                            <li>
-                                <img class="photouploadList__preview" src="img/photos/img-688.jpg" alt=""> 
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-688.jpg" name="photo" alt="" title="">
+                                </div> 
                                 <div class="photouploadList__title">IMG-688.JPG</div>
 
                                 <button class="photouploadList__btnDelete"></button>
                             </li>
-                            <li>
-                                <img class="photouploadList__preview" src="img/photos/img-689.jpg" alt=""> 
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-689.jpg" name="photo" alt="" title="">
+                                </div> 
                                 <div class="photouploadList__title">IMG-686.JPG</div>
 
                                 <button class="photouploadList__btnDelete"></button>
                             </li>
-                            <li>
-                                <img class="photouploadList__preview" src="img/photos/img-690.jpg" alt=""> 
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-690.jpg" name="photo" alt="" title="">
+                                </div> 
                                 <div class="photouploadList__title">IMG-687</div>
 
                                 <button class="photouploadList__btnDelete"></button>
                             </li>
-                            <li>
-                                <img class="photouploadList__preview" src="img/photos/img-691.jpg" alt=""> 
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-691.jpg" name="photo" alt="" title="">
+                                </div> 
                                 <div class="photouploadList__title">IMG-688</div>
 
                                 <button class="photouploadList__btnDelete"></button>
                             </li>
-                            <li>
-                                <img class="photouploadList__preview" src="img/photos/img-691.jpg" alt=""> 
+                            <li class="photouploadList__item">
+                                <div class="photouploadList__preview--wrap">
+                                    <img class="photouploadList__preview" src="img/photos/img-691.jpg" name="photo" alt="" title="">
+                                </div> 
                                 <div class="photouploadList__title">IMG-688</div>
 
                                 <button class="photouploadList__btnDelete"></button>
@@ -327,6 +341,16 @@
                 </div>    
             </footer>
         </div>
+
+        <script id="image-template" type="text/html">
+            <div class="photouploadList__preview--wrap">
+                <img src="{{image}}" alt="{{name}}" title="{{name}}">
+            </div>
+            <button class="photouploadList__btnDelete" title="Удалить"></button>
+        </script>
+        <script src="js/vendors/mustache-2.2.0.min.js"></script>
+        <script src="js/script.min.js"></script>
+        <script src="js/script_render_number.min.js"></script>
 
 	</body>
 
